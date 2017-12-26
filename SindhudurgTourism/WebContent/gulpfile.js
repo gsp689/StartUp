@@ -55,7 +55,7 @@ gulp.task('minify-main', function() {
 
 /* Sass task */
 gulp.task('sass', function () {  
-    gulp.src('scss/style.scss')
+    gulp.src('scss/*.scss')
     .pipe(plumber())
     .pipe(sass({
       errLogToConsole: true,
