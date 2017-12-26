@@ -48,7 +48,7 @@ a {
 	transition: .3s all;
 	color: $brand-primary;
 	&:hover, &:focus, &:active {
-		color: darken($brand-primary, -5%);
+		color: darken($brand-primary, 5%);
 		text-decoration: none;
 	}
 }
