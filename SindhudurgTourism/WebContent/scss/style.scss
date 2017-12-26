@@ -33,6 +33,7 @@ h2 {
 }
 h3 {
 	font-size: 28px;
+	color:darken($brand-secondary,10%);
 }
 h4 {
 	font-size: 36px;
@@ -884,26 +885,14 @@ a {
 		&:before {
 			position: absolute;
 			content: "";
-			background: rgba(0,0,0,.4);
+			background: rgba(0,0,0,0);
 			top: 0;
 			left: 0;
 			right: 0;
 			bottom: 0;
 		}
 	}
-	&.probootstrap-bg1 {
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center center;
-		&:before {
-			position: absolute;
-			content: "";
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-		}
-	}
+	
 }
 
 
