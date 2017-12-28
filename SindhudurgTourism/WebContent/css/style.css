@@ -69,6 +69,26 @@ a:hover, a:focus, a:active {
   text-decoration: none;
 }
 
+.greetings {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 14px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+
+.resize {
+  display: block;
+  max-width: 100%;
+  max-height: 244px;
+  height: 244 !important;
+}
+
 .hero-text-heading, .probootstrap-hero h1, .flexslider .probootstrap-heading {
   font-size: 52px;
   font-weight: 300;

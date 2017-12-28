@@ -93,6 +93,7 @@ gulp.task('merge-styles', function () {
         'css/vendor/magnific-popup.css',
         'css/vendor/photoswipe.css',
         'css/vendor/default-skin.css',
+        'css/custom.css',
         'fonts/icomoon/style.css',
         ])
         // .pipe(sourcemaps.init())
