@@ -36,3 +36,12 @@ a:-webkit-any-link {
   text-align: left;
   vertical-align: middle;
 }
+
+.flexslider .slides > li.overlay:before {
+  background: transparent !important;
+}
+
+.slider.slider-horizontal {
+  width: 400px;
+  /* sample value - set it as you like*/
+}
