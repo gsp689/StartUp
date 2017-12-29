@@ -44,6 +44,9 @@ a:-webkit-any-link {
   .flexslider .slides>li.overlay:before{
       background: rgba(0,0,0,0)!important;
   }
-  .slider.slider-horizontal{
-    width:400px; /* sample value - set it as you like*/
+  .flexslider, .flexslider .slides>li, .slider-height{
+      height: 400px;
   }
+  .flexslider .probootstrap-slider-text {
+margin-top: 200px;  
+}    
