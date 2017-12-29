@@ -1,3 +1,5 @@
+@import 'custom-settings';
+
 img{
     height:244px!important ;
     width: 100%!important;
@@ -21,24 +23,6 @@ a:-webkit-any-link {
     padding: 1em 0;
 }
 
-.modal {
-    text-align: center;
-    padding: 0!important;
-  }
-  
-  .modal:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-   
-  }
-  
-  .modal-dialog {
-    display: inline-block;
-    text-align: left;
-    vertical-align: middle;
-  }
 
 
   .flexslider .slides>li.overlay:before{
@@ -48,5 +32,45 @@ a:-webkit-any-link {
       height: 400px;
   }
   .flexslider .probootstrap-slider-text {
-margin-top: 200px;  
+      margin-top: 200px;  
 }    
+
+#container{
+    width: 400px;
+    background: yellow;
+}
+#floated{
+    float: left;
+    width: 400px;
+    background: red;
+}
+
+.modal-header .close{
+	color: darken($brand-secondary,10%);
+	opacity: 10;
+}
+.btn-default{
+background-color: lighten($brand-secondary,10%);
+}
+
+.modal-footer{
+border-top-color:$brand-secondary;
+}
+
+.modal-header{
+border-bottom-color:$brand-secondary;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

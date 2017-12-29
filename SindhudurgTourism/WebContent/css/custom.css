@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?1z9v6x");
+  src: url("../fonts/icomoon/icomoon.eot?1z9v6x#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?1z9v6x") format("truetype"), url("../fonts/icomoon/icomoon.woff?1z9v6x") format("woff"), url("../fonts/icomoon/icomoon.svg?1z9v6x#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 img {
   height: 244px !important;
   width: 100% !important;
@@ -19,24 +27,6 @@ a:-webkit-any-link {
   padding: 1em 0;
 }
 
-.modal {
-  text-align: center;
-  padding: 0 !important;
-}
-
-.modal:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-
-.modal-dialog {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
-}
-
 .flexslider .slides > li.overlay:before {
   background: transparent !important;
 }
@@ -47,4 +37,32 @@ a:-webkit-any-link {
 
 .flexslider .probootstrap-slider-text {
   margin-top: 200px;
+}
+
+#container {
+  width: 400px;
+  background: yellow;
+}
+
+#floated {
+  float: left;
+  width: 400px;
+  background: red;
+}
+
+.modal-header .close {
+  color: #c05507;
+  opacity: 10;
+}
+
+.btn-default {
+  background-color: #f78736;
+}
+
+.modal-footer {
+  border-top-color: #f16b09;
+}
+
+.modal-header {
+  border-bottom-color: #f16b09;
 }
