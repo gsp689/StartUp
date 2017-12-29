@@ -64,6 +64,7 @@ a {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	text-decoration: none;
+	-moz-binding: url('assets/elip.xml#ellipsis');
 }
 
 .resize {
