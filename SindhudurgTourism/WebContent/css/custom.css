@@ -66,3 +66,7 @@ a:-webkit-any-link {
 .modal-header {
   border-bottom-color: #f16b09;
 }
+
+.probootstrap-flex-block .probootstrap-text {
+  padding: 15px;
+}
