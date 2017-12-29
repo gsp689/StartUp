@@ -70,3 +70,7 @@ a:-webkit-any-link {
 .probootstrap-flex-block .probootstrap-text {
   padding: 15px;
 }
+
+.probootstrap-flex-block {
+  margin-top: -2em;
+}
