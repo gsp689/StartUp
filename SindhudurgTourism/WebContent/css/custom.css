@@ -74,3 +74,45 @@ a:-webkit-any-link {
 .probootstrap-flex-block {
   margin-top: -2em;
 }
+
+#wrapper h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+#wrapper > div {
+  background-color: #eee;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  overflow: hidden;
+}
+
+#wrapper > div.first {
+  border-bottom: none;
+}
+
+#wrapper dl {
+  display: block;
+  margin: 0;
+}
+
+#wrapper dt, #wrapper dd {
+  display: block;
+  float: left;
+  margin: 0 10px;
+}
+
+#wrapper dt {
+  background-color: #f78736;
+  color: #fff;
+}
+
+#wrapper dd {
+  color: #333;
+  margin-right: 50px;
+}
+
+code {
+  font-style: italic;
+}

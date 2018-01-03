@@ -34,7 +34,8 @@ gulp.task('scripts', function() {
     'js/vendor/photoswipe-ui-default.min.js',
     'js/vendor/owl.carousel.min.js',
     'js/vendor/bootstrap.min.js',
-    'js/vendor/jquery.waypoints.min.js'
+    'js/vendor/jquery.waypoints.min.js',
+    'js/cool/jquery.carouFredSel-6.0.4-packed.js'
     ])
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest('js'))
