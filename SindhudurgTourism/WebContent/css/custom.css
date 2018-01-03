@@ -120,3 +120,7 @@ code {
 .probootstrap-footer a {
   color: #f16b09;
 }
+
+.mbody {
+  width: 100%;
+}
