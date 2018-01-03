@@ -116,3 +116,7 @@ a:-webkit-any-link {
 code {
   font-style: italic;
 }
+
+.probootstrap-footer a {
+  color: #f16b09;
+}
