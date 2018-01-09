@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<!-- 
+  Theme Name: Enlight
+  Theme URL: https://probootstrap.com/enlight-free-education-responsive-bootstrap-website-template
+  Author: ProBootstrap.com
+  Author URL: https://probootstrap.com
+  License: Released for free under the Creative Commons Attribution 3.0 license (probootstrap.com/license)
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" value="example, news, ticker, newsticker, javascript, scrolling, text, back, forth" />
+<title>Sindhudurg Tourism &mdash; Maharashtra</title>
+<!-- <meta name="description" content="Free Bootstrap Theme by ProBootstrap.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template"> -->
+
+<link
+	href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans"
+	rel="stylesheet">
+<link rel="stylesheet" href="css/styles-merged.css">
+<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700'
+	rel='stylesheet' type='text/css'>
+<link href='css/custom1.css' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+    
+    <!--cool carousel for news  -->
+    
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
+		<script src="js/cool/jquery.carouFredSel-6.0.4-packed.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function() {
+				var _scroll = {
+					delay: 1000,
+					easing: 'linear',
+					items: 1,
+					duration: 0.07,
+					timeoutDuration: 0,
+					pauseOnHover: 'immediate'
+				};
+				$('#ticker-1').carouFredSel({
+					width: 1000,
+					align: false,
+					items: {
+						width: 'variable',
+						height: 35,
+						visible: 1
+					},
+					scroll: _scroll
+				});
+
+				$('#ticker-2').carouFredSel({
+					width: 1000,
+					align: false,
+					circular: false,
+					items: {
+						width: 'variable',
+						height: 35,
+						visible: 2
+					},
+					scroll: _scroll
+				});
+
+				//	set carousels to be 100% wide
+				$('.caroufredsel_wrapper').css('width', '100%');
+
+				//	set a large width on the last DD so the ticker won't show the first item at the end
+				$('#ticker-2 dd:last').width(2000);
+			});
+		</script>
+		
+</head>
+<body>
+
+	<div class="probootstrap-search" id="probootstrap-search">
+		<a href="#" class="probootstrap-close js-probootstrap-close"><i
+			class="icon-cross"></i></a>
+		<form action="#">
+			<input type="search" name="s" id="search"
+				placeholder="Search a keyword and hit enter...">
+		</form>
+	</div>
+
+	<div class="probootstrap-page-wrapper">
+		<!-- Fixed navbar -->
+		<div class="probootstrap-header-top">
+			<div class="container">
+				<div class="row">
+					<div
+						class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
+						<!-- <span><i class="icon-location2"></i>Brooklyn, NY 10036, United States</span>
+              <span><i class="icon-phone2"></i>+1-123-456-7890</span>
+              <span><i class="icon-mail"></i>info@probootstrap.com</span> -->
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
+						<ul>
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook2"></i></a></li>
+							<li><a href="#"><i class="icon-instagram2"></i></a></li>
+							<li><a href="#"><i class="icon-youtube"></i></a></li>
+							<li><a href="#"
+								class="probootstrap-search-icon js-probootstrap-search"><i
+									class="icon-search"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-default probootstrap-navbar"
+			style="background-size: contain !important">
+			<div class="container">
+				<div class="navbar-header">
+					<div class="btn-more js-btn-more visible-xs">
+						<a href="#"><i class="icon-dots-three-vertical "></i></a>
+					</div>
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#navbar-collapse"
+						aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"
+						title="Sindhudurg Tourism">Sindhudurg Tourism</a>
+					<!-- <a class="navbar-brand1" href="index.html" title="ProBootstrap:Enlight"><h3>Sindhudurg Tourism</h3></a> -->
+				</div>
+
+				<div id="navbar-collapse" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="packages.html">Packages</a></li>
+						<li><a href="teachers.html">Menu2</a></li>
+						<li><a href="events.html">Events</a></li>
+						<li class="dropdown"><a href="#" data-toggle="dropdown"
+							class="dropdown-toggle">Pages</a>
+							<ul class="dropdown-menu">
+								<li><a href="about.html">About Us</a></li>
+								<li><a href="courses.html">Menu2</a></li>
+								<li><a href="course-single.html">Course Single</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li class="dropdown-submenu dropdown"><a href="#"
+									data-toggle="dropdown" class="dropdown-toggle"><span>Sub
+											Menu</span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+									</ul></li>
+								<li><a href="news.html">News</a></li>
+							</ul></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<section class="probootstrap-section" style="padding: 0em 0;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div id="wrapper">
+
+							<div class="first">
+								<dl id="ticker-1" style="line-height:0">
+									<dt >News1</dt>
+									<dd>A news ticker (sometimes referred to as a
+										&quot;crawler&quot;) resides in the lower third of the
+										television screen space on television news networks dedicated
+										to presenting headlines or minor pieces of news.</dd>
+
+									<dt>News2</dt>
+									<dd>It may also refer to a long, thin scoreboard-style
+										display seen around the front of some offices or public
+										buildings.</dd>
+
+									<dt>News3</dt>
+									<dd>Since the growth in usage of the World Wide Web, news
+										tickers have largely syndicated news posts from the websites
+										of the broadcasting services which produce the broadcasts.</dd>
+								</dl>
+							</div>
+							<!-- <div>
+				<dl id="ticker-2">
+					<dt>Back and forth</dt>
+						<dd>By simply setting the option <code>circular</code> to <code>false</code>, this news ticker will go back and forth.</dd>
+
+					<dt>PauseOnHover</dt>
+						<dd>Because the option <code>pauseOnHover</code> is set to <code>&quot;immediate&quot;</code>, these news tickers will immediately stop scrolling if you move your mouse over them.</dd>
+	
+					<dt>Any kind of HTML</dt>
+						<dd>These news tickers may contain any kind of HTML, such as <a href="#">hyperlinks</a>, <em>formatted</em> <strong>text</strong> or even images.</dd>
+				</dl>
+			</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+		<section >
+			<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1main">
+        KKW-->MALVAN-->ACHARA-->KKW</a>
+      </h4>
+      
+      <div id="collapse1main" class="container mbody">
+      <hr style="background-color: #5bc0de">
+								<div class="row">
+									<ul class="nav nav-tabs">
+										<li class="active"><a data-toggle="tab"
+											href="#aboutAchara">What To See</a></li>
+										<li><a data-toggle="tab" href="#menu1">Maps</a></li>
+										<li><a data-toggle="tab" href="#menu2">Things to do</a></li>
+									</ul>
+									<div class="tab-content">
+										<div id="aboutAchara" class="tab-pane fade in active">
+											<div class="wrapper col-md-3">
+												<img src="images/achara.jpg" class="img-responsive"
+													height="99" width="99" alt="Image"
+													style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
+											</div>
+											<p
+												style="text-align: justify; width: inherit;">Achara
+												beach is amongst the charming Sindhudurga beaches. This
+												beach is an enchantress of other beaches in Sindhudurg. In
+												magnificent geographic combination the beautiful stretch of
+												pristine shiny sand has given rise to equally alluring
+												shallow blue water estuary that follows meandering course
+												amidst ‘Jamdool Island’. The Achara Beach, situated at a
+												distance of 15 km from Malvan, is famous for swimming and
+												dolphin watching. The best season for watching dolphins is
+												between the months of October and February. A library, more
+												than 115 years old, is situated near the Achara Beach.</p>
+											<p
+												style="text-align: justify; width: inherit;">Getting
+												There : By Air : Nearest airport is mumbai. By Rail :
+												Nearest railhead is Kudal or kankavli. By Road : Located at
+												22 km from Malvan and 36 km from Kankavali is the Achara
+												beach.</p>
+
+											<p
+												style="text-align: justify; width: inherit;">Accommodation
+												: Beach resorts and hotels are available near achara beach.</p>
+											<p
+												style="text-align: justify; width: inherit;">Places
+												to see nearby : Achara bandar , Malvan beach , Sarjekot fort
+												, Shree shivchatrapati temple</p>
+
+											<div class="col-md-4">
+												<div class="probootstrap-footer-widget"></div>
+											</div>
+										</div>
+										<div id="menu1" class="tab-pane fade">
+											<h3>Menu 1</h3>
+											<p>Some content in menu 1.</p>
+										</div>
+										<div id="menu2" class="tab-pane fade">
+											<h3>Menu 2</h3>
+											<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Water sports</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+      <div class="panel-body"><div class="tab-content">
+										<div  class="tab-pane fade in active">
+											<div class="wrapper col-md-3">
+												<img src="images/kunkeshwar.jpg" class="img-responsive"
+													height="99" width="99" alt="Image"
+													style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
+											</div>
+											<p
+												style="text-align: justify; width: inherit;">Kunkeshwar
+												Temple, an ancient Shiva Temple is located in Kunkeshwar
+												village, 14 Kms from Devgad town. A pristine beach with a
+												very long stretch of seashore and white sand adds to the
+												beauty of temple surroundings. This beautiful temple near
+												beach has alluring architecture with reminiscent of South
+												Indian style of temple architecture. Yadav Kings built this
+												temple in 1100 A. D. Chhatrapati Shivaji Maharaj who
+												rejuvenated this temple many times was a frequent visitor to
+												this temple. This temple is also famous as Kashi of South
+												Konkan. Every year a huge celebration takes place on the
+												occasion of Mahashivratri, which keeps religious beliefs in
+												constant sight of the multitudes. During the festival a
+												large number of devotees throng this place with their
+												families and friends. This vigilant Shiva deity bestows
+												blessings on everyone who surrenders to its feet.</p>
+											<p
+												style="text-align: justify; width: inherit;">A
+												walk through the 5 Kms long Kunkeshwar beach across the
+												temple on one side of the hill has quieting effect on the
+												mind. Swimming in the clear water freshens the mind and if
+												you are lucky ones you can get a rare view of dolphins
+												diving in the deep sea from a distance. Greenery of coconut
+												and mango trees surrounding one side of the beach adds to
+												the beauty and makes the whole experience of every visitor a
+												memorable one.</p>
+
+											<p
+												style="text-align: justify; width: inherit;">Getting
+												There: By Air: Nearest airport at Dabolim, Goa is 186 Kms.
+												Mumbai Airport is 492 Kms. By Railway: Nearest major railway
+												station on Konkan Railway is Kankavli, 49 Kms. Nandgaon
+												Railway station is 42 Kms. By Road: 42 Kms from Nandgaon
+												village on NH17 (Mumbai-Goa Highway) 14 Km from Devgad
+												Mumbai-Kunkeshwar is 492 Kms. Pune-Kunkeshwar is 387 Kms
+												Kolhapur-Kunkeshwar is 160 Kms</p>
+											<p
+												style="text-align: justify; width: inherit;">Places
+												to see nearby : Achara bandar , Malvan beach , Sarjekot fort
+												, Shree shivchatrapati temple</p>
+
+											<div class="col-md-4">
+												<div class="probootstrap-footer-widget"></div>
+											</div>
+										</div>
+										<div id="menu1K" class="tab-pane fade">
+											<h3>Menu 1</h3>
+											<p>Some content in menu 1.</p>
+										</div>
+										<div id="menu2K" class="tab-pane fade">
+											<h3>Menu 2</h3>
+											
+										</div>
+									</div></div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Temples</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Beaches</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+</div>
+										</div>
+									</div>
+
+								</div>
+								<!-- END row -->
+
+							</div>
+  </div>
+    </div>
+    
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Temples</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Beaches</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+</div>
+		</section>
+		
+		
+
+		<section class="probootstrap-cta">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Contact
+							US</h2>
+						<!-- <a href="#" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Enroll</a> -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="probootstrap-footer probootstrap-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="probootstrap-footer-widget">
+							<h3>Map</h3>
+							<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a cupiditate ab minus illum quaerat maxime inventore Ea consequatur consectetur hic provident dolor ab aliquam eveniet alias</p> -->
+							<div id="map"></div>
+							<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+							<script
+								src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+							<script src="js/custom1.js"></script>
+							<h3>Social</h3>
+							<ul class="probootstrap-footer-social">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-youtube"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-md-push-1">
+						<div class="probootstrap-footer-widget">
+							<h3>Quick Links</h3>
+							<ul class="lineheight">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Courses</a></li>
+								<li><a href="#">Teachers</a></li>
+								<li><a href="#">News</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="probootstrap-footer-widget">
+							<h3>Contact Us</h3>
+							<ul class="probootstrap-contact-info lineheight">
+								<li><i class="icon-location2"></i> <span>Sindhudurg
+										Maharashtra</span></li>
+								<li><i class="icon-mail"></i><span>info@domain.com</span></li>
+								<li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<!-- END row -->
+			</div>
+
+			<div class="probootstrap-copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 text-left">
+							<p>
+								All Rights Reserved. Designed &amp; Developed with <i
+									class="icon icon-heart"></i> by <a href="">e-circle
+									Solutions</a>
+							</p>
+						</div>
+						<div class="col-md-4 probootstrap-back-to-top">
+							<p>
+								<a href="#" class="js-backtotop">Back to top <i
+									class="icon-arrow-long-up"></i></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!-- END wrapper -->
+
+	<script src="js/scripts.min.js"></script>
+	<script src="js/main.min.js"></script>
+	<script src="js/custom.js"></script>
+
+</body>
+</html>
