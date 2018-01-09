@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Waypoints in directions</title>
+    <script src="https://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.22&key=AIzaSyBYTVuXABzMPFcSttGeKxrhaTFkk_R_klQ">
+</script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/map.js"></script>
+<script type="text/javascript">
+$(function() {
+	new Maplace({
+	    locations: [
+			{
+				html:"<h3>Milan, Italy</h3>",
+				lat	:45.4654,
+				lon:9.1866,
+				title:"Milan, Italy"
+			},
+			{
+				html:"<h3>Milan, Italy</h3>",
+				lat	:47.36854,
+				lon:8.5391,
+				title:"Milan, Italy"
+			},
+			{
+				html:"<h3>Milan, Italy</h3>",
+				lat	:48.13654,
+				lon:11.57706,
+				title:"Milan, Italy"
+			}
+		],
+	    map_div: '#gmap',
+	    generate_controls: true,
+	    show_markers: true,
+	    type: 'directions',
+	    draggable: true,
+	    directions_panel: '#route',
+	    afterRoute: function(distance) {
+	        $('#km').text(': '+(distance/1000)+'km');
+	    }
+	}).Load(); 
+});
+</script>
+<style type="text/css">
+#gmap {
+    width: 1400px; 
+    height: 1400px;
+}
+</style>
+  </head>
+  <body>
+<div id="gmap"></div>
+<div id="controls"></div>
+<h2>Route <strong id="km"></strong></h2>
+<div id="gmap-route"></div>
+<div id="route"></div>
+
+  </body>
+</html>

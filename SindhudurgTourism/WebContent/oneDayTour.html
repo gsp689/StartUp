@@ -80,10 +80,58 @@
 		$('#ticker-2 dd:last').width(2000);
 	});
 </script>
-
+<script src="https://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.22&key=AIzaSyBYTVuXABzMPFcSttGeKxrhaTFkk_R_klQ">
+</script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/map.js"></script>
+<script type="text/javascript">
+$(function() {
+	new Maplace({
+	    locations: [
+			{
+				html:"<h3>Milan, Italy</h3>",
+				lat	:45.4654,
+				lon:9.1866,
+				title:"Milan, Italy"
+			},
+			{
+				html:"<h3>Milan, Italy</h3>",
+				lat	:47.36854,
+				lon:8.5391,
+				title:"Milan, Italy"
+			},
+			{
+				html:"<h3>Milan, Italy</h3>",
+				lat	:48.13654,
+				lon:11.57706,
+				title:"Milan, Italy"
+			}
+		],
+	    map_div: '#gmap',
+	    generate_controls: true,
+	    show_markers: true,
+	    type: 'directions',
+	    draggable: true,
+	    directions_panel: '#route',
+	    afterRoute: function(distance) {
+	        $('#km').text(': '+(distance/1000)+'km');
+	    }
+	}).Load(); 
+});
+</script>
+<style type="text/css"> 
+#gmap {
+    width: 400px; 
+    height: 400px;
+}
+</style>
 </head>
 <body>
-
+<div id="gmap"></div>
+<div id="controls"></div>
+<h2>Route <strong id="km"></strong></h2>
+<div id="gmap-route"></div>
+<div id="route"></div>
 	<div class="probootstrap-search" id="probootstrap-search">
 		<a href="#" class="probootstrap-close js-probootstrap-close"><i
 			class="icon-cross"></i></a>
@@ -874,77 +922,8 @@
 										<h3>Maps</h3>
 										<div class="panel-group" id="accordion">
 											<div class="panel panel-default">
-												<div class="panel-heading">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion"
-															href="#collapse1"> Water sports</a>
-													</h4>
-												</div>
-												<div id="collapse1" class="panel-collapse collapse">
-													<div class="panel-body">
-														<div class="tab-content">
-															<div class="tab-pane fade in active">
-																<div class="wrapper col-md-3">
-																	<img src="images/kunkeshwar.jpg" class="img-responsive"
-																		height="99" width="99" alt="Image"
-																		style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
-																</div>
-																<p style="text-align: justify; width: inherit;">Kunkeshwar
-																	Temple, an ancient Shiva Temple is located in
-																	Kunkeshwar village, 14 Kms from Devgad town. A pristine
-																	beach with a very long stretch of seashore and white
-																	sand adds to the beauty of temple surroundings. This
-																	beautiful temple near beach has alluring architecture
-																	with reminiscent of South Indian style of temple
-																	architecture. Yadav Kings built this temple in 1100 A.
-																	D. Chhatrapati Shivaji Maharaj who rejuvenated this
-																	temple many times was a frequent visitor to this
-																	temple. This temple is also famous as Kashi of South
-																	Konkan. Every year a huge celebration takes place on
-																	the occasion of Mahashivratri, which keeps religious
-																	beliefs in constant sight of the multitudes. During the
-																	festival a large number of devotees throng this place
-																	with their families and friends. This vigilant Shiva
-																	deity bestows blessings on everyone who surrenders to
-																	its feet.</p>
-																<p style="text-align: justify; width: inherit;">A
-																	walk through the 5 Kms long Kunkeshwar beach across the
-																	temple on one side of the hill has quieting effect on
-																	the mind. Swimming in the clear water freshens the mind
-																	and if you are lucky ones you can get a rare view of
-																	dolphins diving in the deep sea from a distance.
-																	Greenery of coconut and mango trees surrounding one
-																	side of the beach adds to the beauty and makes the
-																	whole experience of every visitor a memorable one.</p>
-
-																<p style="text-align: justify; width: inherit;">Getting
-																	There: By Air: Nearest airport at Dabolim, Goa is 186
-																	Kms. Mumbai Airport is 492 Kms. By Railway: Nearest
-																	major railway station on Konkan Railway is Kankavli, 49
-																	Kms. Nandgaon Railway station is 42 Kms. By Road: 42
-																	Kms from Nandgaon village on NH17 (Mumbai-Goa Highway)
-																	14 Km from Devgad Mumbai-Kunkeshwar is 492 Kms.
-																	Pune-Kunkeshwar is 387 Kms Kolhapur-Kunkeshwar is 160
-																	Kms</p>
-																<p style="text-align: justify; width: inherit;">Places
-																	to see nearby : Achara bandar , Malvan beach , Sarjekot
-																	fort , Shree shivchatrapati temple</p>
-
-																<div class="col-md-4">
-																	<div class="probootstrap-footer-widget"></div>
-																</div>
-															</div>
-															<div id="menu1K" class="tab-pane fade">
-																<h3>Menu 1</h3>
-																<p>Some content in menu 1.</p>
-															</div>
-															<div id="menu2K" class="tab-pane fade">
-																<h3>Menu 2</h3>
-
-															</div>
-														</div>
-													</div>
-												</div>
+												
+												
 											</div>
 											<div class="panel panel-default">
 												<div class="panel-heading">
@@ -1013,8 +992,8 @@
 							<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a cupiditate ab minus illum quaerat maxime inventore Ea consequatur consectetur hic provident dolor ab aliquam eveniet alias</p> -->
 							<div id="map"></div>
 							<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-							<script
-								src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+							<!-- <script
+								src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script> -->
 							<script src="js/custom1.js"></script>
 							<h3>Social</h3>
 							<ul class="probootstrap-footer-social">
