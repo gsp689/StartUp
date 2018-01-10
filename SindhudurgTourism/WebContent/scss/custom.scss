@@ -1,124 +1,123 @@
 @import 'custom-settings';
-
-img{
-    height:244px!important ;
+img {
+    height: 244px!important;
     width: 100%!important;
 }
 
 a:-webkit-any-link {
     text-decoration: none!important;
-
 }
 
-
-.lineheight{
+.lineheight {
     line-height: 8px;
 }
 
-.probootstrap-footer{
+.probootstrap-footer {
     padding: 2em 0 0;
 }
 
-.probootstrap-cta{
+.probootstrap-cta {
     padding: 1em 0;
 }
 
+.flexslider .slides>li.overlay:before {
+    background: rgba(0, 0, 0, 0)!important;
+}
 
+.flexslider,
+.flexslider .slides>li,
+.slider-height {
+    height: 400px;
+}
 
-  .flexslider .slides>li.overlay:before{
-      background: rgba(0,0,0,0)!important;
-  }
-  .flexslider, .flexslider .slides>li, .slider-height{
-      height: 400px;
-  }
-  .flexslider .probootstrap-slider-text {
-      margin-top: 200px;  
-}    
+.flexslider .probootstrap-slider-text {
+    margin-top: 200px;
+}
 
-#container{
+#container {
     width: 400px;
     background: yellow;
 }
-#floated{
+
+#floated {
     float: left;
     width: 400px;
     background: red;
 }
 
-.modal-header .close{
-	color: darken($brand-secondary,10%);
-	opacity: 10;
-}
-.btn-default{
-background-color: lighten($brand-secondary,10%);
+.modal-header .close {
+    color: darken($brand-secondary, 10%);
+    opacity: 10;
 }
 
-.modal-footer{
-border-top-color:$brand-secondary;
+.btn-default {
+    background-color: lighten($brand-secondary, 10%);
 }
 
-.modal-header{
-border-bottom-color:$brand-secondary;
+.modal-footer {
+    border-top-color: $brand-secondary;
 }
 
-
-
-.probootstrap-flex-block .probootstrap-text{
-padding:15px;
+.modal-header {
+    border-bottom-color: $brand-secondary;
 }
 
-.probootstrap-flex-block{
-margin-top:-2em;
+.probootstrap-flex-block .probootstrap-text {
+    padding: 15px;
+}
+
+.probootstrap-flex-block {
+    margin-top: -2em;
 }
 
 #wrapper h3 {
-				font-size: 20px;
-				text-align: center;
-			}
-			
-			#wrapper > div {
-				background-color: #eee;
-				border-top: 1px solid #ccc;
-				border-bottom: 1px solid #ccc;
-				width: 100%;
-				//height: 30px;
-				//padding: 15px 0;
-				overflow: hidden;
-			}
-			#wrapper > div.first {
-				border-bottom: none;
-			}
-			
-			#wrapper dl {
-				display: block;
-				margin: 0;
-			}
-			#wrapper dt, #wrapper dd {
-				display: block;
-				float: left;
-				margin: 0 10px;
-				//padding: 5px 10px;
-			}
-			#wrapper dt {
-				background-color: lighten($brand-secondary,10%);
-				color: #fff;
-			}
-			#wrapper dd {
-				color: #333;
-				margin-right: 50px;
-			}
-
-			code {
-				font-style: italic;
-			}
-
-
-.probootstrap-footer a{
-color:$brand-secondary;
+    font-size: 20px;
+    text-align: center;
 }
 
-.mbody{
-width:100%;
+#wrapper>div {
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width: 100%; //height: 30px;
+    //padding: 15px 0;
+    overflow: hidden;
 }
 
+#wrapper>div.first {
+    border-bottom: none;
+}
 
+#wrapper dl {
+    display: block;
+    margin: 0;
+}
+
+#wrapper dt,
+#wrapper dd {
+    display: block;
+    float: left;
+    margin: 0 10px; //padding: 5px 10px;
+}
+
+#wrapper dt {
+    background-color: lighten($brand-secondary, 10%);
+    color: #fff;
+}
+
+#wrapper dd {
+    color: #333;
+    margin-right: 50px;
+}
+
+code {
+    font-style: italic;
+}
+
+.probootstrap-footer a {
+    color: $brand-secondary;
+}
+
+.mbody {
+    width: 100%;
+}

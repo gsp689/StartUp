@@ -31,7 +31,9 @@ a:-webkit-any-link {
   background: transparent !important;
 }
 
-.flexslider, .flexslider .slides > li, .slider-height {
+.flexslider,
+.flexslider .slides > li,
+.slider-height {
   height: 400px;
 }
 
@@ -97,7 +99,8 @@ a:-webkit-any-link {
   margin: 0;
 }
 
-#wrapper dt, #wrapper dd {
+#wrapper dt,
+#wrapper dd {
   display: block;
   float: left;
   margin: 0 10px;
