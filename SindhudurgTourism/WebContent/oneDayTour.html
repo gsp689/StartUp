@@ -82,12 +82,17 @@
 </script>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script defer
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYTVuXABzMPFcSttGeKxrhaTFkk_R_klQ&callback=initMap">
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYTVuXABzMPFcSttGeKxrhaTFkk_R_klQ">
 	
 </script>
 
 <style type="text/css">
-#map123 {
+#map-vengurla {
+	height: 400px;
+	width: 100%;
+}
+
+#map-malvan {
 	height: 400px;
 	width: 100%;
 }
@@ -204,6 +209,7 @@
 										of the broadcasting services which produce the broadcasts.</dd>
 								</dl>
 							</div>
+							<!-- in case 2 news you want -->
 							<!-- <div>
 				<dl id="ticker-2">
 					<dt>Back and forth</dt>
@@ -220,7 +226,6 @@
 					</div>
 				</div>
 			</div>
-
 		</section>
 
 
@@ -230,10 +235,8 @@
 					<div class="panel-heading">
 						<h4 class="panel-title">
 							<a data-toggle="collapse" data-parent="#accordion"
-								href="#collapse1main"> <b>1. One day Devagad Beach
-									circuit</b></a>
+								href="#collapse1main"> <b>1. One day Devagad Beach circuit</b></a>
 						</h4>
-
 						<div id="collapse1main" class="container mbody collapse">
 							<hr style="background-color: #5bc0de">
 							<div class="row">
@@ -544,7 +547,7 @@
 						<h4 class="panel-title">
 							<a data-toggle="collapse" data-parent="#accordion"
 								href="#collapseWaterfallmain"> <b>3. One day’s waterfall
-									circuit only in rainy session</b></a>
+									circuit (only in rainy season)</b></a>
 						</h4>
 
 						<div id="collapseWaterfallmain" class="container mbody collapse">
@@ -708,7 +711,7 @@
 										href="#aboutMalvan">What To See</a></li>
 									<li><a data-toggle="tab" href="#menuMalvanStay">Where
 											To Stay</a></li>
-									<li><a data-toggle="tab" href="#malvanMaps">Maps</a></li>
+									<li><a data-toggle="tab" href="#malvanMaps" onclick="initMap('malvan')">Maps</a></li>
 								</ul>
 								<div class="tab-content">
 									<div id="aboutMalvan" class="tab-pane fade in active">
@@ -731,111 +734,9 @@
 									</div>
 									<div id="malvanMaps" class="tab-pane fade">
 										<h3>Maps</h3>
-										<div class="panel-group" id="accordion">
-											<div class="panel panel-default">
-												<div class="panel-heading">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion"
-															href="#collapse1"> Water sports</a>
-													</h4>
-												</div>
-												<div id="collapse1" class="panel-collapse collapse">
-													<div class="panel-body">
-														<div class="tab-content">
-															<div class="tab-pane fade in active">
-																<div class="wrapper col-md-3">
-																	<img src="images/kunkeshwar.jpg" class="img-responsive"
-																		height="99" width="99" alt="Image"
-																		style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
-																</div>
-																<p style="text-align: justify; width: inherit;">Kunkeshwar
-																	Temple, an ancient Shiva Temple is located in
-																	Kunkeshwar village, 14 Kms from Devgad town. A pristine
-																	beach with a very long stretch of seashore and white
-																	sand adds to the beauty of temple surroundings. This
-																	beautiful temple near beach has alluring architecture
-																	with reminiscent of South Indian style of temple
-																	architecture. Yadav Kings built this temple in 1100 A.
-																	D. Chhatrapati Shivaji Maharaj who rejuvenated this
-																	temple many times was a frequent visitor to this
-																	temple. This temple is also famous as Kashi of South
-																	Konkan. Every year a huge celebration takes place on
-																	the occasion of Mahashivratri, which keeps religious
-																	beliefs in constant sight of the multitudes. During the
-																	festival a large number of devotees throng this place
-																	with their families and friends. This vigilant Shiva
-																	deity bestows blessings on everyone who surrenders to
-																	its feet.</p>
-																<p style="text-align: justify; width: inherit;">A
-																	walk through the 5 Kms long Kunkeshwar beach across the
-																	temple on one side of the hill has quieting effect on
-																	the mind. Swimming in the clear water freshens the mind
-																	and if you are lucky ones you can get a rare view of
-																	dolphins diving in the deep sea from a distance.
-																	Greenery of coconut and mango trees surrounding one
-																	side of the beach adds to the beauty and makes the
-																	whole experience of every visitor a memorable one.</p>
-
-																<p style="text-align: justify; width: inherit;">Getting
-																	There: By Air: Nearest airport at Dabolim, Goa is 186
-																	Kms. Mumbai Airport is 492 Kms. By Railway: Nearest
-																	major railway station on Konkan Railway is Kankavli, 49
-																	Kms. Nandgaon Railway station is 42 Kms. By Road: 42
-																	Kms from Nandgaon village on NH17 (Mumbai-Goa Highway)
-																	14 Km from Devgad Mumbai-Kunkeshwar is 492 Kms.
-																	Pune-Kunkeshwar is 387 Kms Kolhapur-Kunkeshwar is 160
-																	Kms</p>
-																<p style="text-align: justify; width: inherit;">Places
-																	to see nearby : Achara bandar , Malvan beach , Sarjekot
-																	fort , Shree shivchatrapati temple</p>
-
-																<div class="col-md-4">
-																	<div class="probootstrap-footer-widget"></div>
-																</div>
-															</div>
-															<div id="menu1K" class="tab-pane fade">
-																<h3>Menu 1</h3>
-																<p>Some content in menu 1.</p>
-															</div>
-															<div id="menu2K" class="tab-pane fade">
-																<h3>Menu 2</h3>
-
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="panel panel-default">
-												<div class="panel-heading">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion"
-															href="#collapse2"> Temples</a>
-													</h4>
-												</div>
-												<div id="collapse2" class="panel-collapse collapse">
-													<div class="panel-body">Lorem ipsum dolor sit amet,
-														consectetur adipisicing elit, sed do eiusmod tempor
-														incididunt ut labore et dolore magna aliqua. Ut enim ad
-														minim veniam, quis nostrud exercitation ullamco laboris
-														nisi ut aliquip ex ea commodo consequat.</div>
-												</div>
-											</div>
-											<div class="panel panel-default">
-												<div class="panel-heading">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion"
-															href="#collapse3"> Beaches</a>
-													</h4>
-												</div>
-												<div id="collapse3" class="panel-collapse collapse">
-													<div class="panel-body">Lorem ipsum dolor sit amet,
-														consectetur adipisicing elit, sed do eiusmod tempor
-														incididunt ut labore et dolore magna aliqua. Ut enim ad
-														minim veniam, quis nostrud exercitation ullamco laboris
-														nisi ut aliquip ex ea commodo consequat.</div>
-												</div>
-											</div>
-										</div>
+										<div id="map-malvan"></div>
+										<div id="directions-panel-malvan"></div>
+										<div id="controls-malvan"></div>
 									</div>
 								</div>
 
@@ -864,21 +765,17 @@
 									<li><a data-toggle="tab" href="#menuVengurlaStay">Where
 											To Stay</a></li>
 									<li><a data-toggle="tab" href="#vengurlaMaps"
-										onclick="initMap()">Maps</a></li>
+										onclick="initMap('vengurla')">Maps</a></li>
 								</ul>
 								<div class="tab-content">
 									<div id="aboutVengurla" class="tab-pane fade in active">
 										<ul class="list-group">
 											<li class="list-group-item">Kudal-karli creek</li>
-											<!-- 16.0167341,73.5333281 -->
 											<li class="list-group-item">Bhogwe beach</li>
-											<!--15.9454485,73.5053353  -->
 											<li class="list-group-item">kille nivati beach ( Dolphin
 												Point )</li>
-											<!-- 15.9426142,73.5066317 -->
 											<li class="list-group-item">Kille nivti fort beach</li>
 											<li class="list-group-item">Medha nivti beach</li>
-											<!-- 15.878873,73.6024976 -->
 											<li class="list-group-item">Khavane beach</li>
 											<li class="list-group-item">Waigani olive ridley turtle
 												beach</li>
@@ -899,43 +796,13 @@
 									</div>
 									<div id="vengurlaMaps" class="tab-pane fade">
 										<h3>Maps</h3>
-										
-
-										<select id="start">
-											<option value="Kudal-karli creek">Kudal-karli creek</option>
-											<option value="Bhogwe beach">Bhogwe beach</option>
-											<option value="Medha nivti beach">Medha nivti beach</option>
-											<!-- <option value="Miami, FL">Miami, FL</option> -->
-										</select> <br> <b>Waypoints:</b> <br> <i>(Ctrl+Click or
-											Cmd+Click for multiple selection)</i> <br> <select multiple
-											id="waypoints">
-											<!-- <option value="montreal, quebec">Montreal, QBC</option>
-      <option value="toronto, ont">Toronto, ONT</option>
-      <option value="chicago, il">Chicago</option>
-      <option value="winnipeg, mb">Winnipeg</option>
-      <option value="fargo, nd">Fargo</option>
-      <option value="calgary, ab">Calgary</option>
-      <option value="spokane, wa">Spokane</option> -->
-											<option value="Kudal-karli creek">Kudal-karli creek</option>
-											<option value="Bhogwe beach">Bhogwe beach</option>
-											<option value="Medha nivti beach">Medha nivti beach</option>
-										</select> <br> <b>End:</b> <select id="end">
-											<!-- <option value="Vancouver, BC">Vancouver, BC</option>
-      <option value="Seattle, WA">Seattle, WA</option>
-      <option value="San Francisco, CA">San Francisco, CA</option>
-      <option value="Los Angeles, CA">Los Angeles, CA</option> -->
-											<option value="Kudal-karli creek">Kudal-karli creek</option>
-											<option value="Bhogwe beach">Bhogwe beach</option>
-											<option value="Medha nivti beach">Medha nivti beach</option>
-										</select> <br> <input type="submit" id="submit">
-										<div id="map123"></div>
-										<div id="directions-panel"></div>
-										<div id="controls"></div>
+										<div id="map-vengurla"></div>
+										<div id="directions-panel-vengurla"></div>
+										<div id="controls-vengurla"></div>
 									</div>
 								</div>
 							</div>
 							<!-- END row -->
-
 						</div>
 					</div>
 				</div>
@@ -1035,10 +902,28 @@
 
 	
 	<script>
-		function initMap() {
+		function initMap(customPlace) {
+			var data="";
+			var start="";
+			var end = "";
+			if(customPlace==="vengurla"){
+				
+				data=["Bhogwe beach","kille nivati beach","Kille nivti fort beach","Medha nivti beach","Navabag beach","sagreshwar beach","Vengurla beach","Mochemad beach","Shiroda velagar beach"];
+				start="Kudal-karli creek";
+				end="Redi beach";
+			}
+			if(customPlace==="malvan"){
+				
+				data=["Tondvali beach","Talashil beach","Tarkarli beach"];
+				start="Aachra beach";
+				end="Devbag beach";
+			}
+			var mapVar = 'map-'+customPlace;
+			
+			
 			var directionsService = new google.maps.DirectionsService;
 			var directionsDisplay = new google.maps.DirectionsRenderer;
-			var map = new google.maps.Map(document.getElementById('map123'), {
+			var map = new google.maps.Map(document.getElementById(mapVar), {
 				zoom : 12,
 				center : {
 					lat : 16.3492,
@@ -1051,32 +936,27 @@
 	         });
 	        
 			directionsDisplay.setMap(map);
-
-			document.getElementById('submit').addEventListener(
-					'click',
-					function() {
-						calculateAndDisplayRoute(directionsService,
-								directionsDisplay);
-					});
+			calculateAndDisplayRoute(directionsService,directionsDisplay,data,start,end,customPlace);
+				
 		}
 
-		function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+		function calculateAndDisplayRoute(directionsService, directionsDisplay,data,start,end,place) {
+			
 			var waypts = [];
-			var checkboxArray = document.getElementById('waypoints');
+			var checkboxArray = data; 
 
 			for (var i = 0; i < checkboxArray.length; i++) {
-				if (checkboxArray.options[i].selected) {
-					alert(checkboxArray[i].value);
+				
 					waypts.push({
-						location : checkboxArray[i].value,
+						location : checkboxArray[i],
 						stopover : true
 					});
-				}
+				
 			}
 
 			directionsService.route({
-				origin : document.getElementById('start').value,
-				destination : document.getElementById('end').value,
+				origin : start,
+				destination : end,
 				waypoints : waypts,
 				optimizeWaypoints : true,
 				travelMode : 'DRIVING'
@@ -1084,8 +964,9 @@
 				if (status === 'OK') {
 					directionsDisplay.setDirections(response);
 					var route = response.routes[0];
+					var dPanel = 'directions-panel-'+place;
 					var summaryPanel = document
-							.getElementById('directions-panel');
+							.getElementById(dPanel);
 					summaryPanel.innerHTML = '';
 					// For each route, display summary information.
 					for (var i = 0; i < route.legs.length; i++) {
