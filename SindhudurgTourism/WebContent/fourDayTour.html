@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+
+<!-- 
+  Theme Name: Enlight
+  Theme URL: https://probootstrap.com/enlight-free-education-responsive-bootstrap-website-template
+  Author: ProBootstrap.com
+  Author URL: https://probootstrap.com
+  License: Released for free under the Creative Commons Attribution 3.0 license (probootstrap.com/license)
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords"
+	value="example, news, ticker, newsticker, javascript, scrolling, text, back, forth" />
+<title>Sindhudurg Tourism &mdash; Maharashtra</title>
+<!-- <meta name="description" content="Free Bootstrap Theme by ProBootstrap.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template"> -->
+
+<link
+	href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans"
+	rel="stylesheet">
+<link rel="stylesheet" href="css/styles-merged.css">
+<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/map.css">
+
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700'
+	rel='stylesheet' type='text/css'>
+<link href='css/custom1.css' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+<!--cool carousel for news  -->
+
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"
+	type="text/javascript"></script>
+<script src="js/cool/jquery.carouFredSel-6.0.4-packed.js"
+	type="text/javascript"></script>
+<script type="text/javascript">
+	$(function() {
+		var _scroll = {
+			delay : 1000,
+			easing : 'linear',
+			items : 1,
+			duration : 0.07,
+			timeoutDuration : 0,
+			pauseOnHover : 'immediate'
+		};
+		$('#ticker-1').carouFredSel({
+			width : 1000,
+			align : false,
+			items : {
+				width : 'variable',
+				height : 35,
+				visible : 1
+			},
+			scroll : _scroll
+		});
+
+		$('#ticker-2').carouFredSel({
+			width : 1000,
+			align : false,
+			circular : false,
+			items : {
+				width : 'variable',
+				height : 35,
+				visible : 2
+			},
+			scroll : _scroll
+		});
+
+		//	set carousels to be 100% wide
+		$('.caroufredsel_wrapper').css('width', '100%');
+
+		//	set a large width on the last DD so the ticker won't show the first item at the end
+		$('#ticker-2 dd:last').width(2000);
+	});
+</script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYTVuXABzMPFcSttGeKxrhaTFkk_R_klQ">
+	
+</script>
+
+<style type="text/css">
+
+/*this needs to change  */
+#map-Myth {
+	height: 400px;
+	width: 100%;
+}
+</style>
+</head>
+<body>
+
+
+	<div class="probootstrap-search" id="probootstrap-search">
+		<a href="#" class="probootstrap-close js-probootstrap-close"><i
+			class="icon-cross"></i></a>
+		<form action="#">
+			<input type="search" name="s" id="search"
+				placeholder="Search a keyword and hit enter...">
+		</form>
+	</div>
+
+	<div class="probootstrap-page-wrapper">
+		<!-- Fixed navbar -->
+		<div class="probootstrap-header-top">
+			<div class="container">
+				<div class="row">
+					<div
+						class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
+						<!-- <span><i class="icon-location2"></i>Brooklyn, NY 10036, United States</span>
+              <span><i class="icon-phone2"></i>+1-123-456-7890</span>
+              <span><i class="icon-mail"></i>info@probootstrap.com</span> -->
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
+						<ul>
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook2"></i></a></li>
+							<li><a href="#"><i class="icon-instagram2"></i></a></li>
+							<li><a href="#"><i class="icon-youtube"></i></a></li>
+							<li><a href="#"
+								class="probootstrap-search-icon js-probootstrap-search"><i
+									class="icon-search"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-default probootstrap-navbar"
+			style="background-size: contain !important">
+			<div class="container">
+				<div class="navbar-header">
+					<div class="btn-more js-btn-more visible-xs">
+						<a href="#"><i class="icon-dots-three-vertical "></i></a>
+					</div>
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#navbar-collapse"
+						aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"
+						title="Sindhudurg Tourism">Sindhudurg Tourism</a>
+					<!-- <a class="navbar-brand1" href="index.html" title="ProBootstrap:Enlight"><h3>Sindhudurg Tourism</h3></a> -->
+				</div>
+
+				<div id="navbar-collapse" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="packages.html">Packages</a></li>
+						<li><a href="teachers.html">Menu2</a></li>
+						<li><a href="events.html">Events</a></li>
+						<li class="dropdown active"><a href="#" data-toggle="dropdown"
+							class="dropdown-toggle " >Tours</a>
+							<ul class="dropdown-menu">
+								<li><a href="about.html">About Us</a></li>
+								<li><a href="courses.html">Menu2</a></li>
+								<li><a href="course-single.html">Course Single</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li class="dropdown-submenu dropdown"><a href="#"
+									data-toggle="dropdown" class="dropdown-toggle"><span>Sub
+											Menu</span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+									</ul></li>
+								<li><a href="news.html">News</a></li>
+							</ul></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<section class="probootstrap-section" style="padding: 0em 0;">
+			<div class="" style="width: 100%; padding: 1em;">
+				<div class="row">
+					<div class="col-md-12">
+						<div id="wrapper">
+
+							<div class="first">
+								<dl id="ticker-1" style="line-height: 0">
+									<dt>News1</dt>
+									<dd>A news ticker (sometimes referred to as a
+										&quot;crawler&quot;) resides in the lower third of the
+										television screen space on television news networks dedicated
+										to presenting headlines or minor pieces of news.</dd>
+
+									<dt>News2</dt>
+									<dd>It may also refer to a long, thin scoreboard-style
+										display seen around the front of some offices or public
+										buildings.</dd>
+
+									<dt>News3</dt>
+									<dd>Since the growth in usage of the World Wide Web, news
+										tickers have largely syndicated news posts from the websites
+										of the broadcasting services which produce the broadcasts.</dd>
+								</dl>
+							</div>
+							<!-- in case 2 news you want -->
+							<!-- <div>
+				<dl id="ticker-2">
+					<dt>Back and forth</dt>
+						<dd>By simply setting the option <code>circular</code> to <code>false</code>, this news ticker will go back and forth.</dd>
+
+					<dt>PauseOnHover</dt>
+						<dd>Because the option <code>pauseOnHover</code> is set to <code>&quot;immediate&quot;</code>, these news tickers will immediately stop scrolling if you move your mouse over them.</dd>
+	
+					<dt>Any kind of HTML</dt>
+						<dd>These news tickers may contain any kind of HTML, such as <a href="#">hyperlinks</a>, <em>formatted</em> <strong>text</strong> or even images.</dd>
+				</dl>
+			</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+<!-- actual section starts here -->
+
+		<section>
+			<div class="panel-group" id="accordion">
+								<!-- forts -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion"
+								href="#collapsefortmain"> <b>1. Four Day Temple Visit circuit</b></a>
+						</h4>
+
+						<div id="collapsefortmain" class="container mbody collapse">
+							<hr style="background-color: #5bc0de">
+							<div class="row">
+								<ul class="nav nav-tabs">
+									<li class="active"><a data-toggle="tab" href="#aboutMyth">What
+											To See</a></li>
+									<li><a data-toggle="tab" href="#menuMythStay">Where To
+											Stay</a></li>
+									<li><a data-toggle="tab" href="#fortMyth" onclick="initMap('Myth')">Maps</a></li>
+								</ul>
+								<div class="tab-content">
+									<div id="aboutMyth" class="tab-pane fade in active">
+										<ul class="list-group">
+										     <li class="list-group-item">Hirnyakeshi Amboli</li>
+										     <li class="list-group-item">Satam Mahraj Math Danoli</li>
+											<li class="list-group-item">Sai Temple Mandkhol</li>
+										</ul>
+									</div>
+									<div id="menuMythStay" class="tab-pane fade">
+										<ul class="list-group">
+											<li class="list-group-item"><h3>Stay</h3>
+												<hr>
+												<p>Stay M.T.D.C.B & B</p></li>
+										</ul>
+									</div>
+									<div id="fortMyth"  class="tab-pane fade">
+										<h3>Map</h3>
+										<div id="map-Myth"></div>
+										<div id="controls-Myth"></div>
+									</div>
+								</div>
+
+							</div>
+							<!-- END row -->
+
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+
+		<section class="probootstrap-cta">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Contact
+							US</h2>
+						<!-- <a href="#" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Enroll</a> -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="probootstrap-footer probootstrap-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="probootstrap-footer-widget">
+							<h3>Map</h3>
+							<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a cupiditate ab minus illum quaerat maxime inventore Ea consequatur consectetur hic provident dolor ab aliquam eveniet alias</p> -->
+							<div id="map"></div>
+							<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+							<!-- <script
+								src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script> -->
+							<script src="js/custom1.js"></script>
+							<h3>Social</h3>
+							<ul class="probootstrap-footer-social">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-github"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+								<li><a href="#"><i class="icon-youtube"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-md-push-1">
+						<div class="probootstrap-footer-widget">
+							<h3>Quick Links</h3>
+							<ul class="lineheight">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Courses</a></li>
+								<li><a href="#">Teachers</a></li>
+								<li><a href="#">News</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="probootstrap-footer-widget">
+							<h3>Contact Us</h3>
+							<ul class="probootstrap-contact-info lineheight">
+								<li><i class="icon-location2"></i> <span>Sindhudurg
+										Maharashtra</span></li>
+								<li><i class="icon-mail"></i><span>info@domain.com</span></li>
+								<li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<!-- END row -->
+			</div>
+
+			<div class="probootstrap-copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 text-left">
+							<p>
+								All Rights Reserved. Designed &amp; Developed with <i
+									class="icon icon-heart"></i> by <a href="">e-circle
+									Solutions</a>
+							</p>
+						</div>
+						<div class="col-md-4 probootstrap-back-to-top">
+							<p>
+								<a href="#" class="js-backtotop">Back to top <i
+									class="icon-arrow-long-up"></i></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!-- END wrapper -->
+
+	<script src="js/scripts.min.js"></script>
+	<script src="js/main.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/map.js"></script>
+
+	
+	<script>
+		function initMap(customPlace,again) {
+			
+			var data="";
+			var start="";
+			var end = "";
+		if(customPlace==="Myth"){
+				
+				data=["Satam Maharaj Math danoli"];
+				start="Hiranyakeshi Temple";
+				end="Sai Baba Temple, Ajgaon";
+			}
+								
+			var mapVar = 'map-'+customPlace;
+			
+			
+			var directionsService = new google.maps.DirectionsService;
+			var directionsDisplay = new google.maps.DirectionsRenderer;
+			var map = new google.maps.Map(document.getElementById(mapVar), {
+				zoom : 12,
+				center : {
+					lat : 16.3492,
+					lng : 73.5594
+				}
+			});
+			
+			google.maps.event.addListenerOnce(map, 'idle', function() {
+	            google.maps.event.trigger(map, 'resize');
+	         });
+	        
+			directionsDisplay.setMap(map);
+			setTimeout(function(){ calculateAndDisplayRoute(directionsService,directionsDisplay,data,start,end,customPlace);}, 1000);
+			
+			/* if(again!=1){
+				setTimeout(function(){ initMap(customPlace,1);}, 1000);
+			} */
+				
+		}
+
+		function calculateAndDisplayRoute(directionsService, directionsDisplay,data,start,end,place) {
+			
+			var waypts = [];
+			var checkboxArray = data; 
+			for (var i = 0; i < checkboxArray.length; i++) {
+				
+					waypts.push({
+						location : checkboxArray[i],
+						stopover : true
+					});
+			}
+			directionsService.route({
+				origin : start,
+				destination : end,
+				waypoints : waypts,
+				optimizeWaypoints : true,
+				travelMode : 'DRIVING'
+			}, function(response, status) {
+				if (status === 'OK') {
+					
+					directionsDisplay.setDirections(response);
+					var route = response.routes[0];
+					/* var dPanel = 'directions-panel-'+place;
+					var summaryPanel = document
+							.getElementById(dPanel); */
+					/* summaryPanel.innerHTML = ''; */
+					// For each route, display summary information.
+					/* for (var i = 0; i < route.legs.length; i++) {
+						var routeSegment = i + 1;
+						summaryPanel.innerHTML += '<b>Route Segment: '
+								+ routeSegment + '</b><br>';
+						summaryPanel.innerHTML += route.legs[i].start_address
+								+ ' to ';
+						summaryPanel.innerHTML += route.legs[i].end_address
+								+ '<br>';
+						summaryPanel.innerHTML += route.legs[i].distance.text
+								+ '<br><br>';
+					} */
+				} else {
+					window.alert('Directions request failed due to ' + status);
+				}
+			});
+		}
+	</script>
+</body>
+</html>
