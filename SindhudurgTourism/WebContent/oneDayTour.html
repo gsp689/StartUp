@@ -289,7 +289,7 @@
 													B & B</p></li>
 										</ul>
 									</div>
-									<div id="devgadMaps" style="height: 100%; width: 100%; class="tab-pane fade">
+									<div id="devgadMaps" class="tab-pane fade">
 										<h3>Map</h3>
 										<div id="map-devgad" ></div>
 										<div id="controls-devgad"></div>
@@ -338,7 +338,7 @@
 													B & B</p></li>
 										</ul>
 									</div>
-									<div id="fortMaps" style="height: 100%; width: 100%;" class="tab-pane fade">
+									<div id="fortMaps"  class="tab-pane fade">
 										<h3>Map</h3>
 										<div id="map-fort"></div>
 										<div id="controls-fort"></div>
@@ -388,7 +388,7 @@
 												<p>Stay MTDC Register B & B</p></li>
 										</ul>
 									</div>
-									<div id="waterfallMaps" style="height: 100%; width: 100%;" class="tab-pane fade">
+									<div id="waterfallMaps"  class="tab-pane fade">
 										<h3>Maps</h3>
 										<div id="map-waterfall1"></div>
 										<div id="controls-waterfall1"></div>
@@ -440,7 +440,7 @@
 												<p>M.T.D.C., Tarkarli beach</p></li>
 										</ul>
 									</div>
-									<div id="malvanMaps" style="height: 100%; width: 100%;" class="tab-pane fade">
+									<div id="malvanMaps"  class="tab-pane fade">
 										<h3>Maps</h3>
 										<div id="map-malvan" ></div>
 										<div id="directions-panel-malvan"></div>
@@ -502,7 +502,7 @@
 												<p>M.,T.D.C., sagreshwar beach</p></li>
 										</ul>
 									</div>
-									<div id="vengurlaMaps" style="height: 100%; width: 100%;" class="tab-pane fade">
+									<div id="vengurlaMaps"  class="tab-pane fade">
 										<h3>Maps</h3>
 										<div id="map-vengurla" ></div>
 										<div id="directions-panel-vengurla"></div>
@@ -666,11 +666,11 @@
 	         });
 	        
 			directionsDisplay.setMap(map);
-			calculateAndDisplayRoute(directionsService,directionsDisplay,data,start,end,customPlace);
-			directionsDisplay.setMap(map);
-			if(again!=1){
+			setTimeout(function(){ calculateAndDisplayRoute(directionsService,directionsDisplay,data,start,end,customPlace);}, 1000);
+			
+			/* if(again!=1){
 				setTimeout(function(){ initMap(customPlace,1);}, 1000);
-			}
+			} */
 				
 		}
 
@@ -684,9 +684,7 @@
 						location : checkboxArray[i],
 						stopover : true
 					});
-				
 			}
-
 			directionsService.route({
 				origin : start,
 				destination : end,
@@ -720,7 +718,5 @@
 			});
 		}
 	</script>
-
-
 </body>
 </html>
