@@ -1,0 +1,1278 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /><script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/10FCF88D-EFBF-5346-BFC5-63B7722923D3/main.js" charset="UTF-8"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    <meta property="fb:app_id" content="277010465663761">
+    <meta property="fb:pages" content="180474111974011" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.5.6 - https://yoast.com/wordpress/plugins/seo/ -->
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Travel India &raquo; Feed" href="http://www.india.com/travel/feed/" />
+
+	<!-- Destination Meta -->
+	<title>Tarkarli Tourism | Tarkarli Tourist Places | Tarkarli Travel Guide | Tarkarli Weather | Tarkarli Photos | Travel.India.com</title>
+	<meta name="description" content="Tarkarli Tourism - Get Tarkarli travel & tourism related information including tourist places, transport, nightlife, weather, photos, entertainment, shopping, festivals, maps, and attractions of Tarkarli on Travel.India.com"/>
+	<meta name="keywords" content="Tarkarli, Tarkarli travel guide, Tarkarli tourism, Tarkarli nightlife, Tarkarli Hotels, Tarkarli Transport, Tarkarli Weather, Tarkarli Map, Tarkarli Travel tips, Tarkarli Travel Information, Tarkarli History, Tarkarli Attractions, Tarkarli blogs, Tarkarli articles"/>
+	<link rel="canonical" href="http://www.india.com/travel/tarkarli/">
+	<!-- Facebook Meta -->
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:title" content="Tarkarli Travel and Tourism Guide" />
+	<meta property="og:type"  content="place" />
+	<meta property="og:image" content="http://s3.india.com/travel/wp-content/wp-post-thumbnail/0MRQrg.jpg" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:width" content="260" />
+	<meta property="og:image:height" content="150" />
+	<meta property="og:description" content="Tarkarli Tourism - Get Tarkarli travel & tourism related information including tourist places, transport, nightlife, weather, photos, entertainment, shopping, festivals, maps, and attractions of Tarkarli on Travel.India.com" />
+	<meta property="og:site_name" content="Travel India" />
+	<meta property="og:url" content="http://www.india.com/travel/tarkarli/" />
+	<!-- Twitter Meta -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@itripto" />
+	<meta name="twitter:title" content="Tarkarli Travel and Tourism Guide" />
+	<meta name="twitter:description" content="Tarkarli Tourism - Get Tarkarli travel & tourism related information including tourist places, transport, nightlife, weather, photos, entertainment, shopping, festivals, maps, and attractions of Tarkarli on Travel.India.com" />
+	<meta name="twitter:image" content="http://s3.india.com/travel/wp-content/wp-post-thumbnail/0MRQrg.jpg" />
+
+	<!--[if IE]>
+<link rel='stylesheet' id='mailchimpSF_ie_css-css'  href='http://www.india.com/travel/wp-content/plugins/mailchimp/css/ie.css?ver=3.9.3' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='travel-stylesheet-css'  href='http://s3.india.com/travel/wp-content/themes/travel2014/css/travel.css?ver=20171010.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://s3.india.com/travel/wp-content/themes/travel2014/js/jquery-2.1.1.min.js?ver=20171010.1'></script>
+<link rel="shortcut icon" type="image/x-icon" href="http://s3.india.com/travel/favicon.jpg" />
+<link rel="apple-touch-icon-precomposed" href="http://s3.india.com/travel/apple-touch-icon-120x120-precomposed.png" />
+<meta name="robots" content="index,follow" />    <script type="text/javascript">
+        var site_url = 'http://www.india.com/travel';
+    </script>
+  
+	<script type="text/javascript">
+		var dataEventTrack=[];
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-19458284-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+	<!-- Begin comScore Tag -->
+	<script type="text/javascript">
+		var _comscore = _comscore || [];
+		_comscore.push({ c1: "2", c2: "9254297" });
+		(function() {
+		var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+		s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+		el.parentNode.insertBefore(s, el);
+		})();
+	</script>
+	<!-- End comScore Tag -->
+
+	<!-- Sidebar in Head Tag -->
+				
+			
+<script type='text/javascript'>
+  (function() {
+    var useSSL = 'https:' == document.location.protocol;
+    var src = (useSSL ? 'https:' : 'http:') +
+        '//www.googletagservices.com/tag/js/gpt.js';
+    document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+  })();
+</script>
+<script type='text/javascript'>
+var width = window.innerWidth || document.documentElement.clientWidth;
+</script>
+
+
+<script type='text/javascript'>
+  googletag.cmd.push(function() {
+  		
+  		
+		var topad = googletag.sizeMapping(). addSize([1024, 550 ], [[970, 66], [970, 90], [970, 250], [728, 90]]). build();
+		var Ttopad = googletag.sizeMapping(). addSize([768, 450 ], [728, 90]). build();
+		
+		
+		var DrightATF = googletag.sizeMapping(). addSize([300, 100], [[300, 250], [300, 600]]). build();
+								
+		
+		var middleBTF1 = googletag.sizeMapping(). addSize([300, 100 ],[[300, 250], [300, 600]]). build();
+						
+		var gutterLeft = googletag.sizeMapping(). addSize([1366, 550 ], [160, 600]). build();
+		var gutterRight = googletag.sizeMapping(). addSize([1366, 550 ], [160, 600]). build(); 
+		
+		var onebyone = googletag.sizeMapping(). addSize([1, 1 ], [1, 1]). build();
+		
+		googletag.defineSlot('/11440465/Travel_ROS_300x250_ATF', [[300, 250], [300, 600]], 'div-gpt-ad-1452589356532-2').defineSizeMapping(DrightATF).addService(googletag.pubads());
+               
+		googletag.defineSlot('/11440465/Travel_ROS_300x250_BTF',[[300, 250], [300, 600]], 'div-gpt-ad-1452589356532-3').defineSizeMapping(middleBTF1).addService(googletag.pubads());
+       
+		
+		googletag.defineSlot('/11440465/Travel_ROS_LHS_160x600_ATF', [160, 600], 'div-gpt-ad-1452589356532-4').defineSizeMapping(gutterLeft).addService(googletag.pubads()).setTargeting("category", ["Stream"]);
+		googletag.defineSlot('/11440465/Travel_ROS_RHS_160x600_ATF', [160, 600], 'div-gpt-ad-1452589356532-5').defineSizeMapping(gutterRight).addService(googletag.pubads());
+		
+		googletag.defineSlot('/11440465/Travel_ROS_OutOfPage_ATF', [1, 1], 'div-gpt-ad-1452589356532-8').defineSizeMapping(onebyone).addService(googletag.pubads());
+
+		// header top ad for ROS
+		if (width >= 992) {
+			googletag.defineSlot('/11440465/Travel_ROS_Desktop_970x90_ATF', [[970, 66], [970, 90], [970, 250], [728, 90]], 'div-gpt-ad-1468219824719-0').addService(googletag.pubads());
+		} else if ((width >= 768) && (width < 992)) {
+			googletag.defineSlot('/11440465/Travel_ROS_Tablet_728x90_ATF', [728, 90], 'div-gpt-ad-1468219824719-1').addService(googletag.pubads());
+		}
+
+		//googletag.pubads().enableSingleRequest();
+        googletag.pubads().enableSyncRendering();
+		googletag.enableServices();
+  
+  });
+</script>
+
+
+					
+			<script type="text/javascript">
+   var siteWidth = 944; 
+</script>					
+						<!-- /Sidebar in Head Tag -->
+
+	<script type="text/javascript">
+		var headeranimation = false;
+			</script>
+   
+   	<!--
+	generated in 0.622 seconds
+	95696 bytes batcached for 300 seconds
+-->
+</head>
+<body class="">
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WNTPSJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WNTPSJ');</script>
+<!-- End Google Tag Manager -->
+
+<noscript>
+	<img src="http://b.scorecardresearch.com/p?c1=2&c2=9254297&cv=2.0&cj=1" />
+</noscript>
+<header id="header" class="header-outer innerpage">
+<!----------------- Top Ads section ------------------------>
+<!-- Sidebar in top ad -->
+			
+			<div class="topads">
+			<!-- /11440465/Travel_ROS_Desktop_970x90_ATF -->
+		<div class="ads970">
+			<div id='div-gpt-ad-1468219824719-0' style='height:auto; width:970px;margin:0 auto;'>
+				<script type='text/javascript'>
+					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1468219824719-0'); });
+				</script>
+			</div>
+		</div>
+		<!-- /11440465/Travel_ROS_Tablet_728x90_ATF -->
+		<div class="adtop768">
+			<div id='div-gpt-ad-1468219824719-1' style='height:90px; width:728px;margin:0 auto;'>
+				<script type='text/javascript'>
+					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1468219824719-1'); });
+				</script>
+			</div>
+		</div>
+		<!-- /11440465/Travel_ROS_Mobile_320x50_ATF -->
+		<div class="adtop300">
+			<div id='div-gpt-ad-1468925871172-0' style='width:320px; height:auto; margin: 0 auto;display:flex'>
+				<script type='text/javascript'>
+					googletag.cmd.push(function() { googletag.display('div-gpt-ad-1468925871172-0'); });
+				</script>
+			</div>
+		</div>
+	</div>					
+			<style type="text/css">
+@media screen and (max-width:768px){
+    #sizeholder {min-width: 100%; overflow: hidden;}
+    .dscByPlace{position:absolute;}
+     .topads{padding:0px}
+}
+@media screen and (min-width:769px){
+     .topads{padding: 5px 0}
+}
+</style>		<!-- /Sidebar in top ad -->
+
+	<header class="t-nav inner-container">
+		<nav class="t-nav-in navbar navbar-default" role="navigation">
+			<div class="col-xs-12 navholder">
+								<div class="logo eventtracker" data-event-cat="Header" data-event-sub-cat="Logo">
+				<h1>
+				<a href="http://www.india.com" title="Latest India News | LIVE Breaking News Headlines | Current Affairs, Sports, Bollywood, Politics, Business, Technology, Results &amp; Employment News | India.com">
+				<img src="http://s3.india.com/wp-content/themes/icom/images/india-com-logo.png" alt="Latest India News | LIVE Breaking News Headlines | Current Affairs, Sports, Bollywood, Politics, Business, Technology, Results &amp; Employment News | India.com">
+				</a>
+				</h1>
+				<div class="langopt eventtracker" data-event-cat="Header" data-event-sub-cat="Language">
+									<a href="http://www.india.com/hindi-news/">हिंदी</a>
+									<a href="http://www.india.com/marathi/">मराठी</a>
+									
+								</div>
+								</div>
+                
+                <!-- Essel Group Logo integration - Begins :: 14370 -->
+		
+                <a class="essel-logo"  href="http://www.esselgroup.com/" target="_blank"><img src="http://s3.india.com/wp-content/themes/icom/images/essel-gp.png" /></a>
+                <!-- Essel Group Logo integration - Begins :: 14370 -->
+                
+				<div class="navbar-header">
+                        <button data-target="#main-menu" data-toggle="collapse" class="navbar-toggle" type="button">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+						
+<!-- RHS menu header -->
+<div class="blk-mobileLatest">
+      	  <button class="button-mobile btnlatest visible-xs visible-sm rhs-menu" data-target=".blk-mobileLatest"><i></i></button>
+          <div class="box-mbLatest">
+            <div class="rhs-overlay"><a class="closetest" href="javascript:void(0)" style="display:block; position:absolute; left:0px; top:0px; width:100%; height:100%; padding:5px;">close</a></div>
+<div class="mbLatestList" style="">
+						
+			       
+       <span><h2>Latest Articles</h2></span>
+       
+           
+                          <a href="http://www.india.com/travel/articles/green-sea-turtle-population-in-northern-great-barrier-reef-is-turning-female-heres-why/" title="Green Sea Turtle Population in Northern Great Barrier Reef is Turning Female. Here’s Why!">
+                       Green Sea Turtle Population in Northern Great Barrier Reef is Turning Female. Here’s Why!                   </a>
+           
+                          <a href="http://www.india.com/travel/articles/stunning-photos-of-banff-national-park-in-canada-thatll-blow-your-mind-away/" title="Stunning Photos of Banff National Park in Canada That’ll Blow Your Mind Away">
+                       Stunning Photos of Banff National Park in Canada That’ll Blow Your Mind Away                   </a>
+           
+                          <a href="http://www.india.com/travel/articles/photos-of-basel-an-underrated-swiss-destination-along-the-rhine/" title="Photos of Basel, an Underrated Swiss Destination along the Rhine">
+                       Photos of Basel, an Underrated Swiss Destination along the Rhine                   </a>
+           
+                          <a href="http://www.india.com/travel/articles/airasia-india-offers-flights-with-base-fare-of-rs-99/" title="AirAsia India Offers Flights with Base Fare of Rs 99">
+                       AirAsia India Offers Flights with Base Fare of Rs 99                   </a>
+           
+                          <a href="http://www.india.com/travel/articles/18-airbnbs-to-indulge-the-wanderlust-in-you-in-2018/" title="18 Airbnbs to Indulge the Wanderlust in You in 2018">
+                       18 Airbnbs to Indulge the Wanderlust in You in 2018                   </a>
+           
+                          <a href="http://www.india.com/travel/articles/jodhpur-and-jaisalmer-in-four-days-itinerary-for-a-whirlwind-adventure/" title="Jodhpur and Jaisalmer in 4 Days: Itinerary for a Whirlwind Adventure">
+                       Jodhpur and Jaisalmer in 4 Days: Itinerary for a Whirlwind Adventure                   </a>
+           
+                          <a href="http://www.india.com/travel/articles/top-10-trending-destinations-in-the-world-for-2018-according-to-tripadvisor/" title="Top 10 Trending Destinations in the World for 2018, According to TripAdvisor">
+                       Top 10 Trending Destinations in the World for 2018, According to TripAdvisor                   </a>
+           
+                          <a href="http://www.india.com/travel/articles/three-tigers-spotted-in-neora-valley-national-park-west-bengal/" title="Three Tigers Spotted in Neora Valley National Park, West Bengal">
+                       Three Tigers Spotted in Neora Valley National Park, West Bengal                   </a>
+           
+                          <a href="http://www.india.com/travel/articles/travel-advisory-several-northern-eastern-states-reel-under-cold/" title="Travel Advisory: Several Northern, Eastern States Reel Under Cold">
+                       Travel Advisory: Several Northern, Eastern States Reel Under Cold                   </a>
+           
+                          <a href="http://www.india.com/travel/articles/makar-sankranti-2018-in-tamil-nadu-how-thai-pongal-is-celebrated/" title="Makar Sankranti 2018 in Tamil Nadu: How Thai Pongal is Celebrated">
+                       Makar Sankranti 2018 in Tamil Nadu: How Thai Pongal is Celebrated                   </a>
+           
+                          <a href="http://www.india.com/travel/articles/hot-bikini-photos-of-shama-sikander-from-australia-are-making-waves/" title="Hot Bikini Photos of Shama Sikander from Australia Are Making Waves!">
+                       Hot Bikini Photos of Shama Sikander from Australia Are Making Waves!                   </a>
+           
+                          <a href="http://www.india.com/travel/articles/makar-sankranti-2018-in-hyderabad-photos-of-sankranti-in-telanganas-capital-city/" title="Makar Sankranti 2018 in Hyderabad: Photos of Sankranti in Telangana’s Capital City">
+                       Makar Sankranti 2018 in Hyderabad: Photos of Sankranti in Telangana’s Capital City                   </a>
+           
+                          <a href="http://www.india.com/travel/articles/makar-sankranti-2018-in-gujarat-how-uttarayan-festival-of-kites-is-celebrated/" title="Makar Sankranti 2018 in Gujarat: How Uttarayan, Festival of Kites is Celebrated">
+                       Makar Sankranti 2018 in Gujarat: How Uttarayan, Festival of Kites is Celebrated                   </a>
+           
+                          <a href="http://www.india.com/travel/articles/makar-sankranti-2018-in-karnataka-how-suggi-habba-is-celebrated-in-south-india/" title="Makar Sankranti 2018 in Karnataka: Suggi Habba to Be Celebrated in South India on January 15">
+                       Makar Sankranti 2018 in Karnataka: Suggi Habba to Be Celebrated in South India on January 15                   </a>
+           
+                          <a href="http://www.india.com/travel/articles/makar-sankranti-2018-celebration-in-jaipur-international-kite-festival-delicacies-and-more/" title="Makar Sankranti 2018 Celebration in Jaipur: International Kite Festival, Delicacies and More">
+                       Makar Sankranti 2018 Celebration in Jaipur: International Kite Festival, Delicacies and More                   </a>
+          		          </div>
+ </div>
+
+</div>						
+						
+                        <aside class="ss-iconbx">
+                                                        	<a href="javascript:void(0)" class="btnsrchhd"><i></i></a>
+                                                         <a href="https://plus.google.com/104851070044778838603?prsrc=3" target="_blank" class="gp eventtracker" data-event-cat="Header" data-event-sub-cat="SocialShare - GooglePlus"></a>
+                            <a href="https://twitter.com/indiacom" target="_blank" class="tw eventtracker" data-event-cat="Header" data-event-sub-cat="SocialShare - Twitter"></a>
+                            <a href="https://www.facebook.com/indiacom" target="_blank" class="fb eventtracker" data-event-cat="Header" data-event-sub-cat="SocialShare - Facebook"></a>
+                      </aside>
+                          
+                            <aside class="search ">
+                                <div class="search-in">
+                                <input type="text" class="input-i" name="dissrch_bx"  id="dissrch_bx" />
+                                <input class="btnsrch" type="submit"  name="sa" />
+                                <div class="clear"></div>
+                                <div id="slrsearchres"></div>
+                                </div>
+                            </aside>
+                            <input type="hidden" name="hid_distag" id="hid_distag"/>
+                            <input type="hidden" name="search_url" id="search_url" value="" />
+											</div>
+				<section class="src-menu eventtracker" data-event-cat="Header" data-event-title="yes">
+					<div id="main-menu" class="navl navbar-collapse collapse">
+						<ul>
+							                                                        <li><a href="/travel/" title="India Travel and Tourism Guide" class="">Travel Home</a></li>
+							<li><a href="/travel/destinations/" title="Destinations" class="">Destinations</a></li>
+							<li><a href="/travel/weekend-getaways/" title="Weekend Getaways" class="">Weekend Getaways</a><i class="hbdr"></i></li>
+							<!-- comment this menu on 12 sep 16 - neha -->
+							<li><a href="/travel/explore/" title="Explore" class="">Explore</a><i class="hbdr"></i></li>
+							 <!-- comment this menu on 12 sep 16 - neha -->
+							<li><a href="/travel/articles/" title="Articles" class="">Articles</a><i class="hbdr"></i>
+							<ul>
+							<li><a href="/travel/themes/trip-planning/" title="Trip Planning">Trip Planning</a></li>
+							<li><a href="/travel/themes/budget-travel/" title="Budget Travel">Budget Travel</a></li>	
+							<li><a href="/travel/themes/celebrity-travel/" title="Celebrity Travel">Celebrity Travel</a></li>
+							<li><a href="/travel/themes/nature-and-wildlife/" title="Nature and Wildlife">Nature and Wildlife</a></li>
+							<li><a href="/travel/themes/couple-travel/" title="Couple Travel">Couple Travel</a></li>
+							<li><a href="/travel/themes/family-and-kids/" title="Family and Kids">Family and Kids</a></li>
+							<li><a href="/travel/themes/food-and-drink/" title="Food and Drink">Food and Drink</a></li>
+							<li><a href="/travel/themes/boy-zone/" title="Boy Zone">Boy Zone</a></li>
+							<li><a href="/travel/themes/girl-talk/" title="Girl Talk">Girl Talk</a></li>
+														</ul></li>
+								
+				
+						</ul>
+					</div>
+
+					
+					<div class="clear"></div>
+				</section>
+			</div>
+		</nav>
+	</header>
+<div class="clear"></div>
+</header>
+    <!-- Sidebar in top ad belowheader -->
+    			
+					    <!-- /Sidebar in top ad belowheader -->
+<div id="sizeholder"> <!-- Only for home . closed in index.php -->
+       <ul id="supersized" class="quality eventtracker" data-event-sub-cat="FeaturedImage" style="visibility: visible;"></ul>
+      
+       
+<!-- LHS Menu -->
+<div class="mobile-lhs-menu">
+	<div class="lhs-more-menu">
+	   <div class="lhsmore showfilter" ></div>
+		<div class="lhs-more-menu-list" >
+			
+		</div>
+	</div>
+</div>
+ 
+
+<div class="clear"></div>
+
+
+<section class="discover-plan-outer posr">
+    <section class="inner-container discover-plan ">
+        <section class="discover-plan-in innerdest">
+        	            <h1 class="hpttl">Tarkarli, India </h1>                    </section>	
+        <div class="clear"></div>			
+    </section>
+</section>
+
+<div class="clear"></div>
+		<section class="dscByPlace destinlist eventtracker" data-event-sub-cat="FeaturedTabs" data-event-title="yes" data-event-order="yes">
+          <a href="http://www.india.com/travel/tarkarli/places-to-visit/" title="Places to Visit" class="col-xs-1 blkdscpls "><i class="adv1"><img src="http://s3.india.com/travel/wp-content/themes/travel2014/images/iconpng/places-to-visit.png"></i><h3 class="dsttl">Places to Visit</h3></a><a href="http://www.india.com/travel/tarkarli/things-to-do/" title="Things to Do" class="col-xs-1 blkdscpls "><i class="adv1"><img src="http://s3.india.com/travel/wp-content/themes/travel2014/images/iconpng/things-to-do.png"></i><h3 class="dsttl">Things to Do</h3></a><a href="http://www.india.com/travel/tarkarli/how-to-reach/" title="How to Reach" class="col-xs-1 blkdscpls "><i class="adv1"><img src="http://s3.india.com/travel/wp-content/themes/travel2014/images/iconpng/how-to-reach.png"></i><h3 class="dsttl">How to Reach</h3></a><a href="http://www.india.com/travel/tarkarli/articles/" title="Articles" class="col-xs-1 blkdscpls "><i class="adv1"><img src="http://s3.india.com/travel/wp-content/themes/travel2014/images/iconpng/articles.png"></i><h3 class="dsttl">Articles</h3></a><a href="http://www.india.com/travel/tarkarli/photos/" title="Photos" class="col-xs-1 blkdscpls "><i class="adv1"><img src="http://s3.india.com/travel/wp-content/themes/travel2014/images/iconpng/photos.png"></i><h3 class="dsttl">Photos</h3></a><a href="http://www.india.com/travel/tarkarli/map/" title="Map" class="col-xs-1 blkdscpls "><i class="adv1"><img src="http://s3.india.com/travel/wp-content/themes/travel2014/images/iconpng/map.png"></i><h3 class="dsttl">Map</h3></a><div class="clear"></div>        </section>
+    </div>
+    
+<script type="text/javascript" defer='defer'>
+
+	var preset_big 		= 'http://s3.india.com/travel/wp-content/uploads/2014/11/522439087.jpg';
+	var preset_small 	= '';
+   
+   bw = jQuery('body').width() - 17;
+   ht = jQuery(window).height() ;//- 100;
+   ht = (ht/100)*60;
+
+   hdht = jQuery('.header-outer').height();
+   nht = ht + jQuery('.header-outer').height();
+
+   jQuery('#sizeholder').css({'width':bw+'px','height':ht+'px'});
+   jQuery('#supersized').css({'top':'-'+hdht+'px','height':nht+'px'});
+
+   var superarr = "";
+   jQuery(document).ready(function(){
+    if(jQuery('body').innerWidth() >= 479 ){
+        superarr =     [   // Slideshow desktop
+                        {image : preset_big , title : '', thumb : ''}
+                        ];
+        } else {
+            superarr =     [  // Slideshow Mobile
+                            {image : preset_small , title : '', thumb : ''}
+                        ];
+        }
+    });
+</script>
+<section class="inner-container">
+     <aside class="inner-container-left col-sm-9 resultpageleft ">    
+     
+     				<!-- destination breadcrumb -->
+				<section class="t-breadcrumb eventtracker" data-event-sub-cat="Breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+					<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="url" href="http://www.india.com "><span itemprop="name"> Home</span><meta itemprop="position" content="1"></a></span> > <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="url" href="http://www.india.com/travel/" > <span itemprop="name"> Travel </span><meta itemprop="position" content="2"></a></span> >  <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="url" href="http://www.india.com/travel/states/maharashtra/" > <span itemprop="name"> Maharashtra</span><meta itemprop="position" content="3"></a></span> > Tarkarli           <span class="fr"></span> 				</section>
+		  		<!-- about destination -->
+<section class="about">
+	<h2 class="dest28">TARKARLI TOURISM</h2>
+		<div class="clear"></div>	
+	<div id="" class="isocial" data-url="http://www.india.com/travel/tarkarli/" data-title="Tarkarli Travel and Tourism Guide via @itripto" data-size="large"></div>
+	<div class="clear"></div>
+		<section class="profile-text bio eventtracker" data-event-sub-cat="InternalLinks">
+         <p>Known for its white sandy beach and water sports, Tarkarli is situated in the Sindhudurg district of <a href="http://www.india.com/travel/states/maharashtra/" target="_blank"><strong>Maharashtra</strong></a>. <a href="http://www.india.com/travel/tarkarli/places-to-visit/beaches-tarkarli-beach/" target="_blank"><strong>Tarkarli beach</strong></a> is arguably one of the most picturesque beaches in the Konkan region of Maharashtra. The white sand, clear blue water and the suru (casurina) trees add to the splendor of the beach. The sea at Tarkarli is crystal clear and the seabed can be seen up to a depth of 15 ft or more on a sunny day.</p>
+<p>Another attraction of Tarkarli is the <a href="http://www.india.com/travel/tarkarli/places-to-visit/nature-karli-backwaters/" target="_blank"><strong>backwaters of Karli river</strong></a> which extend from Tarkarli to Kudal. It is the only place to experience the backwaters in Maharashtra. The estuary of Karli river is another scenic spot located near Tarkarli.</p>
+<p>Tarkarli is also the only place in Maharashtra where you can scuba dive. The waters are relatively clear around the Sindhudurg fort and though the reefs here aren&#8217;t exactly world class, it is not a bad idea to try it out once. Guides and instructors are helpful and patient; if you are keen, you can even enroll for a special certified course.</p>
+<p>Tarkarli is situated close to several tourist attractions including the <strong><a href="http://www.india.com/travel/goa/places-to-visit/forts-sindhudurg-fort/" target="_blank">Sindhudurg fort</a> </strong>(headquarters of Shivaji&#8217;s navy), Kolamb beach and Dharampur lake.</p>
+<h2>BEST PLACES TO STAY IN TARKARLI</h2>
+<p>The most popular place to stay in Tarkarli is the MTDC holiday resort. With pretty AC and non-AC cottages and two &#8216;houseboats&#8217;, the resort is probably the best place to stay in Tarkarli. Most locals have opened their homes to tourists and offer decent service and food; look for the ones that are closest to the beach.</p>
+<p>Rental bike culture has seeped in to Tarkarli too, which makes local transport very easy. Your resort manager or homestay owner will be happy to help you rent one out.</p>
+<h2>BEST PLACES TO EAT IN TARKARLI</h2>
+<p>Tarkarli is famous for its delicious seafood. <em>Kombdi-vade</em>, <em>Malvani mutton curry</em> and <em>mori masala</em> are some of the seafood delicacies worth trying in Tarkarli. There are quite a few restaurants in Tarkarli that serve delicious seafood for the non vegetarians. <em>Sol kadi</em> and <em>aamras</em> served by the restaurants in the town are vegetarian delicacies worth trying.</p>
+<p>Bamboo and Chaitanya restaurants are considered to be two of the best restaurants in town, though restaurant at the MTDC resort also serves a pretty mean feast too.</p>
+         <div class="clear"></div>
+    </section>
+
+    
+  	
+  	<div class="clear"></div>
+			          	                 
+	<!-- Best Time To Visit -->
+	     <h2 class="dest24">BEST TIME TO VISIT TARKARLI</h2><p>The average minimum and maximum temperature of Tarkarli is as given below. The best time to visit Tarkarli is also specified. </p><table class='table tblbesttime'><tr><td class='evntm'>MONTH </td><td class='besttime'>BEST TIME</td><td class='tips'> </td><td class='mintemp'>MIN. TEMP (&deg;C)</td><td class='maxtemp'>MAX. TEMP (&deg;C)</td></tr><tr class='current'><td class="evntm"><span class="bestmnth">January</span></td><td class='besttime'><span class='favtime'></span></td><td class='tips'></td><td class='mintemp'>15</td><td class='maxtemp'>33</td></tr><tr class=''><td class="evntm"><span class="bestmnth">February</span></td><td class='besttime'><span class='favtime'></span></td><td class='tips'></td><td class='mintemp'>15</td><td class='maxtemp'>33</td></tr><tr class=''><td class="evntm"><span class="bestmnth">March</span></td><td class='besttime'><span class='favtime'></span></td><td class='tips'></td><td class='mintemp'>23</td><td class='maxtemp'>40</td></tr><tr class=''><td class="evntm"><span class="bestmnth">April</span></td><td class='besttime'></td><td class='tips'></td><td class='mintemp'>23</td><td class='maxtemp'>40</td></tr><tr class=''><td class="evntm"><span class="bestmnth">May</span></td><td class='besttime'></td><td class='tips'></td><td class='mintemp'>23</td><td class='maxtemp'>40</td></tr><tr class=''><td class="evntm"><span class="bestmnth">June</span></td><td class='besttime'></td><td class='tips'></td><td class='mintemp'>23</td><td class='maxtemp'>40</td></tr><tr class=''><td class="evntm"><span class="bestmnth">July</span></td><td class='besttime'></td><td class='tips'></td><td class='mintemp'>23</td><td class='maxtemp'>40</td></tr><tr class=''><td class="evntm"><span class="bestmnth">August</span></td><td class='besttime'></td><td class='tips'></td><td class='mintemp'>23</td><td class='maxtemp'>40</td></tr><tr class=''><td class="evntm"><span class="bestmnth">September</span></td><td class='besttime'></td><td class='tips'></td><td class='mintemp'>23</td><td class='maxtemp'>40</td></tr><tr class=''><td class="evntm"><span class="bestmnth">October</span></td><td class='besttime'><span class='favtime'></span></td><td class='tips'></td><td class='mintemp'>23</td><td class='maxtemp'>40</td></tr><tr class=''><td class="evntm"><span class="bestmnth">November</span></td><td class='besttime'><span class='favtime'></span></td><td class='tips'></td><td class='mintemp'>15</td><td class='maxtemp'>33</td></tr><tr class=''><td class="evntm"><span class="bestmnth">December</span></td><td class='besttime'><span class='favtime'></span></td><td class='tips'></td><td class='mintemp'>15</td><td class='maxtemp'>33</td></tr></table>	<!-- /Best Time To Visit -->
+</section>
+	<!-- /about destination -->
+	
+<div class="clear"></div>
+
+
+
+<!-- attachment slider -->
+
+			<section class="inslidertab about eventtracker" data-event-sub-cat="Photos">
+
+				<a href="http://www.india.com/travel/tarkarli/photos/" ><h2 class="dest24" id="page">PHOTOS OF TARKARLI</h2></a>
+			    <ul class="inslider eventtracker" data-event-sub-cat="Photos" data-event-order="yes">
+			    					  <li>
+							 <a href="http://www.india.com/travel/tarkarli/photos/vijaydurg-fort-1-2/" class="imgt" title="">
+								<img width="75" height="75" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2016/01/Vijaydurg_fort_1-150x150.jpg" class="lazy lazy-hidden attachment-75x75" alt="Vijaydurg Fort" /><noscript><img width="75" height="75" src="http://s3.india.com/travel/wp-content/uploads/2016/01/Vijaydurg_fort_1-150x150.jpg" class="attachment-75x75" alt="Vijaydurg Fort" /></noscript>							</a>
+							<div class="clear"></div>						
+					  </li>
+				    					  <li>
+							 <a href="http://www.india.com/travel/tarkarli/photos/karli-backwaters-2/" class="imgt" title="">
+								<img width="75" height="75" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2014/11/karli-backwaters-150x150.jpg" class="lazy lazy-hidden attachment-75x75" alt="karli-backwaters" /><noscript><img width="75" height="75" src="http://s3.india.com/travel/wp-content/uploads/2014/11/karli-backwaters-150x150.jpg" class="attachment-75x75" alt="karli-backwaters" /></noscript>							</a>
+							<div class="clear"></div>						
+					  </li>
+				    					  <li>
+							 <a href="http://www.india.com/travel/tarkarli/photos/tarkarli-beach-2/" class="imgt" title="">
+								<img width="75" height="75" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2014/11/tarkarli-beach-150x150.jpg" class="lazy lazy-hidden attachment-75x75" alt="tarkarli-beach" /><noscript><img width="75" height="75" src="http://s3.india.com/travel/wp-content/uploads/2014/11/tarkarli-beach-150x150.jpg" class="attachment-75x75" alt="tarkarli-beach" /></noscript>							</a>
+							<div class="clear"></div>						
+					  </li>
+				    					  <li>
+							 <a href="http://www.india.com/travel/tarkarli/photos/shopping-tarkali/" class="imgt" title="">
+								<img width="75" height="75" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2014/11/shopping-tarkali-150x150.jpg" class="lazy lazy-hidden attachment-75x75" alt="shopping-tarkali" /><noscript><img width="75" height="75" src="http://s3.india.com/travel/wp-content/uploads/2014/11/shopping-tarkali-150x150.jpg" class="attachment-75x75" alt="shopping-tarkali" /></noscript>							</a>
+							<div class="clear"></div>						
+					  </li>
+				    					  <li>
+							 <a href="http://www.india.com/travel/tarkarli/photos/scuba-diving-tark/" class="imgt" title="">
+								<img width="75" height="75" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2014/11/scuba-diving-tark-150x150.jpg" class="lazy lazy-hidden attachment-75x75" alt="scuba-diving-tark" /><noscript><img width="75" height="75" src="http://s3.india.com/travel/wp-content/uploads/2014/11/scuba-diving-tark-150x150.jpg" class="attachment-75x75" alt="scuba-diving-tark" /></noscript>							</a>
+							<div class="clear"></div>						
+					  </li>
+				    					  <li>
+							 <a href="http://www.india.com/travel/tarkarli/photos/tarkarli-2/" class="imgt" title="">
+								<img width="75" height="75" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2014/09/tarkarli-150x150.jpg" class="lazy lazy-hidden attachment-75x75" alt="tarkarli" /><noscript><img width="75" height="75" src="http://s3.india.com/travel/wp-content/uploads/2014/09/tarkarli-150x150.jpg" class="attachment-75x75" alt="tarkarli" /></noscript>							</a>
+							<div class="clear"></div>						
+					  </li>
+				      			  
+			    </ul>			  
+			</section>
+			<div class="clear"></div>
+<!-- /attachment slider -->  
+
+
+  <!-- place to visit -->
+ 					  
+  <section class="place-visit eventtracker" data-event-sub-cat="PlacesToVisit" data-event-order="yes" data-event-order-offset="4">					  		
+		      <a class="eventtracker" data-event-sub-cat="PlacesToVisit" href="http://www.india.com/travel/tarkarli/places-to-visit/"><h2 class="dest24">PLACES TO VISIT IN TARKARLI</h2></a>
+	  			<!-- destination combine tags icon -->
+			        <section class="thing-to-do">
+		<section class="place-visit-icon">
+					
+			    <aside class="p-icon">
+			    				    		    	
+				    <ul class="p-icontxt eventtracker" data-event-sub-cat="Tags" data-event-order="yes"><li class="active-iconactive-icon"><a href="http://www.india.com/travel/tarkarli/places-to-visit/" class="placeholder">
+							      All
+								</a></li>
+					    					    		
+						<li class=""><a href="http://www.india.com/travel/tarkarli/forts/">
+										Forts								</a></li>
+											    		
+						<li class=""><a href="http://www.india.com/travel/tarkarli/beaches/">
+										Beaches								</a></li>
+											    		
+						<li class=""><a href="http://www.india.com/travel/tarkarli/nature/">
+										Nature								</a></li>
+										
+					</ul>
+					<div class="clear"></div>
+				</aside>
+		</section>
+	</section>
+	<div class="clear"></div>
+				<!-- /destination combine tags icon -->
+				
+		<div class="clear"></div>
+		   <ul>
+	  					
+	  			  <li class="col-sm-4 col-xs-12 ">	 
+					<figure>
+						 <a href="http://www.india.com/travel/tarkarli/places-to-visit/forts-sindhudurg-fort/" class="imgt  " title="Sindhudurg Fort"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/themes/travel2014/images/article-default-3-260x150.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Sindhudurg Fort"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/themes/travel2014/images/article-default-3-260x150.jpg" class="attachment-medium wp-post-image" alt="Sindhudurg Fort"></noscript></a>						<figcaption>
+						 <a href="http://www.india.com/travel/tarkarli/places-to-visit/forts-sindhudurg-fort/" title="Sindhudurg Fort"><h3>Sindhudurg Fort </h3></a>
+						  <div class="clear"></div>	
+						 <p>Built by Shivaji, Sindhudurg Fort was the naval headquarters of the Marathas. Situated on Kurte Island,&hellip;</p>
+						</figcaption>
+						<div class="clear"></div>	
+					</figure>
+					</li>
+						
+	  			  <li class="col-sm-4 col-xs-12 ">	 
+					<figure>
+						 <a href="http://www.india.com/travel/tarkarli/places-to-visit/beaches-tarkarli-beach/" class="imgt  " title="Tarkarli Beach"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/wp-post-thumbnail/UatNPv.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Tarkarli Beach"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/wp-post-thumbnail/UatNPv.jpg" class="attachment-medium wp-post-image" alt="Tarkarli Beach"></noscript></a>						<figcaption>
+						 <a href="http://www.india.com/travel/tarkarli/places-to-visit/beaches-tarkarli-beach/" title="Tarkarli Beach"><h3>Tarkarli Beach </h3></a>
+						  <div class="clear"></div>	
+						 <p>Tarkarli is a clean water beach located between the union of Arabian sea and Karli&hellip;</p>
+						</figcaption>
+						<div class="clear"></div>	
+					</figure>
+					</li>
+						
+	  			  <li class="col-sm-4 col-xs-12 ">	 
+					<figure>
+						 <a href="http://www.india.com/travel/tarkarli/places-to-visit/nature-malvan/" class="imgt  " title="Malvan"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/themes/travel2014/images/article-default-4-260x150.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Malvan"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/themes/travel2014/images/article-default-4-260x150.jpg" class="attachment-medium wp-post-image" alt="Malvan"></noscript></a>						<figcaption>
+						 <a href="http://www.india.com/travel/tarkarli/places-to-visit/nature-malvan/" title="Malvan"><h3>Malvan </h3></a>
+						  <div class="clear"></div>	
+						 <p>Malvan is famous for quite a few uniques that attracts tourists to make a visit&hellip;</p>
+						</figcaption>
+						<div class="clear"></div>	
+					</figure>
+					</li>
+						
+	  			  <li class="col-sm-4 col-xs-12 ">	 
+					<figure>
+						 <a href="http://www.india.com/travel/tarkarli/places-to-visit/nature-karli-backwaters/" class="imgt  " title="Karli backwaters"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/wp-post-thumbnail/NnJ0yc.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Karli backwaters"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/wp-post-thumbnail/NnJ0yc.jpg" class="attachment-medium wp-post-image" alt="Karli backwaters"></noscript></a>						<figcaption>
+						 <a href="http://www.india.com/travel/tarkarli/places-to-visit/nature-karli-backwaters/" title="Karli backwaters"><h3>Karli backwaters </h3></a>
+						  <div class="clear"></div>	
+						 <p>The backwaters in Tarkarli is unique in its own. The water sports and boating are&hellip;</p>
+						</figcaption>
+						<div class="clear"></div>	
+					</figure>
+					</li>
+								</ul>
+				<div class="clear"></div>
+				<a href="http://www.india.com/travel/tarkarli/places-to-visit/" class="view-all-place eventtracker" data-event-sub-cat="PlacesToVisit - ViewAll"> View all places to visit in Tarkarli</a>
+		 									  
+  </section>
+  
+  <div class="clear"></div>
+
+  <!-- Things to do -->  
+  <section class="place-visit eventtracker" data-event-sub-cat="ThingsToDo" data-event-order="yes" data-event-order-offset="4">					  		
+		      <a class="eventtracker" data-event-sub-cat="ThingsToDo" href="http://www.india.com/travel/tarkarli/things-to-do/"><h2 class="dest24">THINGS TO DO IN TARKARLI</h2></a>
+	  			<!-- destination combine tags icon -->
+			        <section class="thing-to-do">
+		<section class="place-visit-icon">
+					
+			    <aside class="p-icon">
+			    				    		    	
+				    <ul class="p-icontxt eventtracker" data-event-sub-cat="Tags" data-event-order="yes"><li class="active-iconactive-icon"><a href="http://www.india.com/travel/tarkarli/things-to-do/" class="placeholder">
+							      All
+								</a></li>
+					    					    		
+						<li class=""><a href="http://www.india.com/travel/tarkarli/shopping/">
+										Shopping								</a></li>
+											    		
+						<li class=""><a href="http://www.india.com/travel/tarkarli/adventure/">
+										Adventure								</a></li>
+										
+					</ul>
+					<div class="clear"></div>
+				</aside>
+		</section>
+	</section>
+	<div class="clear"></div>
+				<!-- /destination combine tags icon -->
+				
+		<div class="clear"></div>
+		<ul>
+	  				<li class="col-sm-4 col-xs-12 ">		 
+					<figure>
+						 <a href="http://www.india.com/travel/tarkarli/things-to-do/shopping-shopping-tarkarli/" class="imgt  " title="Shopping in Tarkarli"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/wp-post-thumbnail/N33q1q.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Shopping in Tarkarli"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/wp-post-thumbnail/N33q1q.jpg" class="attachment-medium wp-post-image" alt="Shopping in Tarkarli"></noscript></a>						<figcaption>
+						 <a href="http://www.india.com/travel/tarkarli/things-to-do/shopping-shopping-tarkarli/" title="Shopping in Tarkarli"><h3>Shopping in Tarkarli </h3></a>
+						  <div class="clear"></div>	
+						 <p>Tarkarli is all about buying fresh and delicious cashew nuts for which the markets are&hellip;</p>
+						</figcaption>
+						<div class="clear"></div>	
+					</figure>
+					</li>
+					<li class="col-sm-4 col-xs-12 ">		 
+					<figure>
+						 <a href="http://www.india.com/travel/tarkarli/things-to-do/adventure-scuba-diving-tarkarli/" class="imgt  " title="Scuba Diving and Snorkeling in Tarkarli"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/wp-post-thumbnail/nRN80H.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Scuba Diving and Snorkeling in Tarkarli"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/wp-post-thumbnail/nRN80H.jpg" class="attachment-medium wp-post-image" alt="Scuba Diving and Snorkeling in Tarkarli"></noscript></a>						<figcaption>
+						 <a href="http://www.india.com/travel/tarkarli/things-to-do/adventure-scuba-diving-tarkarli/" title="Scuba Diving and Snorkeling in Tarkarli"><h3>Scuba Diving and Snorkeling in Tarkarli </h3></a>
+						  <div class="clear"></div>	
+						 <p>Scuba diving is one the main attractions in Tarkarli among the tourists. Tarkarli is among&hellip;</p>
+						</figcaption>
+						<div class="clear"></div>	
+					</figure>
+					</li>
+								</ul>
+				<div class="clear"></div>
+				<a href="http://www.india.com/travel/tarkarli/things-to-do/" class="view-all-place eventtracker" data-event-sub-cat="ThingsToDo - ViewAll"> View all things to do in Tarkarli</a>
+		 									  
+  </section>
+  
+  <div class="clear"></div>
+  <!-- Articles about  -->  
+  			<section class="placevisit">
+
+                    <div class="place-visit"><a class="eventtracker" data-event-sub-cat="Articles" href="http://www.india.com/travel/tarkarli/articles/" ><h2 class="dest24">ARTICLES ABOUT TARKARLI</h2></a></div>
+				
+			<div class="clear"></div>	
+			<section class="visit-list eventtracker" data-event-sub-cat="Articles" data-event-order="yes">
+												 <figure class="col-sm-12">
+								<a href="http://www.india.com/travel/articles/best-offbeat-places-near-mumbai-to-visit-in-2018/" class="imgt  " title="Best Offbeat Places near Mumbai to Visit in 2018"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2015/11/Tarkarli.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Best Offbeat Places near Mumbai to Visit in 2018"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/uploads/2015/11/Tarkarli.jpg" class="attachment-medium wp-post-image" alt="Best Offbeat Places near Mumbai to Visit in 2018"></noscript></a>								<figcaption>
+									 <a href="http://www.india.com/travel/articles/best-offbeat-places-near-mumbai-to-visit-in-2018/" title="Best Offbeat Places near Mumbai to Visit in 2018"><h2>Best Offbeat Places near Mumbai to Visit in 2018</h2></a>
+									 <p>These are the best offbeat places to visit near Mumbai in the New Year 2018.</p>
+									 
+									 <div class="clear"></div>							
+								</figcaption>
+								<div class="clear"></div>	
+							 </figure>
+												 <figure class="col-sm-12">
+								<a href="http://www.india.com/travel/articles/best-new-year-destinations-in-india-to-bring-in-2018/" class="imgt  " title="Best New Year Destinations in India to Bring in 2018"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2013/06/coorg.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Best New Year Destinations in India to Bring in 2018"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/uploads/2013/06/coorg.jpg" class="attachment-medium wp-post-image" alt="Best New Year Destinations in India to Bring in 2018"></noscript></a>								<figcaption>
+									 <a href="http://www.india.com/travel/articles/best-new-year-destinations-in-india-to-bring-in-2018/" title="Best New Year Destinations in India to Bring in 2018"><h2>Best New Year Destinations in India to Bring in 2018</h2></a>
+									 <p>With the New Year coming in a few weeks, it's time to start planning your big New Year's bash. Here are the best places in India to head to usher in 2018.</p>
+									 
+									 <div class="clear"></div>							
+								</figcaption>
+								<div class="clear"></div>	
+							 </figure>
+												 <figure class="col-sm-12">
+								<a href="http://www.india.com/travel/articles/sindhudurg-an-ode-to-maratha-maritime-valour/" class="imgt  " title="Sindhudurg: An ode to Maratha maritime valour"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/themes/travel2014/images/article-default-6-260x150.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Sindhudurg: An ode to Maratha maritime valour"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/themes/travel2014/images/article-default-6-260x150.jpg" class="attachment-medium wp-post-image" alt="Sindhudurg: An ode to Maratha maritime valour"></noscript></a>								<figcaption>
+									 <a href="http://www.india.com/travel/articles/sindhudurg-an-ode-to-maratha-maritime-valour/" title="Sindhudurg: An ode to Maratha maritime valour"><h2>Sindhudurg: An ode to Maratha maritime valour</h2></a>
+									 <p>Maharashtra’s coastline is dotted with forts that often tell a story.</p>
+									 
+									 <div class="clear"></div>							
+								</figcaption>
+								<div class="clear"></div>	
+							 </figure>
+												 <figure class="col-sm-12">
+								<a href="http://www.india.com/travel/articles/romantic-weekend-getaways-from-mumbai/" class="imgt  " title="Romantic Weekend getaways from Mumbai: Top 5 places to rekindle the romance"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/themes/travel2014/images/article-default-1-260x150.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Romantic Weekend getaways from Mumbai: Top 5 places to rekindle the romance"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/themes/travel2014/images/article-default-1-260x150.jpg" class="attachment-medium wp-post-image" alt="Romantic Weekend getaways from Mumbai: Top 5 places to rekindle the romance"></noscript></a>								<figcaption>
+									 <a href="http://www.india.com/travel/articles/romantic-weekend-getaways-from-mumbai/" title="Romantic Weekend getaways from Mumbai: Top 5 places to rekindle the romance"><h2>Romantic Weekend getaways from Mumbai: Top 5 places to rekindle the romance</h2></a>
+									 <p>Planning for a romantic weekend, here is a list of top five romantic getaways near Mumbai.</p>
+									 
+									 <div class="clear"></div>							
+								</figcaption>
+								<div class="clear"></div>	
+							 </figure>
+								 						 
+			  <div class="clear"></div>	
+			  <a href="http://www.india.com/travel/tarkarli/articles/" class="view-all-place eventtracker" data-event-sub-cat="Articles - ViewAll"> View all articles about Tarkarli</a>
+			 </section>
+		</section>
+		  <div class="clear"></div>
+
+  <!-- near by destinations -->
+  <section class="similar-destinations eventtracker" data-event-sub-cat="PlacesNearBy" data-event-order="yes" data-event-order-offset="1">
+  		  	<h3>PLACES NEAR TARKARLI</h3>
+		  									
+									<aside class="col-sm-6">
+									<figure>
+									 											
+											<a href="http://www.india.com/travel/vengurla/" class="imgt  col-xs-6" title="Vengurla"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/themes/travel2014/images/article-default-6-260x150.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Vengurla"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/themes/travel2014/images/article-default-6-260x150.jpg" class="attachment-medium wp-post-image" alt="Vengurla"></noscript></a>																			 
+									<figcaption class="col-xs-6">
+									 <a href="http://www.india.com/travel/vengurla/" title="Vengurla"><h2>Vengurla</h2></a>
+									 <p>29 km</p>
+									 
+									 <!-- combine tags -->
+									 									 <!-- /combine tags -->
+									</figcaption>
+									<div class="clear"></div>	
+								 </figure>
+								 </aside>
+									
+									<aside class="col-sm-6">
+									<figure>
+									 											
+											<a href="http://www.india.com/travel/vijaydurg-fort/" class="imgt  col-xs-6" title="Vijaydurg Fort"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/wp-post-thumbnail/kXn70.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Vijaydurg Fort"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/wp-post-thumbnail/kXn70.jpg" class="attachment-medium wp-post-image" alt="Vijaydurg Fort"></noscript></a>																			 
+									<figcaption class="col-xs-6">
+									 <a href="http://www.india.com/travel/vijaydurg-fort/" title="Vijaydurg Fort"><h2>Vijaydurg Fort</h2></a>
+									 <p>58 km</p>
+									 
+									 <!-- combine tags -->
+									 									 <!-- /combine tags -->
+									</figcaption>
+									<div class="clear"></div>	
+								 </figure>
+								 </aside>
+									
+									<aside class="col-sm-6">
+									<figure>
+									 											
+											<a href="http://www.india.com/travel/goa/" class="imgt  col-xs-6" title="Goa"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/wp-post-thumbnail/BW6IsF.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Goa"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/wp-post-thumbnail/BW6IsF.jpg" class="attachment-medium wp-post-image" alt="Goa"></noscript></a>																			 
+									<figcaption class="col-xs-6">
+									 <a href="http://www.india.com/travel/goa/" title="Goa"><h2>Goa</h2></a>
+									 <p>73 km</p>
+									 
+									 <!-- combine tags -->
+									 									 <!-- /combine tags -->
+									</figcaption>
+									<div class="clear"></div>	
+								 </figure>
+								 </aside>
+									
+									<aside class="col-sm-6">
+									<figure>
+									 											
+											<a href="http://www.india.com/travel/kolhapur/" class="imgt  col-xs-6" title="Kolhapur"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2014/10/Kolhapur_Shree-Chhatrapati-Shahu-Museum-Kolhapur-India.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Kolhapur"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/uploads/2014/10/Kolhapur_Shree-Chhatrapati-Shahu-Museum-Kolhapur-India.jpg" class="attachment-medium wp-post-image" alt="Kolhapur"></noscript></a>																			 
+									<figcaption class="col-xs-6">
+									 <a href="http://www.india.com/travel/kolhapur/" title="Kolhapur"><h2>Kolhapur</h2></a>
+									 <p>108 km</p>
+									 
+									 <!-- combine tags -->
+									 									 <!-- /combine tags -->
+									</figcaption>
+									<div class="clear"></div>	
+								 </figure>
+								 </aside>
+									  <div class="clear abcd"></div>
+  </section>
+  <!-- /near by destinations -->
+  
+  <!-- similar destination -->	
+  <section class="similar-destinations eventtracker" data-event-sub-cat="SimilarDestinations" data-event-order="yes" data-event-order-offset="1">
+
+  	<h3>SIMILAR DESTINATIONS</h3>
+  	      <aside class="col-sm-6">
+		 <figure>
+			<a href="http://www.india.com/travel/shrivardhan/" class="imgt  imgt col-xs-6" title="Shrivardhan"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/wp-post-thumbnail/NC38t1.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Shrivardhan"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/wp-post-thumbnail/NC38t1.jpg" class="attachment-medium wp-post-image" alt="Shrivardhan"></noscript></a>			<figcaption class="col-xs-6">
+			 <a href="http://www.india.com/travel/shrivardhan/" title="Shrivardhan"><h2> Shrivardhan</h2></a>								 
+			</figcaption>
+			<div class="clear"></div>	
+		 </figure>								 						 
+      </aside>
+           <aside class="col-sm-6">
+		 <figure>
+			<a href="http://www.india.com/travel/diveagar/" class="imgt  imgt col-xs-6" title="Diveagar"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/wp-post-thumbnail/UYKS8.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Diveagar"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/wp-post-thumbnail/UYKS8.jpg" class="attachment-medium wp-post-image" alt="Diveagar"></noscript></a>			<figcaption class="col-xs-6">
+			 <a href="http://www.india.com/travel/diveagar/" title="Diveagar"><h2> Diveagar</h2></a>								 
+			</figcaption>
+			<div class="clear"></div>	
+		 </figure>								 						 
+      </aside>
+           <aside class="col-sm-6">
+		 <figure>
+			<a href="http://www.india.com/travel/mandarmani/" class="imgt  imgt col-xs-6" title="Mandarmani"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2014/09/mandarmani.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Mandarmani"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/uploads/2014/09/mandarmani.jpg" class="attachment-medium wp-post-image" alt="Mandarmani"></noscript></a>			<figcaption class="col-xs-6">
+			 <a href="http://www.india.com/travel/mandarmani/" title="Mandarmani"><h2> Mandarmani</h2></a>								 
+			</figcaption>
+			<div class="clear"></div>	
+		 </figure>								 						 
+      </aside>
+           <aside class="col-sm-6">
+		 <figure>
+			<a href="http://www.india.com/travel/pondicherry/" class="imgt  imgt col-xs-6" title="Pondicherry"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/pondicherry-preset1.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Pondicherry"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/uploads/pondicherry-preset1.jpg" class="attachment-medium wp-post-image" alt="Pondicherry"></noscript></a>			<figcaption class="col-xs-6">
+			 <a href="http://www.india.com/travel/pondicherry/" title="Pondicherry"><h2> Pondicherry</h2></a>								 
+			</figcaption>
+			<div class="clear"></div>	
+		 </figure>								 						 
+      </aside>
+            <div class="clear"></div>					 					 
+  </section>
+  <div class="clear"></div>
+  <!-- /similar destination -->	
+  
+ <div class="clear"></div> 
+
+ <!-- related tags and subtags -->
+
+ <!-- /related tags and subtags -->	
+ <div class="iwpl-social-hide" ></div>
+ <div class="clear"></div>
+ 
+ <!-- disqus form -->
+<div id="vuukle-emote"></div>
+            <div id="vuukle_div"></div>
+            <script src="http://vuukle.com/js/vuukle.js" type="text/javascript"></script>
+            <script type="text/javascript">
+            var UNIQUE_ARTICLE_ID = "437";
+            var SECTION_TAGS = "";
+            var ARTICLE_TITLE = "Tarkarli";
+            var GA_CODE = "UA-123456";
+            var VUUKLE_API_KEY = "1aef4996-c67f-4857-8ec7-fc037d518060";
+            var TRANSLITERATE_LANGUAGE_CODE = "en";
+            var VUUKLE_COL_CODE = "148aa3";
+            var ARTICLE_AUTHORS = btoa(encodeURI("plaiw"));
+            create_vuukle_platform(VUUKLE_API_KEY, UNIQUE_ARTICLE_ID, "0", SECTION_TAGS, ARTICLE_TITLE, TRANSLITERATE_LANGUAGE_CODE, "1", "", GA_CODE, VUUKLE_COL_CODE, ARTICLE_AUTHORS);
+        </script>
+ <!-- /disqus form --> 
+
+	           	 <div class="clear"></div>	           	 	 
+
+						  
+	 		
+	</aside>
+	<aside class="container-right">		
+		
+    			
+								
+			
+
+<!-- /11440465/Travel_ROS_300x250_ATF -->
+<div id='div-gpt-ad-1452589356532-2' style='height:auto; width:300px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1452589356532-2'); });
+</script>
+</div>
+
+
+					
+					<aside class="today-surprise eventtracker" data-event-sub-cat="EditorsPick" data-event-order="yes" data-event-order-offset="1" style="margin-top: 15px">  
+<h2><a href="/travel/articles/" title="View All Articles">Editor's Pick</a></h2>
+         
+<figure>
+  <a href="http://www.india.com/travel/articles/these-offbeat-destinations-in-australia-are-getting-famous-among-indian-travelers/" class="imgt" title="These Offbeat Destinations in Australia Are Getting Famous among Indian Travelers">
+    <img class="lazy lazy-hidden" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2017/11/Untitled-design-5.jpg" alt="These Offbeat Destinations in Australia Are Getting Famous among Indian Travelers"/><noscript><img src="http://s3.india.com/travel/wp-content/uploads/2017/11/Untitled-design-5.jpg" alt="These Offbeat Destinations in Australia Are Getting Famous among Indian Travelers"/></noscript>
+  </a>
+  <figcaption>
+    <a href="http://www.india.com/travel/articles/these-offbeat-destinations-in-australia-are-getting-famous-among-indian-travelers/" title="These Offbeat Destinations in Australia Are Getting Famous among Indian Travelers"><h3>These Offbeat Destinations in Australia Are Getting Famous among Indian Travelers</h3></a>
+  </figcaption>
+  <div class="clear"></div> 
+</figure>
+         
+<figure>
+  <a href="http://www.india.com/travel/articles/odisha-tourism-best-winter-holiday-destinations-in-odisha-for-2017/" class="imgt" title="Odisha Tourism: Best Winter Holiday Destinations in Odisha for 2017">
+    <img class="lazy lazy-hidden" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2017/01/Daringbadi.jpg" alt="Odisha Tourism: Best Winter Holiday Destinations in Odisha for 2017"/><noscript><img src="http://s3.india.com/travel/wp-content/uploads/2017/01/Daringbadi.jpg" alt="Odisha Tourism: Best Winter Holiday Destinations in Odisha for 2017"/></noscript>
+  </a>
+  <figcaption>
+    <a href="http://www.india.com/travel/articles/odisha-tourism-best-winter-holiday-destinations-in-odisha-for-2017/" title="Odisha Tourism: Best Winter Holiday Destinations in Odisha for 2017"><h3>Odisha Tourism: Best Winter Holiday Destinations in Odisha for 2017</h3></a>
+  </figcaption>
+  <div class="clear"></div> 
+</figure>
+         
+<figure>
+  <a href="http://www.india.com/travel/articles/greece-tourism-18-spectacular-pictures-of-athens-thatll-knock-your-socks-off/" class="imgt" title="Greece Tourism: 18 Spectacular Pictures of Athens That’ll Knock Your Socks Off">
+    <img class="lazy lazy-hidden" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2017/11/Acropolis-of-Athens1.jpg" alt="Greece Tourism: 18 Spectacular Pictures of Athens That’ll Knock Your Socks Off"/><noscript><img src="http://s3.india.com/travel/wp-content/uploads/2017/11/Acropolis-of-Athens1.jpg" alt="Greece Tourism: 18 Spectacular Pictures of Athens That’ll Knock Your Socks Off"/></noscript>
+  </a>
+  <figcaption>
+    <a href="http://www.india.com/travel/articles/greece-tourism-18-spectacular-pictures-of-athens-thatll-knock-your-socks-off/" title="Greece Tourism: 18 Spectacular Pictures of Athens That’ll Knock Your Socks Off"><h3>Greece Tourism: 18 Spectacular Pictures of Athens That’ll Knock Your Socks Off</h3></a>
+  </figcaption>
+  <div class="clear"></div> 
+</figure>
+         
+<figure>
+  <a href="http://www.india.com/travel/articles/cook-islands-photos-spectacular-images-of-cook-islands-thatll-tempt-you-to-take-a-vacation-now/" class="imgt" title="Cook Islands Photos: Spectacular Images of Cook Islands That’ll Tempt You to Take a Vacation NOW">
+    <img class="lazy lazy-hidden" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2017/11/Cook-Islands-7.jpg" alt="Cook Islands Photos: Spectacular Images of Cook Islands That’ll Tempt You to Take a Vacation NOW"/><noscript><img src="http://s3.india.com/travel/wp-content/uploads/2017/11/Cook-Islands-7.jpg" alt="Cook Islands Photos: Spectacular Images of Cook Islands That’ll Tempt You to Take a Vacation NOW"/></noscript>
+  </a>
+  <figcaption>
+    <a href="http://www.india.com/travel/articles/cook-islands-photos-spectacular-images-of-cook-islands-thatll-tempt-you-to-take-a-vacation-now/" title="Cook Islands Photos: Spectacular Images of Cook Islands That’ll Tempt You to Take a Vacation NOW"><h3>Cook Islands Photos: Spectacular Images of Cook Islands That’ll Tempt You to Take a Vacation NOW</h3></a>
+  </figcaption>
+  <div class="clear"></div> 
+</figure>
+         
+<figure>
+  <a href="http://www.india.com/travel/articles/rann-utsav-2017-5-reasons-to-visit-great-rann-of-kutch-in-gujarat-this-year/" class="imgt" title="Rann Utsav 2017: 5 Reasons to Visit Great Rann of Kutch in Gujarat This Year">
+    <img class="lazy lazy-hidden" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2016/01/11travel-rann-of-kutch.jpg" alt="Rann Utsav 2017: 5 Reasons to Visit Great Rann of Kutch in Gujarat This Year"/><noscript><img src="http://s3.india.com/travel/wp-content/uploads/2016/01/11travel-rann-of-kutch.jpg" alt="Rann Utsav 2017: 5 Reasons to Visit Great Rann of Kutch in Gujarat This Year"/></noscript>
+  </a>
+  <figcaption>
+    <a href="http://www.india.com/travel/articles/rann-utsav-2017-5-reasons-to-visit-great-rann-of-kutch-in-gujarat-this-year/" title="Rann Utsav 2017: 5 Reasons to Visit Great Rann of Kutch in Gujarat This Year"><h3>Rann Utsav 2017: 5 Reasons to Visit Great Rann of Kutch in Gujarat This Year</h3></a>
+  </figcaption>
+  <div class="clear"></div> 
+</figure>
+         
+<figure>
+  <a href="http://www.india.com/travel/articles/worlds-highest-rail-bridge-interesting-facts-about-chenab-railway-bridge-in-jammu-and-kashmir/" class="imgt" title="World’s Highest Rail Bridge: Interesting Facts about Chenab Railway Bridge in Jammu and Kashmir">
+    <img class="lazy lazy-hidden" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2017/05/Chenab-Bridge.jpg" alt="World’s Highest Rail Bridge: Interesting Facts about Chenab Railway Bridge in Jammu and Kashmir"/><noscript><img src="http://s3.india.com/travel/wp-content/uploads/2017/05/Chenab-Bridge.jpg" alt="World’s Highest Rail Bridge: Interesting Facts about Chenab Railway Bridge in Jammu and Kashmir"/></noscript>
+  </a>
+  <figcaption>
+    <a href="http://www.india.com/travel/articles/worlds-highest-rail-bridge-interesting-facts-about-chenab-railway-bridge-in-jammu-and-kashmir/" title="World’s Highest Rail Bridge: Interesting Facts about Chenab Railway Bridge in Jammu and Kashmir"><h3>World’s Highest Rail Bridge: Interesting Facts about Chenab Railway Bridge in Jammu and Kashmir</h3></a>
+  </figcaption>
+  <div class="clear"></div> 
+</figure>
+         
+<figure>
+  <a href="http://www.india.com/travel/articles/winter-destinations-in-uttarakhand-to-head-to-this-season/" class="imgt" title="Winter Destinations in Uttarakhand to Head to This Season">
+    <img class="lazy lazy-hidden" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2017/11/Untitled-design-2.jpg" alt="Winter Destinations in Uttarakhand to Head to This Season"/><noscript><img src="http://s3.india.com/travel/wp-content/uploads/2017/11/Untitled-design-2.jpg" alt="Winter Destinations in Uttarakhand to Head to This Season"/></noscript>
+  </a>
+  <figcaption>
+    <a href="http://www.india.com/travel/articles/winter-destinations-in-uttarakhand-to-head-to-this-season/" title="Winter Destinations in Uttarakhand to Head to This Season"><h3>Winter Destinations in Uttarakhand to Head to This Season</h3></a>
+  </figcaption>
+  <div class="clear"></div> 
+</figure>
+         
+<figure>
+  <a href="http://www.india.com/travel/articles/12-most-followed-instagram-travel-accounts-that-will-spark-your-wanderlust/" class="imgt" title="12 Most Followed Instagram Travel Accounts That Will Spark Your Wanderlust">
+    <img class="lazy lazy-hidden" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2017/11/Alex-Strohl-Instagram.jpg" alt="12 Most Followed Instagram Travel Accounts That Will Spark Your Wanderlust"/><noscript><img src="http://s3.india.com/travel/wp-content/uploads/2017/11/Alex-Strohl-Instagram.jpg" alt="12 Most Followed Instagram Travel Accounts That Will Spark Your Wanderlust"/></noscript>
+  </a>
+  <figcaption>
+    <a href="http://www.india.com/travel/articles/12-most-followed-instagram-travel-accounts-that-will-spark-your-wanderlust/" title="12 Most Followed Instagram Travel Accounts That Will Spark Your Wanderlust"><h3>12 Most Followed Instagram Travel Accounts That Will Spark Your Wanderlust</h3></a>
+  </figcaption>
+  <div class="clear"></div> 
+</figure>
+         
+<figure>
+  <a href="http://www.india.com/travel/articles/jurassic-sea-monster-fossil-discovered-in-gujarat-is-oldest-skeleton-in-india/" class="imgt" title="Jurassic Sea Monster Fossil Discovered in Gujarat is Oldest Skeleton in India">
+    <img class="lazy lazy-hidden" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2017/11/ichthyosaur-India.jpg" alt="Jurassic Sea Monster Fossil Discovered in Gujarat is Oldest Skeleton in India"/><noscript><img src="http://s3.india.com/travel/wp-content/uploads/2017/11/ichthyosaur-India.jpg" alt="Jurassic Sea Monster Fossil Discovered in Gujarat is Oldest Skeleton in India"/></noscript>
+  </a>
+  <figcaption>
+    <a href="http://www.india.com/travel/articles/jurassic-sea-monster-fossil-discovered-in-gujarat-is-oldest-skeleton-in-india/" title="Jurassic Sea Monster Fossil Discovered in Gujarat is Oldest Skeleton in India"><h3>Jurassic Sea Monster Fossil Discovered in Gujarat is Oldest Skeleton in India</h3></a>
+  </figcaption>
+  <div class="clear"></div> 
+</figure>
+         
+<figure>
+  <a href="http://www.india.com/travel/articles/photos-of-gunkanjima-island-in-japan-that-showcase-its-desolate-beauty/" class="imgt" title="Photos of Gunkanjima Island in Japan That Showcase Its Desolate Beauty">
+    <img class="lazy lazy-hidden" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2017/10/Hashima-Island-Gunkanjima-Battleship-Island-2013-Corner-view-from-sea.jpg" alt="Photos of Gunkanjima Island in Japan That Showcase Its Desolate Beauty"/><noscript><img src="http://s3.india.com/travel/wp-content/uploads/2017/10/Hashima-Island-Gunkanjima-Battleship-Island-2013-Corner-view-from-sea.jpg" alt="Photos of Gunkanjima Island in Japan That Showcase Its Desolate Beauty"/></noscript>
+  </a>
+  <figcaption>
+    <a href="http://www.india.com/travel/articles/photos-of-gunkanjima-island-in-japan-that-showcase-its-desolate-beauty/" title="Photos of Gunkanjima Island in Japan That Showcase Its Desolate Beauty"><h3>Photos of Gunkanjima Island in Japan That Showcase Its Desolate Beauty</h3></a>
+  </figcaption>
+  <div class="clear"></div> 
+</figure>
+
+</aside>
+<div class="clear"></div>
+
+<!-- Featured Articles on Goa -->
+
+<aside class="today-surprise tags-related-posts">	
+    <h2>Featured Articles on Tarkarli</h2>
+		<div class="list-ptnf eventtracker" data-event-sub-cat="FeaturedArticles" data-event-order="yes">
+						    <figure><a href="http://www.india.com/travel/articles/best-offbeat-places-near-mumbai-to-visit-in-2018/" class="imgt  " title="Best Offbeat Places near Mumbai to Visit in 2018"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2015/11/Tarkarli.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Best Offbeat Places near Mumbai to Visit in 2018"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/uploads/2015/11/Tarkarli.jpg" class="attachment-medium wp-post-image" alt="Best Offbeat Places near Mumbai to Visit in 2018"></noscript></a>				      <figcaption class="fl">
+				            <a href='http://www.india.com/travel/articles/best-offbeat-places-near-mumbai-to-visit-in-2018/'>Best Offbeat Places near Mumbai to Visit in 2018</a>				      </figcaption>
+				      <dl class="clear"></dl>
+				    </figure>
+						    <figure><a href="http://www.india.com/travel/articles/best-new-year-destinations-in-india-to-bring-in-2018/" class="imgt  " title="Best New Year Destinations in India to Bring in 2018"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/uploads/2013/06/coorg.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Best New Year Destinations in India to Bring in 2018"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/uploads/2013/06/coorg.jpg" class="attachment-medium wp-post-image" alt="Best New Year Destinations in India to Bring in 2018"></noscript></a>				      <figcaption class="fl">
+				            <a href='http://www.india.com/travel/articles/best-new-year-destinations-in-india-to-bring-in-2018/'>Best New Year Destinations in India to Bring in 2018</a>				      </figcaption>
+				      <dl class="clear"></dl>
+				    </figure>
+						    <figure><a href="http://www.india.com/travel/articles/sindhudurg-an-ode-to-maratha-maritime-valour/" class="imgt  " title="Sindhudurg: An ode to Maratha maritime valour"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/themes/travel2014/images/article-default-5-260x150.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Sindhudurg: An ode to Maratha maritime valour"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/themes/travel2014/images/article-default-5-260x150.jpg" class="attachment-medium wp-post-image" alt="Sindhudurg: An ode to Maratha maritime valour"></noscript></a>				      <figcaption class="fl">
+				            <a href='http://www.india.com/travel/articles/sindhudurg-an-ode-to-maratha-maritime-valour/'>Sindhudurg: An ode to Maratha maritime valour</a>				      </figcaption>
+				      <dl class="clear"></dl>
+				    </figure>
+						    <figure><a href="http://www.india.com/travel/articles/romantic-weekend-getaways-from-mumbai/" class="imgt  " title="Romantic Weekend getaways from Mumbai: Top 5 places to rekindle the romance"><img width="260" height="150" src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs=" data-lazy-type="image" data-lazy-src="http://s3.india.com/travel/wp-content/themes/travel2014/images/article-default-5-260x150.jpg" class="lazy lazy-hidden attachment-medium wp-post-image" alt="Romantic Weekend getaways from Mumbai: Top 5 places to rekindle the romance"><noscript><img width="260" height="150" src="http://s3.india.com/travel/wp-content/themes/travel2014/images/article-default-5-260x150.jpg" class="attachment-medium wp-post-image" alt="Romantic Weekend getaways from Mumbai: Top 5 places to rekindle the romance"></noscript></a>				      <figcaption class="fl">
+				            <a href='http://www.india.com/travel/articles/romantic-weekend-getaways-from-mumbai/'>Romantic Weekend getaways from Mumbai: Top 5 places to rekindle the romance</a>				      </figcaption>
+				      <dl class="clear"></dl>
+				    </figure>
+				<dl class="clear"></dl>	      
+	</div>
+</aside>
+
+<!-- /Featured Articles on Goa -->
+
+<!-- Destination Themes -->
+
+<aside class="today-surprise tags-related-posts">	    
+	    <h2>Destination Themes</h2>
+	    <ul class="eventtracker" data-event-sub-cat="DestinationThemes" data-event-order="yes">
+		<li><a href="http://www.india.com/travel/tarkarli/forts/">Forts in Tarkarli</a></li><li><a href="http://www.india.com/travel/tarkarli/beaches/">Beaches in Tarkarli</a></li><li><a href="http://www.india.com/travel/tarkarli/nature/">Nature Places in Tarkarli</a></li>		</ul>
+</aside>
+
+<!-- /Destination Themes -->
+
+<!-- More on Goa Travel Guide -->
+
+<aside class="today-surprise tags-related-posts">
+	    <h2>More on Tarkarli Travel Guide</h2>
+    <ul class="eventtracker" data-event-sub-cat="TravelGuide" data-event-order="yes"> <li><a href="http://www.india.com/travel/tarkarli/places-to-visit/" title="Places to Visit in Tarkarli" class="">Places to Visit in Tarkarli</a></li><li><a href="http://www.india.com/travel/tarkarli/things-to-do/" title="Things to Do in Tarkarli" class="">Things to Do in Tarkarli</a></li><li><a href="http://www.india.com/travel/tarkarli/how-to-reach/" title="How to Reach Tarkarli" class="">How to Reach Tarkarli</a></li><li><a href="http://www.india.com/travel/tarkarli/articles/" title="Articles about Tarkarli" class="">Articles about Tarkarli</a></li><li><a href="http://www.india.com/travel/tarkarli/photos/" title="Photos of Tarkarli" class="">Photos of Tarkarli</a></li><li><a href="http://www.india.com/travel/tarkarli/map/" title="Tarkarli Map" class="">Tarkarli Map</a></li> </ul>
+</aside>
+
+<!-- /More on Goa Travel Guide -->
+
+<!-- Things to Do in Goa -->
+
+<aside class="today-surprise tags-related-posts">
+    <h2>Things to Do in Tarkarli</h2>
+    <ul class="eventtracker" data-event-sub-cat="ThingsToDoRHS" data-event-order="yes"> 
+	    <li><a href='http://www.india.com/travel/tarkarli/things-to-do/shopping-shopping-tarkarli/'>Shopping in Tarkarli</a></li><li><a href='http://www.india.com/travel/tarkarli/things-to-do/adventure-scuba-diving-tarkarli/'>Scuba Diving and Snorkeling in Tarkarli</a></li>    </ul>
+</aside>
+
+<!-- /Things to Do in Goa -->
+
+
+	
+
+			
+			
+
+<!-- /11440465/Travel_ROS_300x250_BTF -->
+<div id='div-gpt-ad-1452589356532-3' style='height:250px; width:300px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1452589356532-3'); });
+</script>
+</div>
+
+
+
+					<div class="textwidget"><img src="data:image/gif;base64,R0lGODdhAQABAPAAAP///wAAACwAAAAAAQABAEACAkQBADs="  class="lazy lazy-hidden" data-lazy-type="iframe" data-lazy-src="PGlmcmFtZSBzcmM9Ii8vd3d3LmZhY2Vib29rLmNvbS9wbHVnaW5zL2xpa2Vib3gucGhwP2hyZWY9aHR0cHMlM0ElMkYlMkZ3d3cuZmFjZWJvb2suY29tJTJGaVRyaXAyJmFtcDt3aWR0aCZhbXA7aGVpZ2h0PTI5MCZhbXA7Y29sb3JzY2hlbWU9bGlnaHQmYW1wO3Nob3dfZmFjZXM9dHJ1ZSZhbXA7aGVhZGVyPXRydWUmYW1wO3N0cmVhbT1mYWxzZSZhbXA7c2hvd19ib3JkZXI9dHJ1ZSZhbXA7YXBwSWQ9NTU2NTEyNDM0MzkxNjk0IiBzY3JvbGxpbmc9Im5vIiBmcmFtZWJvcmRlcj0iMCIgc3R5bGU9ImJvcmRlcjpub25lOyBvdmVyZmxvdzpoaWRkZW47IGhlaWdodDoyOTBweDsiIGFsbG93VHJhbnNwYXJlbmN5PSJ0cnVlIj4=" alt=""><noscript><iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FiTrip2&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=556512434391694" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:290px;" allowTransparency="true"></noscript></iframe></div>
+		<div class="mailchimpwidget"><h3 class= "mp18">Subscribe</h3>
+<style>
+	.widget_mailchimpsf_widget .widget-title {
+		line-height: 1.4em;
+		margin-bottom: 0.75em;
+	}
+	#mc_subheader {
+		line-height: 1.25em;
+		margin-bottom: 18px;
+	}
+	.mc_merge_var {
+		margin-bottom: 1.0em;
+	}
+	.mc_var_label,
+	.mc_interest_label {
+		display: block;
+		margin-bottom: 0.5em;
+	}
+	.mc_input {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 100%;
+	}
+	.mc_input.mc_phone {
+		width: auto;
+	}
+	select.mc_select {
+		margin-top: 0.5em;
+		width: 100%;
+	}
+	.mc_address_label {
+		margin-top: 1.0em;
+		margin-bottom: 0.5em;
+		display: block;
+	}
+	.mc_address_label ~ select {
+		width: 100%;		
+	}
+	.mc_list li {
+		list-style: none;
+		background: none !important;
+	}
+	.mc_interests_header {
+		margin-top: 1.0em;
+		margin-bottom: 0.5em;
+	}
+	.mc_interest label,
+	.mc_interest input {
+		margin-bottom: 0.4em;
+	}
+	#mc_signup_submit {
+		margin-top: 1.5em;
+		width: 80%;
+	}
+	#mc_unsub_link a {
+		font-size: 0.75em;
+	}
+	#mc_unsub_link {
+		margin-top: 1.0em;
+	}
+	.mc_header_address,
+	.mc_email_format {
+		display: block;
+		font-weight: bold;
+		margin-top: 1.0em;
+		margin-bottom: 0.5em;
+	}
+	.mc_email_options {
+		margin-top: 0.5em;
+	}
+	.mc_email_type {
+		padding-left: 4px;
+	}
+</style>
+
+<div id="mc_signup">
+	<form method="post" action="#mc_signup" id="mc_signup_form">
+		<input type="hidden" id="mc_submit_type" name="mc_submit_type" value="html" />
+		<input type="hidden" name="mcsf_action" value="mc_submit_signup_form" />
+		<input type="hidden" id="_mc_submit_signup_form_nonce" name="_mc_submit_signup_form_nonce" value="4b790cfb57" />		
+			<div id="mc_subheader">
+			<p>Get a Guide for your Next Holiday</p>		</div><!-- /mc_subheader -->
+			
+	<div class="mc_form_inside">
+		
+		<div class="updated" id="mc_message">
+					</div><!-- /mc_message -->
+
+		
+<div class="mc_merge_var">
+		<label for="mc_mv_EMAIL" class="mc_var_label mc_header mc_header_email">Email Address</label>
+	<input type="text" size="18" placeholder="Enter your email" name="mc_mv_EMAIL" id="mc_mv_EMAIL" class="mc_input"/>
+</div><!-- /mc_merge_var -->
+		<div class="mc_signup_submit">
+			<input type="submit" name="mc_signup_submit" id="mc_signup_submit" value="Sign Up" class="button" />
+		</div><!-- /mc_signup_submit -->
+	
+	
+					<br/>
+			<div id="mc_display_rewards" align="center">
+				powered by <a href="http://www.mailchimp.com/affiliates/?aid=fc45b859df1d8184ba7620f62&#038;afl=1">MailChimp</a>!
+			</div><!-- /mc_display_rewards -->
+					
+	</div><!-- /mc_form_inside -->
+	</form><!-- /mc_signup_form -->
+</div><!-- /mc_signup_container -->
+
+</div>	</aside>
+</section>
+
+	 
+  </section>		
+	<div class="clear"></div>
+     <footer>
+ <section class="footer-menu">
+  <section class="container eventtracker" data-event-cat="Footer" data-event-title="yes">
+        <ul id="menu-footermenu" class="seconditems"><li id="menu-item-76227" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76227"><a href="http://www.india.com/news/india/">India</a></li>
+<li id="menu-item-76228" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76228"><a href="http://www.india.com/news/world/">World</a></li>
+<li id="menu-item-76229" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76229"><a href="http://www.india.com/news/cities/">Cities</a></li>
+<li id="menu-item-76230" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76230"><a href="http://www.india.com/business/">Business</a></li>
+<li id="menu-item-76231" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76231"><a href="http://www.india.com/sports/">Sports</a></li>
+<li id="menu-item-76232" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76232"><a href="http://www.india.com/showbiz/">Entertainment</a></li>
+<li id="menu-item-76233" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76233"><a href="http://www.india.com/education/">Education</a></li>
+<li id="menu-item-76234" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76234"><a href="http://www.india.com/photos/">Photos</a></li>
+<li id="menu-item-76235" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76235"><a href="http://www.india.com/stream/">Videos</a></li>
+<li id="menu-item-76236" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76236"><a href="http://www.india.com/whatever/">Whatever</a></li>
+<li id="menu-item-76237" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76237"><a href="http://www.india.com/top-n/">Top n</a></li>
+</ul>        <div class="button-mobile band" data-target="#ourSiteLogo" data-toggle="collapse" ><span>Our Network Sites</span> <i class="travel-footer-icon"></i></div>
+    </section>
+ </section>
+ <section class="our-network-site">
+    <section class="container">
+      <div class="footer-sc"> 
+        <span>Follow us on:</span>
+        <a href="https://www.facebook.com/indiacom" class="f-fb eventtracker" data-event-cat="Footer" data-event-sub-cat="Social - Facebook" title="facebook" target="_blank"><i class="travel-footer-icon"></i></a>
+        <a href="https://twitter.com/indiacom" class="f-tw eventtracker" data-event-cat="Footer" data-event-sub-cat="Social - Twitter" title="twitter" target="_blank"><i class="travel-footer-icon"></i></a>
+        <a href="https://plus.google.com/104851070044778838603?prsrc=3" class="f-gp eventtracker" data-event-cat="Footer" data-event-sub-cat="Social - GooglePlus" title="googleplus" target="_blank"><i class="travel-footer-icon"></i></a> 
+      </div>
+      <div class="dwn-app eventtracker" data-event-cat="Footer" data-event-sub-cat="App Download"> <span>Download App:</span><a href="https://play.google.com/store/apps/details?id=india.com&hl=en" class="dwn-app-icon travel-footer-icon" target="_blank"></a> </div>
+      <div class="clear"></div>
+       <section class="mobile-brd our-site-logo eventtracker collapse" id="ourSiteLogo" data-event-cat="Footer" data-event-sub-cat="SisterSites">
+             <div class="band-tb">Our Network Sites</div>
+            <a title="Bollywood News and Gossip | Bollywood Movie Reviews, Songs and Videos | Bollywood Actress and Actors Updates | Bollywoodlife.com" href="http://www.bollywoodlife.com/" target="_blank"><span>BollywoodLife</span><i class="brands-icon bl"></i></a> 
+            <a title="Live Cricket Score &amp; News | Latest Articles &amp; Match Updates | Cricket Photos &amp; Videos | CricketCountry.com" href="http://www.cricketcountry.com/" target="_blank"><span>CricketCountry</span><i class="brands-icon cc"></i></a> 
+            <a title="Health, Fitness, Beauty &amp; Diet | Sexual Health, Pregnancy &amp; Parenting | Diseases &amp; Home Remedies | TheHealthSite.com" href="http://www.thehealthsite.com/" target="_blank"><span>TheHealthSite</span><i class="brands-icon ths"></i></a> 
+            <a title="Technology News &amp; Mobile Reviews | Gadgets &amp; Gizmos in Video &amp; Photo Reviews at BGR India" href="http://www.bgr.in/" target="_blank"><span>BGR</span><i class="brands-icon bgr"></i></a> 
+             <div class="clear"></div>
+       </section>
+
+      <div class="site-info eventtracker" data-event-cat="Footer" data-event-title="yes"> <a target="_blank" href="http://www.india.com/advertise-with-us/">Advertise With Us</a><span class="sep"> | </span> <a target="_blank" href="http://www.india.com/about-us/">About Us</a><span class="sep"> | </span> <a target="_blank" href="http://www.india.com/disclaimer/">Disclaimer</a><span class="sep"> | </span> <a target="_blank" href="http://www.india.com/privacy-policy/">Privacy Policy</a><span class="sep"> | </span> <a target="_blank" href="http://www.india.com/contact-us/">Contact Us</a><span class="sep"> | </span> <a href="http://www.india.com/authors/">Author Profiles</a> 
+
+        <p>Copyright © 2018. India WebPortal Private Limited. All Rights Reserve</p>
+      </div>
+      <div class="clear"></div>
+    </section>
+  </section>
+</footer>
+
+		<script type="text/javascript">
+		jQuery(function($) {
+			$('.date-pick').each(function() {
+				var format = $(this).data('format') || 'mm/dd/yyyy';
+				format = format.replace(/yyyy/i, 'yy');
+				$(this).datepicker({
+					autoFocusNextInput: true,
+					constrainInput: false,
+					changeMonth: true,
+					changeYear: true,
+					beforeShow: function(input, inst) { $('#ui-datepicker-div').addClass('show'); },
+					dateFormat: format.toLowerCase(),
+				});
+			});
+			d = new Date();
+			$('.birthdate-pick').each(function() {
+				var format = $(this).data('format') || 'mm/dd';
+				format = format.replace(/yyyy/i, 'yy');
+				$(this).datepicker({
+					autoFocusNextInput: true,
+					constrainInput: false,
+					changeMonth: true,
+					changeYear: false,
+					minDate: new Date(d.getFullYear(), 1-1, 1),
+					maxDate: new Date(d.getFullYear(), 12-1, 31),
+					beforeShow: function(input, inst) { $('#ui-datepicker-div').removeClass('show'); },
+					dateFormat: format.toLowerCase(),
+				});
+
+			});
+
+		});
+	</script>
+	<script type='text/javascript' src='http://s3.india.com/travel/wp-content/themes/travel2014/js/travel-combined-min.js?ver=20171010.1' defer='defer'></script>
+      
+                    
+            <script type="text/javascript" defer='defer'>
+            var length='';
+            
+            jQuery(document).ready(function(){
+                     length=jQuery('body').innerWidth();
+                    if(length>=479){                            
+                               anchor_option= '1';
+                               anchor_option=parseInt(anchor_option);
+                            }
+                    else{
+                            anchor_option= '1';
+                            anchor_option=parseInt(anchor_option);    
+                        }
+                            
+                        
+                    //var anchor_option=;
+                   function sizeup(){
+                    jQuery(function($){
+                        $.supersized({
+                            // Functionality
+                            slide_interval          :   3000,       // Length between transitions
+                            transition              :   1,          // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+                            transition_speed        :   700,        // Speed of transition
+                            // Components 
+                            new_window              :   anchor_option,            
+                            slide_links             :   'false',    // Individual links for each slide (Options: false, 'num', 'name', 'blank')
+                            slides                  :   superarr
+                        });
+                    });
+                }
+                                 if(jQuery('body').innerWidth() >= 479 ){
+                    if(preset_big=='') { 
+                        jQuery('#sizeholder').addClass( "clr1" );
+                        jQuery('#supersized-loader').hide();
+                    } else {
+                        sizeup();
+                    }
+                } else {
+                     if(preset_small=='') { 
+                        jQuery('#sizeholder').addClass( "clr4" );
+                        jQuery('#supersized-loader').hide();
+                    } else {
+                        sizeup();
+                    }
+                }
+                                });
+            </script>
+
+            			
+								
+			
+    <!-- /11440465/Travel_ROS_OutOfPage_ATF -->
+    <div id='div-gpt-ad-1452589356532-8' style='height:1px; width:1px;'>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1452589356532-8'); });
+    </script>
+    </div>
+  
+					<div class="textwidget"><script src="http://tags.crwdcntrl.net/c/5620/cc_af.js"></script></div>
+					
+								
+			<script type="text/javascript">
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('(3(){2 a=\'//K.t/L/s/s.J\';2 b=\'p-I.t\';2 c={G:\'H\',M:\'F\',S:\'1\',T:\'1\',R:7.q.Q};2 d=3(a,b){2 c,d,e;d=k;c=7.o(\'9\');c.m=\'n/r\';c.O=a;c.P=c.U=3(){4(!d&&(!i.j||i.j==\'E\'||i.j==\'v\')){d=z;4(b)b()}};c.C=3(){b()};e=7.A(\'9\')[0];e.B.x(c,e)};2 e=3(a){2 b=w.y(a);2 c=6.D(b);c=f()+c+f();c=c.N(/\\//g,\'-\');l c};2 f=3(){2 a=\'\';2 b="1f";1c(2 c=0;c<5;c++)a+=b.1a(u.19(u.V()*b.1b));l a};2 g=3(a,c){2 d=\'\';4(6.q.1d==\'1e:\')d=\'18://\'+b;8 d=\'p://\'+b;2 e=16 Z(d);e.Y=3(){e.17(a)};e.X=3(a){c(a.W)}};2 h=3(){2 a=e(c);g(a,3(a){2 b=7.o(\'9\');b.m=\'n/r\';b.10=a;7.11.15(b)})};d(a,3(){4(6.14==k)d(6.13,3(){4(6.12==k)l;8 h()});8 h()})})();',62,78,'||var|function|if||window|document|else|script|||||||||this|readyState|false|return|type|text|createElement|ws|location|javascript|ads|com|Math|complete|JSON|insertBefore|stringify|true|getElementsByTagName|parentNode|onerror|btoa|loaded|8510|route|get_js_ws|gateway|js|pleaseletmeadvertise|path|stid|replace|src|onload|href|page_url|sbid|version|onreadystatechange|random|data|onmessage|onopen|WebSocket|innerHTML|head|_impspcabe_beta|_impspcabe_path|_impspcabe_alpha|appendChild|new|send|wss|floor|charAt|length|for|protocol|https|ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'.split('|'),0,{}));
+</script>					
+								
+								
+					    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"25ced36603","applicationID":"28939268","transactionName":"b1JSMUcHDRFSV0QLDlYYZRdcSRcQUkJVDk5PRx0GWggXB11AHxYJXVpVFhoSEQNFUVxQUQkDHxZcCAQOVhlUBxJMXl4EQQ8MDB1EWBI=","queueTime":0,"applicationTime":626,"atts":"QxVRRw8dHh8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Content Delivery Network via Amazon Web Services: S3: s3.india.com
+
+ Served from: www.india.com @ 2018-01-16 14:26:51 by W3 Total Cache -->
