@@ -193,7 +193,12 @@
 			}).on('hide.bs.tab', function () {
 		    destroy_owl(jQuery('#owl3'));
 			});
-
+		jQuery('a[href="#nearBy"]').on('shown.bs.tab', function () {
+		    initialize_owl(jQuery('#owl4'));
+		    console.log('nice');
+			}).on('hide.bs.tab', function () {
+		    destroy_owl(jQuery('#owl3'));
+			});
 
 
 		function initialize_owl(el) {
