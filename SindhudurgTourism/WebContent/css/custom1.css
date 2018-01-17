@@ -81,3 +81,7 @@ h1 {
   background: url("../images/back.jpg");
   opacity: 0.5;
 }
+
+.section1 {
+  padding: 10em 0;
+}
