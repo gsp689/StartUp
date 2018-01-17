@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" value="example, news, ticker, newsticker, javascript, scrolling, text, back, forth" />
+<title>Sindhudurg Tourism &mdash; Forts</title>
+<!-- <meta name="description" content="Free Bootstrap Theme by ProBootstrap.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template"> -->
+
+<link
+	href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans"
+	rel="stylesheet">
+<link rel="stylesheet" href="css/styles-merged.css">
+<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700'
+	rel='stylesheet' type='text/css'>
+<link href='css/custom1.css' rel='stylesheet' type='text/css'>
+<link href='css/custom2.css' rel='stylesheet' type='text/css'>
+<!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+    
+    <!--cool carousel for news  -->
+    
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
+		<script src="js/cool/jquery.carouFredSel-6.0.4-packed.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function() {
+				var _scroll = {
+					delay: 1000,
+					easing: 'linear',
+					items: 1,
+					duration: 0.07,
+					timeoutDuration: 0,
+					pauseOnHover: 'immediate'
+				};
+				$('#ticker-1').carouFredSel({
+					width: 1000,
+					align: false,
+					items: {
+						width: 'variable',
+						height: 35,
+						visible: 1
+					},
+					scroll: _scroll
+				});
+
+				$('#ticker-2').carouFredSel({
+					width: 1000,
+					align: false,
+					circular: false,
+					items: {
+						width: 'variable',
+						height: 35,
+						visible: 2
+					},
+					scroll: _scroll
+				});
+
+				//	set carousels to be 100% wide
+				$('.caroufredsel_wrapper').css('width', '100%');
+
+				//	set a large width on the last DD so the ticker won't show the first item at the end
+				$('#ticker-2 dd:last').width(2000);
+			});
+		</script>
+		
+</head>
+<body>
+<div class="probootstrap-search" id="probootstrap-search">
+		<a href="#" class="probootstrap-close js-probootstrap-close"><i
+			class="icon-cross"></i></a>
+		<form action="#">
+			<input type="search" name="s" id="search"
+				placeholder="Search a keyword and hit enter...">
+		</form>
+	</div>
+	
+	<div class="probootstrap-page-wrapper">
+	
+	<!-- Fixed navbar -->
+		<div class="probootstrap-header-top">
+			<div class="container">
+				<div class="row">
+					<div
+						class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
+						<!-- <span><i class="icon-location2"></i>Brooklyn, NY 10036, United States</span>
+              <span><i class="icon-phone2"></i>+1-123-456-7890</span>
+              <span><i class="icon-mail"></i>info@probootstrap.com</span> -->
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
+						<ul>
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook2"></i></a></li>
+							<li><a href="#"><i class="icon-instagram2"></i></a></li>
+							<li><a href="#"><i class="icon-youtube"></i></a></li>
+							<li><a href="#"
+								class="probootstrap-search-icon js-probootstrap-search"><i
+									class="icon-search"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-default probootstrap-navbar upMenu"
+			style="background-size: contain !important" >
+			<div class="container">
+				<div class="navbar-header">
+					<div class="btn-more js-btn-more visible-xs">
+						<a href="#"><i class="icon-dots-three-vertical "></i></a>
+					</div>
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#navbar-collapse"
+						aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"
+						title="Sindhudurg Tourism">Sindhudurg Tourism</a>
+					<!-- <a class="navbar-brand1" href="index.html" title="ProBootstrap:Enlight"><h3>Sindhudurg Tourism</h3></a> -->
+				</div>
+
+				<div id="navbar-collapse" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html">I am Sindhudurg</a></li>
+						<li class="dropdown"><a href="#" data-toggle="dropdown"
+							class="dropdown-toggle">Tours</a>
+							<ul class="dropdown-menu">
+								<li><a href="oneDayTour.html">One Day Tour</a></li>
+								<li><a href="twoDayTour.html">Two Day Tour</a></li>
+								<li><a href="threeDayTour.html">Three Day Tour</a></li>
+								<li><a href="fourDayTour.html">Four Day Tour</a></li>
+								<!-- <li class="dropdown-submenu dropdown"><a href="#"
+									data-toggle="dropdown" class="dropdown-toggle"><span>Tours</span></a>
+									<ul class="dropdown-menu">
+										<li><a href="oneDayTour.html">One Day Tour</a></li>
+										<li><a href="#">Two Days Tour</a></li>
+										<li><a href="#">Three Days Tour</a></li>
+										<li><a href="#">Four Days Tour</a></li>
+									</ul></li>
+								<li><a href="news.html">News</a></li> -->
+							</ul></li>
+						<li class="dropdown"><a href="#" data-toggle="dropdown"
+							class="dropdown-toggle">Discover</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-submenu dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Destinations</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu dropdown">
+                    <a href="forts.html"   class="dropdown-toggle"><span> Forts</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="dropdown-submenu dropdown">
+                    <a href="#"  class="dropdown-toggle"><span>Wildlife</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="dropdown-submenu dropdown">
+                    <a href="#"  class="dropdown-toggle"><span>Beaches</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="dropdown-submenu dropdown">
+                    <a href="#"  class="dropdown-toggle"><span>Temples</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                    </ul>
+                  </li>
+							</ul></li>
+						
+						
+						<li class="dropdown"><a href="#" data-toggle="dropdown"
+							class="dropdown-toggle">Experience</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-submenu dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Fairs & Festivals</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Adventure</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="dropdown-submenu dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Heritage Properties</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                    </ul>
+                  </li>
+				</ul></li>
+						
+						
+						<li><a href="aboutUs.html">About Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	
+	
+	<section class="probootstrap-section" style="padding: 0em 0;">
+			<div class="" style="width: 100%;padding:1em;">
+				<div class="row">
+					<div class="col-md-12">
+						<div id="wrapper">
+
+							<div class="first">
+								<dl id="ticker-1" style="line-height:0">
+									<dt >News1</dt>
+									<dd>A news ticker (sometimes referred to as a
+										&quot;crawler&quot;) resides in the lower third of the
+										television screen space on television news networks dedicated
+										to presenting headlines or minor pieces of news.</dd>
+
+									<dt>News2</dt>
+									<dd>It may also refer to a long, thin scoreboard-style
+										display seen around the front of some offices or public
+										buildings.</dd>
+
+									<dt>News3</dt>
+									<dd>Since the growth in usage of the World Wide Web, news
+										tickers have largely syndicated news posts from the websites
+										of the broadcasting services which produce the broadcasts.</dd>
+								</dl>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+	
+	<section class="probootstrap-section section probootstrap-section-colored">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-left section-heading probootstrap-animate">
+              <h1>Forts to Explore!!</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+	
+	
+	<section class="probootstrap-section">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate">
+              <a href="#" class="probootstrap-featured-news-box">
+                <figure class="probootstrap-media">
+														<img src="images/forts/Vijaydurg fort.jpg"
+															alt="Free Bootstrap Template by ProBootstrap.com"
+															class="img-responsive">
+													</figure>
+													<div class="probootstrap-text">
+														<h3>Vijaydurg Fort</h3>
+														<p class="greetings1">Sprawling over an area of 48 acres, Vijaydurg, fort of victory, was once seized by the
+British following a bloody battle. They renamed it Fort Augustus. A dilapidated
+board at the entrance of the fort relates its history. One of the best views of the fort is
+from the jetty. The fort stretches out into the sea and a walk inside its precincts is
+worthwhile.
+Shivaji added triple rows of huge walls, umpteen towers and spacious inner buildings
+to it and strengthened it in the 17th century. Vijaydurg&#39;s beach is a stretch of about a
+kilometre with good views of the fort at the right and a small plateau with a hut to the
+left. Once naval bases, Vijaydurg and Sindhudurg bear testimony to Maharashtra&#39;s
+martial supremacy during Shivaji&#39;s reign</p>
+														<hr></hr>
+														<button type="button" class="btn btn-info"
+															data-toggle="modal" data-target="#acharaModal">Read
+															more</button>
+													</div>
+                
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate">
+              <a href="#" class="probootstrap-featured-news-box">
+                <figure class="probootstrap-media">
+														<img src="images/forts/Vijaydurg fort.jpg"
+															alt="Free Bootstrap Template by ProBootstrap.com"
+															class="img-responsive">
+													</figure>
+													<div class="probootstrap-text">
+														<h3>Vijaydurg Fort</h3>
+														<p class="greetings">Achara Beach. (22km north of
+															Malvan). Easily accessible by road. This beach is an
+															enchantress of other beaches in Sindhudurg</p>
+														<hr></hr>
+														<button type="button" class="btn btn-info"
+															data-toggle="modal" data-target="#acharaModal">Read
+															more</button>
+													</div>
+              </a>
+            </div>
+            <div class="clearfix visible-sm-block visible-xs-block"></div>
+            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate">
+              <a href="#" class="probootstrap-featured-news-box">
+               <figure class="probootstrap-media">
+														<img src="images/forts/Vijaydurg fort.jpg"
+															alt="Free Bootstrap Template by ProBootstrap.com"
+															class="img-responsive">
+													</figure>
+													<div class="probootstrap-text">
+														<h3>Vijaydurg Fort</h3>
+														<p class="greetings">Achara Beach. (22km north of
+															Malvan). Easily accessible by road. This beach is an
+															enchantress of other beaches in Sindhudurg</p>
+														<hr></hr>
+														<button type="button" class="btn btn-info"
+															data-toggle="modal" data-target="#acharaModal">Read
+															more</button>
+													</div>
+              </a>
+            </div>
+
+            <div class="clearfix visible-md-block"></div>
+            
+            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate">
+              <a href="#" class="probootstrap-featured-news-box">
+                <figure class="probootstrap-media">
+														<img src="images/forts/Vijaydurg fort.jpg"
+															alt="Free Bootstrap Template by ProBootstrap.com"
+															class="img-responsive">
+													</figure>
+													<div class="probootstrap-text">
+														<h3>Vijaydurg Fort</h3>
+														<p class="greetings">Achara Beach. (22km north of
+															Malvan). Easily accessible by road. This beach is an
+															enchantress of other beaches in Sindhudurg</p>
+														<hr></hr>
+														<button type="button" class="btn btn-info"
+															data-toggle="modal" data-target="#acharaModal">Read
+															more</button>
+													</div>
+              </a>
+            </div>
+            <div class="clearfix visible-sm-block visible-xs-block"></div>
+            
+            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate">
+              <a href="#" class="probootstrap-featured-news-box">
+                <figure class="probootstrap-media">
+														<img src="images/forts/Vijaydurg fort.jpg"
+															alt="Free Bootstrap Template by ProBootstrap.com"
+															class="img-responsive">
+													</figure>
+													<div class="probootstrap-text">
+														<h3>Vijaydurg Fort</h3>
+														<p class="greetings">Achara Beach. (22km north of
+															Malvan). Easily accessible by road. This beach is an
+															enchantress of other beaches in Sindhudurg</p>
+														<hr></hr>
+														<button type="button" class="btn btn-info"
+															data-toggle="modal" data-target="#acharaModal">Read
+															more</button>
+													</div>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate">
+              <a href="#" class="probootstrap-featured-news-box">
+                <figure class="probootstrap-media">
+														<img src="images/forts/Vijaydurg fort.jpg"
+															alt="Free Bootstrap Template by ProBootstrap.com"
+															class="img-responsive">
+													</figure>
+													<div class="probootstrap-text">
+														<h3>Vijaydurg Fort</h3>
+														<p class="greetings">Achara Beach. (22km north of
+															Malvan). Easily accessible by road. This beach is an
+															enchantress of other beaches in Sindhudurg</p>
+														<hr></hr>
+														<button type="button" class="btn btn-info"
+															data-toggle="modal" data-target="#acharaModal">Read
+															more</button>
+													</div>
+              </a>
+            </div>
+            <div class="clearfix visible-sm-block visible-xs-block"></div>
+
+          </div>
+        </div>
+      </section>
+	
+	
+	
+	</div>
+ <script src="js/scripts.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
