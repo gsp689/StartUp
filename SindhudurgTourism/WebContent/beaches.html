@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" value="example, news, ticker, newsticker, javascript, scrolling, text, back, forth" />
+<title>Sindhudurg Tourism &mdash; beaches</title>
+<!-- <meta name="description" content="Free Bootstrap Theme by ProBootstrap.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template"> -->
+
+<link
+	href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans"
+	rel="stylesheet">
+<link rel="stylesheet" href="css/styles-merged.css">
+<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700'
+	rel='stylesheet' type='text/css'>
+<link href='css/custom1.css' rel='stylesheet' type='text/css'>
+<link href='css/custom2.css' rel='stylesheet' type='text/css'>
+<!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+    
+    <!--cool carousel for news  -->
+    
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
+		<script src="js/cool/jquery.carouFredSel-6.0.4-packed.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function() {
+				var _scroll = {
+					delay: 1000,
+					easing: 'linear',
+					items: 1,
+					duration: 0.07,
+					timeoutDuration: 0,
+					pauseOnHover: 'immediate'
+				};
+				$('#ticker-1').carouFredSel({
+					width: 1000,
+					align: false,
+					items: {
+						width: 'variable',
+						height: 35,
+						visible: 1
+					},
+					scroll: _scroll
+				});
+
+				$('#ticker-2').carouFredSel({
+					width: 1000,
+					align: false,
+					circular: false,
+					items: {
+						width: 'variable',
+						height: 35,
+						visible: 2
+					},
+					scroll: _scroll
+				});
+
+				//	set carousels to be 100% wide
+				$('.caroufredsel_wrapper').css('width', '100%');
+
+				//	set a large width on the last DD so the ticker won't show the first item at the end
+				$('#ticker-2 dd:last').width(2000);
+			});
+		</script>
+		
+</head>
+<body>
+<div class="probootstrap-search" id="probootstrap-search">
+		<a href="#" class="probootstrap-close js-probootstrap-close"><i
+			class="icon-cross"></i></a>
+		<form action="#">
+			<input type="search" name="s" id="search"
+				placeholder="Search a keyword and hit enter...">
+		</form>
+	</div>
+	
+	<div class="probootstrap-page-wrapper">
+	
+	<!-- Fixed navbar -->
+		<div class="probootstrap-header-top">
+			<div class="container">
+				<div class="row">
+					<div
+						class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
+						<!-- <span><i class="icon-location2"></i>Brooklyn, NY 10036, United States</span>
+              <span><i class="icon-phone2"></i>+1-123-456-7890</span>
+              <span><i class="icon-mail"></i>info@probootstrap.com</span> -->
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
+						<ul>
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook2"></i></a></li>
+							<li><a href="#"><i class="icon-instagram2"></i></a></li>
+							<li><a href="#"><i class="icon-youtube"></i></a></li>
+							<li><a href="#"
+								class="probootstrap-search-icon js-probootstrap-search"><i
+									class="icon-search"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-default probootstrap-navbar upMenu"
+			style="background-size: contain !important" >
+			<div class="container">
+				<div class="navbar-header">
+					<div class="btn-more js-btn-more visible-xs">
+						<a href="#"><i class="icon-dots-three-vertical "></i></a>
+					</div>
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#navbar-collapse"
+						aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"
+						title="Sindhudurg Tourism">Sindhudurg Tourism</a>
+					<!-- <a class="navbar-brand1" href="index.html" title="ProBootstrap:Enlight"><h3>Sindhudurg Tourism</h3></a> -->
+				</div>
+
+				<div id="navbar-collapse" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html">I am Sindhudurg</a></li>
+						<li class="dropdown"><a href="#" data-toggle="dropdown"
+							class="dropdown-toggle">Tours</a>
+							<ul class="dropdown-menu">
+								<li><a href="oneDayTour.html">One Day Tour</a></li>
+								<li><a href="twoDayTour.html">Two Day Tour</a></li>
+								<li><a href="threeDayTour.html">Three Day Tour</a></li>
+								<li><a href="fourDayTour.html">Four Day Tour</a></li>
+								<!-- <li class="dropdown-submenu dropdown"><a href="#"
+									data-toggle="dropdown" class="dropdown-toggle"><span>Tours</span></a>
+									<ul class="dropdown-menu">
+										<li><a href="oneDayTour.html">One Day Tour</a></li>
+										<li><a href="#">Two Days Tour</a></li>
+										<li><a href="#">Three Days Tour</a></li>
+										<li><a href="#">Four Days Tour</a></li>
+									</ul></li>
+								<li><a href="news.html">News</a></li> -->
+							</ul></li>
+						<li class="dropdown"><a href="#" data-toggle="dropdown"
+							class="dropdown-toggle">Discover</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-submenu dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Destinations</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu dropdown">
+                    <a href="beaches.html"   class="dropdown-toggle"><span> beaches</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="dropdown-submenu dropdown">
+                    <a href="#"  class="dropdown-toggle"><span>Wildlife</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="dropdown-submenu dropdown">
+                    <a href="#"  class="dropdown-toggle"><span>Beaches</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="dropdown-submenu dropdown">
+                    <a href="#"  class="dropdown-toggle"><span>Temples</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                    </ul>
+                  </li>
+							</ul></li>
+						
+						
+						<li class="dropdown"><a href="#" data-toggle="dropdown"
+							class="dropdown-toggle">Experience</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-submenu dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Fairs & Festivals</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Adventure</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="dropdown-submenu dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Heritage Properties</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                      <li><a href="#">Second Level Menu</a></li>
+                    </ul>
+                  </li>
+				</ul></li>
+						
+						
+						<li><a href="aboutUs.html">About Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	
+	
+	<section class="probootstrap-section" style="padding: 0em 0;">
+			<div class="" style="width: 100%;padding:1em;">
+				<div class="row">
+					<div class="col-md-12">
+						<div id="wrapper">
+
+							<div class="first">
+								<dl id="ticker-1" style="line-height:0">
+									<dt >News1</dt>
+									<dd>A news ticker (sometimes referred to as a
+										&quot;crawler&quot;) resides in the lower third of the
+										television screen space on television news networks dedicated
+										to presenting headlines or minor pieces of news.</dd>
+
+									<dt>News2</dt>
+									<dd>It may also refer to a long, thin scoreboard-style
+										display seen around the front of some offices or public
+										buildings.</dd>
+
+									<dt>News3</dt>
+									<dd>Since the growth in usage of the World Wide Web, news
+										tickers have largely syndicated news posts from the websites
+										of the broadcasting services which produce the broadcasts.</dd>
+								</dl>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+	
+	<section class="probootstrap-section section probootstrap-section-colored">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-left section-heading probootstrap-animate">
+              <h1>beaches to Explore!!</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+	
+	
+	<section class="probootstrap-section">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4" >
+              <a href="#" class="probootstrap-featured-news-box">
+                <figure class="probootstrap-media">
+														<img src="images/beaches/sagareshwar-beach.jpg"
+															alt="Free Bootstrap Template by ProBootstrap.com"
+															class="img-responsive">
+													</figure>
+													<div class="probootstrap-text">
+														<h3>Sagareshwar Beach</h3>
+														<p class="greetings">Driving on the way to Shiroda from Vengurla just turn to the right at Ubhadanda you will see the huge streteh of shiny silvery sand dunes. By trampling the sand under the foot, a short walk, climbing the sand dunes and lo behold you are at the sparkling beach and crystal blue waters of Sagreshwar. This beautiful beach is just 3-4 kms from Vengurla. A small temple of Sagareshwara(Lord of the Sea) is situated on the beach.
+The Cajuring plantations on the beach offers hospitality and pleasure to the tourists. Ideal for swimming, this is a secluded beach and can be accessed by trekking.
+														</p>
+														<hr></hr>
+														<button type="button" class="btn btn-info"
+															data-toggle="modal" data-target="#acharaModal">Read
+															more</button>
+													</div>
+                
+              </a>
+            </div>
+            <div class="col-md-4" >
+              <a href="#" class="probootstrap-featured-news-box">
+                <figure class="probootstrap-media">
+														<img src="images/beaches/nivti.jpg"
+															alt="Free Bootstrap Template by ProBootstrap.com"
+															class="img-responsive">
+													</figure>
+													<div class="probootstrap-text">
+														<h3>Nivati Beach </h3>
+														<p class="greetings">Nivati Beach Offers peace and serenity to independent travelers.
+														 Fishermen seen launching their traditional boats and nets daily into the sea is an
+														  interesting feature to watch on this beach. Adjoining the beach is as 
+														  twin village Kochara which offers wonderful view of small tropical oasis on Nivti shore.
+														</p>
+														<hr></hr>
+														<button type="button" class="btn btn-info"
+															data-toggle="modal" data-target="#acharaModal">Read
+															more</button>
+													</div>
+              </a>
+            </div>
+            <div class="clearfix visible-sm-block visible-xs-block"></div>
+            <div class="col-md-4" >
+              <a href="#" class="probootstrap-featured-news-box">
+               <figure class="probootstrap-media">
+														<img src="images/beaches/redibagayat.jpg"
+															alt="Free Bootstrap Template by ProBootstrap.com"
+															class="img-responsive">
+													</figure>
+													<div class="probootstrap-text">
+														<h3>Bagayat Beach</h3>
+														<p class="greetings">
+If you wish privacy on your vacation plan, Bagayat Beach will offer you best ever option. Located in Vengurla, Sindhudurg, this beach is one of the best and of its own kind. To the south of Vengurla light house (deepagruh) is the Beach stretching almost 2 km with white sand & clean blue water. 
+Entire area is calm and quiet, so overlook the natural port of Vengurla, this pristine stretch of shiny silvery sand dunes and refreshing waves; and is bordered with magnificent cajurina plantations and fluttering palms which offers pleasure to the visitors. 
+One needs to cross "Manasi" river on the way to reach Bagayat Beach.
+Walking through the sand with waves playing with the feet; it's a nice experience.
+Have fun with small crabs running around the Bagayat beach, finding the nearest hole to hide into. Till the water was up to the level of one hip and surprisingly, we could see the sea bed with the naked eye.
+Doodle around for a while at the beach, take snaps or watch how local fishermen start their day at sea. The complete lack of any affectations of being a touristy place is what will encouraged one to wander around.
+The golden shade of the white sand during sunrise and the view of sun setting into the ocean will set your mood on fire. The beach surrounding the temple has been wisely crafted and nurtured to grow a blooming courtyard of a variety of lowers bursting with all sorts of colours imaginable. Right at the entrance of the temple is the massive Deepstambh, and the ever vigilant Nandi the Bull, at the entrance of the Lord's abode
+														</p>
+														<hr></hr>
+														<button type="button" class="btn btn-info"
+															data-toggle="modal" data-target="#acharaModal">Read
+															more</button>
+													</div>
+              </a>
+            </div>
+
+            <div class="clearfix visible-md-block"></div>
+            
+            <div class="col-md-4" >
+              <a href="#" class="probootstrap-featured-news-box">
+                <figure class="probootstrap-media">
+														<img src="images/beaches/shirodavelagar.jpeg"
+															alt="Free Bootstrap Template by ProBootstrap.com"
+															class="img-responsive">
+													</figure>
+													<div class="probootstrap-text">
+														<h3>Shiroda Velagar Beach</h3>
+														<p class="greetings">Shiroda Velagar Beach - Featuring natural beauty, privacy, sparkling blue waters, long stretch of silver sands, cool sea breeze whispering through towering cajuring plantations on the beach, amenities and salt depots around the village, Shiroda is feast for the eyes of visitors.
+Everyone in Maharashtra and its neighbouring state is aware of great Marathi author Shri V. S. Khandekar. It is a place where he worked from 1920 to 1938 as a primary and secondary school teacher. So this place has got its own identity.
+														</p>
+														<hr></hr>
+														<button type="button" class="btn btn-info"
+															data-toggle="modal" data-target="#acharaModal">Read
+															more</button>
+													</div>
+              </a>
+            </div>
+            <div class="clearfix visible-sm-block visible-xs-block"></div>
+            
+            <div class="col-md-4" >
+              <a href="#" class="probootstrap-featured-news-box">
+                <figure class="probootstrap-media">
+														<img src="images/beaches/kondura.jpg"
+															alt="Free Bootstrap Template by ProBootstrap.com"
+															class="img-responsive">
+													</figure>
+													<div class="probootstrap-text">
+														<h3>Kondura Beach</h3>
+														<p class="greetings">Kondura beach is one of the smallest beaches encased in rocky shore triangle. It is worth visiting to hear sea roar. Kondura beach is one of the rare silvery sand beaches on the Konkan coast. It is near a small village called the place has gained enigmatic characteristics. There is a small cave in a small hill named Kond.
+When you reach Kondura, the light breeze will make you feel good as it brushes against your cheeks. Swim in the crystal clear water, pick the seashells, or try your skills and built a sand castle with the fine sand. You can start picking seashells after swim. It is ideal place for birdwatching . kondura beach is 20 mins drive from golven resort and the road is also picturesque as it gooes through hills and sada.
+Kondura beach is very smooth, with calm, low waves that gently lap on the shore, providing a soothing background sound that will turn you on for sure. The fresh salty smell of the sea, dancing waves and the breeze slowly passes whispering through your ears bringing that peace inside you.
+The green parrots flying above your head, the woodpeckers working on the old coconut trees, the small lizards running a race with the breeze rushing through the nearby bush – all these make you be with nature. If you are lucky you can see The Brahminy Kite (Haliastur indus) also known as the Red-backed Sea-eagle.
+																	</p>
+														<hr></hr>
+														<button type="button" class="btn btn-info"
+															data-toggle="modal" data-target="#acharaModal">Read
+															more</button>
+													</div>
+              </a>
+            </div>
+            <div class="col-md-4" >
+              <a href="#" class="probootstrap-featured-news-box">
+                <figure class="probootstrap-media">
+														<img src="images/beaches/chivla-malvan-beach.jpg"
+															alt="Free Bootstrap Template by ProBootstrap.com"
+															class="img-responsive">
+													</figure>
+													<div class="probootstrap-text">
+														<h3>Chevla Beach</h3>
+														<p class="greetings">Chivla beach is a favorite destination for evening stroll of local populace.
+														This long stretch of 1-1.5kms of clean sands between Government rest house on left and rocky jutting on the right is a pleasure-walk.
+														Like all konkan beaches this is a clean unpolluted beach.Chivla beach has fisher-folk community living by it's side.
+														Early in the morning or in the evening one can see and experience the fishermen returning in small boats from fishing expedition.
+														 The whole community gathers at the shore to receive and help them in bringing the catch to the shore.A small auction takes place at the beach
+														  itself and the catch is sold to the highest bidder. In the days of mechanized and trawler fishing this beach has still retained the traditional
+														   manual fishing. One can also see firsthand the languid pulling of net spread in the sea to catch the fish.Some 8-10 persons are engaged in 
+														   this activity and they systematically pull the net out step-by step. Each person doing his assigned duty in rotation with utmost sincerity.
+														   This process lasts almost two hours and if you've the patience you can have the rare opportunity of witnessing the fresh silvery fish 
+														   in the net still live, jumping and dancing moments before death.Like all sea-shores one can enjoy the sunset from Chivla beach.
+														   During December to February when skies are clear one can see many shades of colours at the time of sunset.
+														Moonlight makes this beach more splendid late in the night and nocturnal walk on this beach is a memory to cherish</p>
+														<hr></hr>
+														<button type="button" class="btn btn-info"
+															data-toggle="modal" data-target="#acharaModal">Read
+															more</button>
+													</div>
+              </a>
+            </div>
+            <div class="clearfix visible-sm-block visible-xs-block"></div>
+             <div class="col-md-4" >
+              <a href="#" class="probootstrap-featured-news-box">
+                <figure class="probootstrap-media">
+														<img src="images/beaches/tarkarli.jpg"
+															alt="Free Bootstrap Template by ProBootstrap.com"
+															class="img-responsive">
+													</figure>
+													<div class="probootstrap-text">
+														<h3>Tarkarli Beach</h3>
+														<p class="greetings">Tarkarli Beach - Tarkarli is a narrow stretch of beach with pristine waters, located at the convergence of the Karli River and the Arabian Sea. It is 546 k.m. away from Mumbai, 6 kms. south of Malvan, on the west coast of India. This place has gained prominence because of its transparently clear seas, where on a fairly sunny day, one can see the sea- bed up to a depth of 20 feet. This beach can be rightly called as ‘Queen Beach’ of Sindhudurg.
+Sea and sand blending in enchanting natural harmony, gracefully cruising boats in calm and cool river waters add to the beauty of this beach. Here newly built M .T. D.C. Cottages are ready to provide you comfortable accommodation and recreation facilities. Now MTDC has made houseboat facility available at Tarkarli. 2 houseboats, namely, Hiranyakeshi (a deluxe houseboat) and Karli (a standard houseboat) are at the service of discerning traveler. These fully equipped luxury boats have the Hi-tech equipment and all luxurious amenities on board. For more details and latest tariff visit MTDC site on web.
+For adventure water sports lovers, snorkeling and scuba diving facilities are also available at Tarkarli. For novice, well-trained snorkeling guides will guide snorkeling trip ensuring safety and make it sure that one can have the first and finest ever experience of marine life.
+														</p>
+														<hr></hr>
+														<button type="button" class="btn btn-info"
+															data-toggle="modal" data-target="#acharaModal">Read
+															more</button>
+													</div>
+              </a>
+            </div>
+            
+
+          </div>
+        </div>
+      </section>
+	
+	
+	
+	</div>
+ <script src="js/scripts.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
