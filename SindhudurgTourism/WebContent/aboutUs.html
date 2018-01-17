@@ -24,6 +24,23 @@
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
+    <style> 
+#borderimg1 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(images/border1.png) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(images/border1.png) 30 round; /* Opera 11-12.1 */
+    border-image: url(images/border1.png) 30 round;
+}
+
+#borderimg2 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(images/border1.png) 30 stretch; /* Safari 3.1-5 */
+    -o-border-image: url(images/border1.png) 30 stretch; /* Opera 11-12.1 */
+    border-image: url(images/border1.png) 30 stretch;
+}
+</style>
   </head>
   <body>
 
@@ -102,7 +119,7 @@
       </nav>
       
       <section class="probootstrap-section probootstrap-section-colored firstImage">
-             <img alt="" src="images/test.jpg" style="height: 100%!important;width:100%!important">
+             <img data-animate-effect="fadeInRight" alt="" src="images/test.jpg" style="height: 100%!important;width:100%!important">
       </section>
 
       
@@ -115,27 +132,43 @@
         </div>
       </section>
       
-      <section style="">
-          <div class="container container1">
-    <div class="tabbable">
-        <div class="row">
-            <ul class="nav nav-tabs">
-                <li class="active"><a class="" href="#tab1" data-toggle="tab">WELCOME NOTE</a>
-                </li>
-                <li><a class="" href="#tab2" data-toggle="tab">OVERVIEW</a>
-                </li>
-                <li><a class="" href="#tab3" data-toggle="tab">CULTURE</a>
-                </li>
-                <li><a class="" href="#tab4" data-toggle="tab">ROYALTY</a>
-                </li>
-                
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane active" id="tab1">
-                    <div class="col-md-6">
+      <section
+			class="probootstrap-section probootstrap-section-colored probootstrap-bg probootstrap-custom-heading probootstrap-tab-section"
+			style="background-image: url(images/11.jpg)">
+			<div class="container">
+				<div class="row">
+					<div
+						class="col-md-12 text-center section-heading probootstrap-animate">
+						<h2 class="mb0">
+							<!-- Highlights -->
+						</h2>
+					</div>
+				</div>
+			</div>
+			<div class="probootstrap-tab-style-1">
+				<ul class="nav nav-tabs probootstrap-center probootstrap-tabs no-border">
+					<li class="active"><a data-toggle="tab" href="#featured-news">Welcome Note</a></li>
+					<li><a data-toggle="tab" href="#upcoming-events">Overview</a></li>
+					<li><a data-toggle="tab" href="#tours">Culture</a></li>
+				</ul>
+				
+			</div>
+		</section>
+		
+		
+		<section class="probootstrap-section about" style="padding: 2em 0;">
+			<div class="container" id="borderimg2">
+				<div class="row">
+					<div class="col-md-12" style="border-image:url(images/border.jpg) 100% repeat">
+						<div class="tab-content">
+							<div id="featured-news" class="tab-pane fade in active">
+								<div class="row">
+									<div class="col-md-12">
+										
+											<!-- <div class="col-md-6"> -->
                          
                           <p class="">Dear Visitor,</p>
-                          <p class="">
+                          <p class="" >
 Welcome to my Sindhudurg, fascinating Sindhudurg.
 This land is a colourful melange of massive forts, stunning palaces, diverse cultures, delectable cuisines and warm people, set amidst a rugged yet inviting landscape.
 Sindhudurg is the first district in the country to be notified as the Tourism District and it is gifted with treasure or natural beauty.
@@ -146,19 +179,27 @@ Sindhudurg is the first district in the country to be notified as the Tourism Di
 </p>
                         <p class="">Come, walk into the unforgettable embrace of my Sindhudurg.</p>
                         <p class="">UDAY CHAUDHARI</p>
-                        <p class-"">The Hon'ble  Collector of  Sindhudurg</p>
-                    </div>
-                </div>
-                <div class="tab-pane" id="tab2">
-                    <div class="col-md-6">
-                        <p class="">The Land of Culture and Natural beauty. Sindhudurg is famous for it's natural beauty like Beaches, Backwater, Waterfalls and Pilgrimage centers. 
+                        <p class-"">The Hon'ble  Collector of  Sindhudurg.</p>
+                    <!-- </div> -->
+											
+									</div>
+								</div>
+								<!-- END row -->
+
+								
+							</div>
+							<div id="upcoming-events" class="tab-pane fade">
+								<div class="row">
+									<div class="col-md-12" >
+										
+                        <p class="" style="text-align: justify">The Land of Culture and Natural beauty. Sindhudurg is famous for it's natural beauty like Beaches, Backwater, Waterfalls and Pilgrimage centers. 
                         The major attraction here is the long and narrow stretch of beaches.On a clear day, you can see the sea-bed through a depth of 20 ft. Then of course, there are the forts, Sindhudurg one of Maharashtra's more popular and important sea forts built in the 17th century.
                         Sindhudurg is in the Konkan area of Maharashtra having picturesque stretch of land on the west cost of India, endowed with the beautiful seashore, picturesque Mountains and scenic natural beauty and known for tropical fruits like the world famous Alphonso Mangoes, Cashews, Jamuns etc.
                         Sindhudurg District is the southern part of the greater tract known as the 'Konkan' which is historically famous for its long coast line and safe harbors.</p>
-                        <img alt="" src="images/Final Image Mlvn Fort1.jpg">
+                        <img alt="" src="images/Final Image Mlvn Fort1.jpg" class="imgBorder" style="width: inherit">
                         
                         <h1>HISTORICAL VIEW OF SINDHUDURG</h1>
-                         <p class="">Sindhudurg District is the Southern part of the greater track which
+                         <p class="" >Sindhudurg District is the Southern part of the greater track which
 is known as the ‘Konkan’ which is historical famous for its long coast
 line and safe harbors. Sindhudurg District was a part of the Ratnagiri
 district, but for administrative convenience and industrial and agricultural
@@ -175,9 +216,9 @@ thesis. Sindhudurgnagari at Oros Bk is the district headquarters. The
 name of the district has been adopted from the famous sea fort of
 Sindhudurg which was built by Chhatrapati Shivaji the great near Malvan
 and it literally means “Sea Fort</p>
- <img alt="" src="images/historic .JPG">
+ <img alt="" src="images/historic .JPG" class="imgBorder" style="width: inherit">
 <h1>TOPOGRAPHIC VIEW</h1>
-                          <p class="">Sindhudurg District is situated between North 15o 37’ to 16o
+                          <p class="" >Sindhudurg District is situated between North 15o 37’ to 16o
  40’
 latitudes and East 73o
  19’ to 74o
@@ -194,29 +235,36 @@ Sahyadri strip and in between there is a strip of small plateaus and flat
 land known as Valati, All the three sub regions are in the north south
 direction. Width of the middle portion of land is 25 km and that of
 Sahyadri hill range is 15 to 25 km.</p>
- <img alt="" src="images/topo.jpg">
+ <img alt="" src="images/topo.jpg" style="width: inherit" class="imgBorder">
                           
-                    </div>
-                </div>
-                <div class="tab-pane" id="tab3">
-                    <div class="col-md-6">
-                        <p class="">I'm in Section 4.</p>
-                    </div>
-                </div>
-                <div class="tab-pane" id="tab4">
-                    <div class="col-md-6">
-                        <p class="">I'm in Section 5.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end row -->
-    </div>
-    <!-- end tabbable -->
-</div>
-<!-- end main container -->
+                    
+									</div>
+								</div>
+								
+							</div>
+							
+							<div id="tours" class="tab-pane fade">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="owl-carousel" id="owl3">
+											
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+      
+     
          
-      </secion>
+     
       
       <section class="probootstrap-cta">
 			<div class="container">
