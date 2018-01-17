@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords"
+	value="example, news, ticker, newsticker, javascript, scrolling, text, back, forth" />
+<title>Sindhudurg &mdash; Tarkarli</title>
+<!-- <meta name="description" content="Free Bootstrap Theme by ProBootstrap.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template"> -->
+
+<link
+	href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans"
+	rel="stylesheet">
+<link rel="stylesheet" href="css/styles-merged.css">
+<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700'
+	rel='stylesheet' type='text/css'>
+<link href='css/custom1.css' rel='stylesheet' type='text/css'>
+<link href='css/custom3.css' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+<!--cool carousel for news  -->
+
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"
+	type="text/javascript"></script>
+<script src="js/cool/jquery.carouFredSel-6.0.4-packed.js"
+	type="text/javascript"></script>
+<script type="text/javascript">
+	$(function() {
+		var _scroll = {
+			delay : 1000,
+			easing : 'linear',
+			items : 1,
+			duration : 0.07,
+			timeoutDuration : 0,
+			pauseOnHover : 'immediate'
+		};
+		$('#ticker-1').carouFredSel({
+			width : 1000,
+			align : false,
+			items : {
+				width : 'variable',
+				height : 35,
+				visible : 1
+			},
+			scroll : _scroll
+		});
+
+		$('#ticker-2').carouFredSel({
+			width : 1000,
+			align : false,
+			circular : false,
+			items : {
+				width : 'variable',
+				height : 35,
+				visible : 2
+			},
+			scroll : _scroll
+		});
+
+		//	set carousels to be 100% wide
+		$('.caroufredsel_wrapper').css('width', '100%');
+
+		//	set a large width on the last DD so the ticker won't show the first item at the end
+		$('#ticker-2 dd:last').width(2000);
+	});
+</script>
+</head>
+<body>
+
+	<div class="probootstrap-search" id="probootstrap-search">
+		<a href="#" class="probootstrap-close js-probootstrap-close"><i
+			class="icon-cross"></i></a>
+		<form action="#">
+			<input type="search" name="s" id="search"
+				placeholder="Search a keyword and hit enter...">
+		</form>
+	</div>
+
+	<div class="probootstrap-page-wrapper">
+		<!-- Fixed navbar -->
+		<div class="probootstrap-header-top">
+			<div class="container">
+				<div class="row">
+					<div
+						class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
+						<!-- <span><i class="icon-location2"></i>Brooklyn, NY 10036, United States</span>
+              <span><i class="icon-phone2"></i>+1-123-456-7890</span>
+              <span><i class="icon-mail"></i>info@probootstrap.com</span> -->
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
+						<ul>
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook2"></i></a></li>
+							<li><a href="#"><i class="icon-instagram2"></i></a></li>
+							<li><a href="#"><i class="icon-youtube"></i></a></li>
+							<li><a href="#"
+								class="probootstrap-search-icon js-probootstrap-search"><i
+									class="icon-search"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-default probootstrap-navbar upMenu"
+			style="background-size: contain !important">
+			<div class="container">
+				<div class="navbar-header">
+					<div class="btn-more js-btn-more visible-xs">
+						<a href="#"><i class="icon-dots-three-vertical "></i></a>
+					</div>
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#navbar-collapse"
+						aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"
+						title="Sindhudurg Tourism">Sindhudurg Tourism</a>
+					<!-- <a class="navbar-brand1" href="index.html" title="ProBootstrap:Enlight"><h3>Sindhudurg Tourism</h3></a> -->
+				</div>
+
+				<div id="navbar-collapse" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html">I am Sindhudurg</a></li>
+						<li class="dropdown"><a href="#" data-toggle="dropdown"
+							class="dropdown-toggle">Tours</a>
+							<ul class="dropdown-menu">
+								<li><a href="oneDayTour.html">One Day Tour</a></li>
+								<li><a href="twoDayTour.html">Two Day Tour</a></li>
+								<li><a href="threeDayTour.html">Three Day Tour</a></li>
+								<li><a href="fourDayTour.html">Four Day Tour</a></li>
+								<!-- <li class="dropdown-submenu dropdown"><a href="#"
+									data-toggle="dropdown" class="dropdown-toggle"><span>Tours</span></a>
+									<ul class="dropdown-menu">
+										<li><a href="oneDayTour.html">One Day Tour</a></li>
+										<li><a href="#">Two Days Tour</a></li>
+										<li><a href="#">Three Days Tour</a></li>
+										<li><a href="#">Four Days Tour</a></li>
+									</ul></li>
+								<li><a href="news.html">News</a></li> -->
+							</ul></li>
+						<li class="dropdown"><a href="#" data-toggle="dropdown"
+							class="dropdown-toggle">Discover</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-submenu dropdown"><a href="#"
+									data-toggle="dropdown" class="dropdown-toggle"><span>Destinations</span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+									</ul></li>
+								<li class="dropdown-submenu dropdown"><a href="forts.html"
+									class="dropdown-toggle"><span>Forts</span></a>
+									<ul class="dropdown-menu">
+										<li><a href="vijaydurg.html">Vijaydurg Fort</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+									</ul></li>
+
+								<li class="dropdown-submenu dropdown"><a href="#"
+									class="dropdown-toggle"><span>Wildlife</span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+									</ul></li>
+
+								<li class="dropdown-submenu dropdown"><a
+									href="beaches.html" class="dropdown-toggle"><span>Beaches</span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+									</ul></li>
+
+								<li class="dropdown-submenu dropdown"><a
+									href="temples.html" class="dropdown-toggle"><span>Temples</span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+									</ul></li>
+							</ul></li>
+
+
+						<li class="dropdown"><a href="#" data-toggle="dropdown"
+							class="dropdown-toggle">Experience</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-submenu dropdown"><a href="#"
+									data-toggle="dropdown" class="dropdown-toggle"><span>Fairs
+											& Festivals</span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+									</ul></li>
+								<li class="dropdown-submenu dropdown"><a href="#"
+									data-toggle="dropdown" class="dropdown-toggle"><span>Adventure</span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+									</ul></li>
+
+								<li class="dropdown-submenu dropdown"><a href="#"
+									data-toggle="dropdown" class="dropdown-toggle"><span>Heritage
+											Properties</span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+										<li><a href="#">Second Level Menu</a></li>
+									</ul></li>
+							</ul></li>
+
+
+						<li><a href="aboutUs.html">About Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<section class="probootstrap-section" style="padding: 0em 0;">
+			<div class="" style="width: 100%; padding: 1em;">
+				<div class="row">
+					<div class="col-md-12">
+						<div id="wrapper">
+
+							<div class="first">
+								<dl id="ticker-1" style="line-height: 0">
+									<dt>News1</dt>
+									<dd>A news ticker (sometimes referred to as a
+										&quot;crawler&quot;) resides in the lower third of the
+										television screen space on television news networks dedicated
+										to presenting headlines or minor pieces of news.</dd>
+
+									<dt>News2</dt>
+									<dd>It may also refer to a long, thin scoreboard-style
+										display seen around the front of some offices or public
+										buildings.</dd>
+
+									<dt>News3</dt>
+									<dd>Since the growth in usage of the World Wide Web, news
+										tickers have largely syndicated news posts from the websites
+										of the broadcasting services which produce the broadcasts.</dd>
+								</dl>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- add tarkarli image here -->
+		<section
+			class="probootstrap-section section1 probootstrap-section-colored probootstrap-bg probootstrap-custom-heading probootstrap-tab-section"
+			style="background-image: url(images/11.jpg)">
+			<div class="container">
+				<div class="row">
+					<div
+						class="col-md-12 text-center section-heading probootstrap-animate">
+						<h2 class="mb0">
+							<!-- Highlights -->
+						</h2>
+					</div>
+				</div>
+			</div>
+			<div class="probootstrap-tab-style-1">
+				<ul
+					class="nav nav-tabs probootstrap-center probootstrap-tabs no-border">
+					<li class="active"><a data-toggle="tab" href="#featured-news">
+							Places to Visit</a></li>
+					<li><a data-toggle="tab" href="#upcoming-events">Things To
+							Do</a></li>
+					<li><a data-toggle="tab" href="#nearBy">Near By</a></li>
+					<li><a data-toggle="tab" href="#tours">How To Reach</a></li>
+					<li><a data-toggle="tab" href="#gallery">Gallery</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="probootstrap-section about" style="padding: 2em 0;">
+			<div class="container" id="borderimg2">
+				<div class="row">
+					<div class="col-md-12"
+						style="border-image: url(images/border.jpg) 100% repeat">
+						<div class="tab-content">
+							<div id="featured-news" class="tab-pane fade in active">
+								<div class="row">
+									<div class="col-md-12">
+
+										<div class="panel-group" id="accordion">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordion"
+															href="#collapse1"> Water sports</a>
+													</h4>
+												</div>
+												<div id="collapse1" class="panel-collapse collapse">
+													<div class="panel-body">
+														<div class="tab-content">
+															<div class="tab-pane fade in active">
+																<div class="wrapper col-md-3">
+																	<img src="images/kunkeshwar.jpg" class="img-responsive"
+																		height="99" width="99" alt="Image"
+																		style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
+																</div>
+																<p
+																	style="text-align: justify; width: inherit; max-width: 55em;">Kunkeshwar
+																	Temple, an ancient Shiva Temple is located in
+																	Kunkeshwar village, 14 Kms from Devgad town. A pristine
+																	beach with a very long stretch of seashore and white
+																	sand adds to the beauty of temple surroundings. This
+																	beautiful temple near beach has alluring architecture
+																	with reminiscent of South Indian style of temple
+																	architecture. Yadav Kings built this temple in 1100 A.
+																	D. Chhatrapati Shivaji Maharaj who rejuvenated this
+																	temple many times was a frequent visitor to this
+																	temple. This temple is also famous as Kashi of South
+																	Konkan. Every year a huge celebration takes place on
+																	the occasion of Mahashivratri, which keeps religious
+																	beliefs in constant sight of the multitudes. During the
+																	festival a large number of devotees throng this place
+																	with their families and friends. This vigilant Shiva
+																	deity bestows blessings on everyone who surrenders to
+																	its feet.</p>
+																<p
+																	style="text-align: justify; width: inherit; max-width: 55em;">A
+																	walk through the 5 Kms long Kunkeshwar beach across the
+																	temple on one side of the hill has quieting effect on
+																	the mind. Swimming in the clear water freshens the mind
+																	and if you are lucky ones you can get a rare view of
+																	dolphins diving in the deep sea from a distance.
+																	Greenery of coconut and mango trees surrounding one
+																	side of the beach adds to the beauty and makes the
+																	whole experience of every visitor a memorable one.</p>
+
+																<p
+																	style="text-align: justify; width: inherit; max-width: 55em;">Getting
+																	There: By Air: Nearest airport at Dabolim, Goa is 186
+																	Kms. Mumbai Airport is 492 Kms. By Railway: Nearest
+																	major railway station on Konkan Railway is Kankavli, 49
+																	Kms. Nandgaon Railway station is 42 Kms. By Road: 42
+																	Kms from Nandgaon village on NH17 (Mumbai-Goa Highway)
+																	14 Km from Devgad Mumbai-Kunkeshwar is 492 Kms.
+																	Pune-Kunkeshwar is 387 Kms Kolhapur-Kunkeshwar is 160
+																	Kms</p>
+																<p
+																	style="text-align: justify; width: inherit; max-width: 55em;">Places
+																	to see nearby : Achara bandar , Malvan beach , Sarjekot
+																	fort , Shree shivchatrapati temple</p>
+
+																<div class="col-md-4">
+																	<div class="probootstrap-footer-widget"></div>
+																</div>
+															</div>
+															<div id="menu1K" class="tab-pane fade">
+																<h3>Menu 1</h3>
+																<p>Some content in menu 1.</p>
+															</div>
+															<div id="menu2K" class="tab-pane fade">
+																<h3>Menu 2</h3>
+
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordion"
+															href="#collapse2"> Temples</a>
+													</h4>
+												</div>
+												<div id="collapse2" class="panel-collapse collapse">
+													<div class="panel-body">Lorem ipsum dolor sit amet,
+														consectetur adipisicing elit, sed do eiusmod tempor
+														incididunt ut labore et dolore magna aliqua. Ut enim ad
+														minim veniam, quis nostrud exercitation ullamco laboris
+														nisi ut aliquip ex ea commodo consequat.</div>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordion"
+															href="#collapse3"> Beaches</a>
+													</h4>
+												</div>
+												<div id="collapse3" class="panel-collapse collapse">
+													<div class="panel-body">Lorem ipsum dolor sit amet,
+														consectetur adipisicing elit, sed do eiusmod tempor
+														incididunt ut labore et dolore magna aliqua. Ut enim ad
+														minim veniam, quis nostrud exercitation ullamco laboris
+														nisi ut aliquip ex ea commodo consequat.</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<!-- END row -->
+
+
+							</div>
+							<div id="upcoming-events" class="tab-pane fade">
+								<div class="row">
+									<div class="col-md-12">
+
+										<div class="panel-group" id="accordion1">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordion1"
+															href="#collapseW1"> Water sports</a>
+													</h4>
+												</div>
+												<div id="collapseW1" class="panel-collapse collapse">
+													<div class="panel-body">
+														<div class="tab-content">
+															<div class="tab-pane fade in active">
+																<div class="wrapper col-md-3">
+																	<img src="images/kunkeshwar.jpg" class="img-responsive"
+																		height="99" width="99" alt="Image"
+																		style="float: left; margin: 4px 10px 0px 0px; border: 1px solid #000000;">
+																</div>
+																<p
+																	style="text-align: justify; width: inherit; max-width: 55em;">Kunkeshwar
+																	Temple, an ancient Shiva Temple is located in
+																	Kunkeshwar village, 14 Kms from Devgad town. A pristine
+																	beach with a very long stretch of seashore and white
+																	sand adds to the beauty of temple surroundings. This
+																	beautiful temple near beach has alluring architecture
+																	with reminiscent of South Indian style of temple
+																	architecture. Yadav Kings built this temple in 1100 A.
+																	D. Chhatrapati Shivaji Maharaj who rejuvenated this
+																	temple many times was a frequent visitor to this
+																	temple. This temple is also famous as Kashi of South
+																	Konkan. Every year a huge celebration takes place on
+																	the occasion of Mahashivratri, which keeps religious
+																	beliefs in constant sight of the multitudes. During the
+																	festival a large number of devotees throng this place
+																	with their families and friends. This vigilant Shiva
+																	deity bestows blessings on everyone who surrenders to
+																	its feet.</p>
+																<p
+																	style="text-align: justify; width: inherit; max-width: 55em;">A
+																	walk through the 5 Kms long Kunkeshwar beach across the
+																	temple on one side of the hill has quieting effect on
+																	the mind. Swimming in the clear water freshens the mind
+																	and if you are lucky ones you can get a rare view of
+																	dolphins diving in the deep sea from a distance.
+																	Greenery of coconut and mango trees surrounding one
+																	side of the beach adds to the beauty and makes the
+																	whole experience of every visitor a memorable one.</p>
+
+																<p
+																	style="text-align: justify; width: inherit; max-width: 55em;">Getting
+																	There: By Air: Nearest airport at Dabolim, Goa is 186
+																	Kms. Mumbai Airport is 492 Kms. By Railway: Nearest
+																	major railway station on Konkan Railway is Kankavli, 49
+																	Kms. Nandgaon Railway station is 42 Kms. By Road: 42
+																	Kms from Nandgaon village on NH17 (Mumbai-Goa Highway)
+																	14 Km from Devgad Mumbai-Kunkeshwar is 492 Kms.
+																	Pune-Kunkeshwar is 387 Kms Kolhapur-Kunkeshwar is 160
+																	Kms</p>
+																<p
+																	style="text-align: justify; width: inherit; max-width: 55em;">Places
+																	to see nearby : Achara bandar , Malvan beach , Sarjekot
+																	fort , Shree shivchatrapati temple</p>
+
+																<div class="col-md-4">
+																	<div class="probootstrap-footer-widget"></div>
+																</div>
+															</div>
+															<div id="menu1K" class="tab-pane fade">
+																<h3>Menu 1</h3>
+																<p>Some content in menu 1.</p>
+															</div>
+															<div id="menu2K" class="tab-pane fade">
+																<h3>Menu 2</h3>
+
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordion1"
+															href="#collapseT1"> Temples</a>
+													</h4>
+												</div>
+												<div id="collapseT1" class="panel-collapse collapse">
+													<div class="panel-body">Lorem ipsum dolor sit amet,
+														consectetur adipisicing elit, sed do eiusmod tempor
+														incididunt ut labore et dolore magna aliqua. Ut enim ad
+														minim veniam, quis nostrud exercitation ullamco laboris
+														nisi ut aliquip ex ea commodo consequat.</div>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordion1"
+															href="#collapseB1"> Beaches</a>
+													</h4>
+												</div>
+												<div id="collapseB1" class="panel-collapse collapse">
+													<div class="panel-body">Lorem ipsum dolor sit amet,
+														consectetur adipisicing elit, sed do eiusmod tempor
+														incididunt ut labore et dolore magna aliqua. Ut enim ad
+														minim veniam, quis nostrud exercitation ullamco laboris
+														nisi ut aliquip ex ea commodo consequat.</div>
+												</div>
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+
+							</div>
+
+							<div id="tours" class="tab-pane fade">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="owl-carousel" id="owl3"></div>
+									</div>
+								</div>
+
+							</div>
+							
+							<div id="gallery" class="tab-pane fade">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="owl-carousel" id="owl3"></div>
+									</div>
+								</div>
+
+							</div>
+							
+							<div id="nearBy" class="tab-pane fade">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="owl-carousel" id="owl4">
+											<div class="item">
+												<a href="#" class="probootstrap-featured-news-box">
+													<figure class="probootstrap-media">
+														<img src="images/achara.JPG"
+															alt="Free Bootstrap Template by ProBootstrap.com"
+															class="img-responsive">
+													</figure>
+													<div class="probootstrap-text">
+														<h3>Achara</h3>
+														<p class="greetings">Achara Beach. (22km north of
+															Malvan). Easily accessible by road. This beach is an
+															enchantress of other beaches in Sindhudurg</p>
+														<hr></hr>
+														<button type="button" class="btn btn-info"
+															data-toggle="modal" data-target="#acharaModal">Read
+															more</button>
+													</div>
+												</a>
+											</div>
+											<!-- END item -->
+											<div class="item">
+												<a href="#" class="probootstrap-featured-news-box">
+													<figure class="probootstrap-media">
+														<img src="images/kunkeshwar.JPG"
+															alt="Free Bootstrap Template by ProBootstrap.com"
+															class="img-responsive">
+													</figure>
+													<div class="probootstrap-text">
+														<h3>Kunkeshwar</h3>
+														<p class="greetings">Kunkeshwar Temple and Beach -
+															Kunkeshwar Temple, an ancient Shiva Temple is located in
+															Kunkeshwar village, 14 Kms from Devgad town. A pristine
+															beach with a very long stretch of seashore and white sand
+															adds to the beauty of temple surroundings.</p>
+														<hr></hr>
+														<button type="button" class="btn btn-info"
+															data-toggle="modal" data-target="#kunkeshwarModal">Read
+															more</button>
+													</div>
+												</a>
+											</div>
+											<!-- END item -->
+											<div class="item">
+												<a href="#" class="probootstrap-featured-news-box">
+													<figure class="probootstrap-media">
+														<img src="images/tarkarli.JPG"
+															alt="Free Bootstrap Template by ProBootstrap.com"
+															class="resize img-responsive" height="400px!important">
+													</figure>
+													<div class="probootstrap-text">
+														<h3>Tarkarli</h3>
+														<p class="greetings">Tarkarli is a village in Malvan
+															taluka in Sindhudurg district in the Indian state of
+															Maharashtra. It is tourist destination and a coral beach.
+															Ramnavmi is celebrated every year in Mahapurush Temple of
+															the village.</p>
+														<hr></hr>
+														<!-- <p data-toggle="modal" data-target="#myModal">Read more...</p> -->
+														<button type="button" class="btn btn-info"
+															data-toggle="modal" data-target="#tarkarliModal">Read
+															more</button>
+													</div>
+												</a>
+											</div>
+											<!-- END item -->
+											<div class="item">
+												<a href="#" class="probootstrap-featured-news-box">
+													<figure class="probootstrap-media">
+														<img src="images/malvan.JPG"
+															alt="Free Bootstrap Template by ProBootstrap.com"
+															class="img-responsive resize">
+													</figure>
+													<div class="probootstrap-text">
+														<h3>Malvan</h3>
+														<p class="greetings">Malvan is a compact town situated
+															on the coast of Western India and boasts some beautiful
+															beaches. Sindhudurg fort, Tarkarli beach, Mobar point,
+															Chivla beach, Tondavali beach, all attract tourists.</p>
+														<hr></hr>
+														<button type="button" class="btn btn-info"
+															data-toggle="modal" data-target="#myModal">Read
+															more</button>
+													</div>
+												</a>
+											</div>
+											<!-- END item -->
+											<div class="item">
+												<a href="#" class="probootstrap-featured-news-box">
+													<figure class="probootstrap-media">
+														<img src="images/redi.JPG"
+															alt="Free Bootstrap Template by ProBootstrap.com"
+															class="img-responsive">
+													</figure>
+													<div class="probootstrap-text">
+														<h3>Redi</h3>
+														<p class="greetings">Redi is a tiny fishing village
+															along the Konkan coast of Maharashtra which is soon
+															becoming the go to destination for many foreigners. Goa
+															is around 34 km from Redi and the town of Vengurla is
+															around 20 km away.</p>
+														<hr></hr>
+														<button type="button" class="btn btn-info"
+															data-toggle="modal" data-target="#myModal">Read
+															more</button>
+													</div>
+												</a>
+											</div>
+											<!-- END item -->
+
+											<div class="item">
+												<a href="#" class="probootstrap-featured-news-box">
+													<figure class="probootstrap-media">
+														<img src="images/bhogwe.JPG"
+															alt="Free Bootstrap Template by ProBootstrap.com"
+															class="img-responsive">
+													</figure>
+													<div class="probootstrap-text">
+														<h3>Bhogawe</h3>
+														<p class="greetings">Konkan is blessed with one of the
+															longest coastlines in India, and has some untouched and
+															heavenly beach locations that are a delight unto
+															themselves. You will find plenty of isolated coves with
+															long, clean uninterrupted stretches of golden sand that
+															are just the right distance away to give you your privacy</p>
+														<hr></hr>
+														<button type="button" class="btn btn-info"
+															data-toggle="modal" data-target="#myModal">Read
+															more</button>
+													</div>
+												</a>
+											</div>
+											<!-- END item -->
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="probootstrap-cta">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Contact
+							US</h2>
+						<!-- <a href="#" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Enroll</a> -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="probootstrap-footer probootstrap-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="probootstrap-footer-widget">
+							<h3>Quick Links</h3>
+							<ul class="lineheight">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Courses</a></li>
+								<li><a href="#">Teachers</a></li>
+								<li><a href="#">News</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-md-push-1">
+						<div class="probootstrap-footer-widget">
+							<h3>Contact Us</h3>
+							<ul class="probootstrap-contact-info lineheight">
+								<li><i class="icon-location2"></i> <span>Sindhudurg
+										Maharashtra</span></li>
+								<li><i class="icon-mail"></i><span>info@domain.com</span></li>
+								<li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4"></div>
+
+				</div>
+				<!-- END row -->
+			</div>
+
+			<div class="probootstrap-copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 text-left">
+							<p>
+								All Rights Reserved. Designed &amp; Developed with <i
+									class="icon icon-heart"></i> by <a href="">e-circle
+									Solutions</a>
+							</p>
+						</div>
+						<div class="col-md-4 probootstrap-back-to-top">
+							<p>
+								<a href="#" class="js-backtotop">Back to top <i
+									class="icon-arrow-long-up"></i></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!-- END wrapper -->
+
+
+	<script src="js/scripts.min.js"></script>
+	<script src="js/main.min.js"></script>
+	<script src="js/custom.js"></script>
+
+</body>
+</html>
