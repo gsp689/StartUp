@@ -70,9 +70,10 @@ h1{
     background: url('../images/back.jpg');
 }
 
-
+.sec{
+	padding: 0.01em!important;
+	}
 .probootstrap-section1.probootstrap-bg1:before{
 	background: url('../images/back.jpg');
 	opacity:0.5;
-	padding: 0.01em!important;
 	}
